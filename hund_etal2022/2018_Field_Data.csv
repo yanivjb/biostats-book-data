@@ -1,0 +1,125 @@
+﻿Fish_ID,Lake,Date,Infected,Fibrosis_Score_field,Fibrosis_score_count,WormCount,Worm_Intensity,Mass_All_worms_field,Worm_Mass_Numeric,Worm_Mass_mg,Worm_avg_mass_mg,worm_detected,Sex_Fish,Granuloma,Worm_Encysted (tiny & dead)
+Gos_001,Gosling,6/6/18,y,0,0,3,3,< 0.01g,0.009,9,3,no,f,n,no
+Gos_012,Gosling,6/6/18,y,0,0,3,3,< 0.01g,0.009,9,3,no,f,n,no
+Gos_023,Gosling,6/6/18,y,0,0,9,9,< 0.01g,0.009,9,1,no,m,n,no
+Gos_026,Gosling,6/6/18,y,0,0,1,1,< 0.01g,0.009,9,9,no,f,n,no
+Gos_030,Gosling,6/6/18,y,0,0,1,1,< 0.01g,0.009,9,9,no,m,n,no
+Gos_038,Gosling,6/6/18,y,0,0,1,1,< 0.01g,0.009,9,9,no,f,n,no
+Gos_040,Gosling,6/6/18,y,0,0,1,1,< 0.01g,0.009,9,9,no,f,n,no
+Gos_043,Gosling,6/6/18,y,0,0,1,1,< 0.01g,0.009,9,9,no,f,n,no
+Gos_046,Gosling,6/6/18,y,0,0,2,2,< 0.01g,0.009,9,4.5,no,m,n,no
+Gos_047,Gosling,6/6/18,y,0,0,1,1,< 0.01g,0.009,9,9,no,f,n,no
+Gos_048,Gosling,6/6/18,y,0,0,2,2,< 0.01g,0.009,9,4.5,no,m,n,no
+Gos_049,Gosling,6/6/18,y,0,0,1,1,< 0.01g,0.009,9,9,no,f,n,no
+Gos_050,Gosling,6/6/18,y,0,0,1,1,< 0.01g,0.009,9,9,no,m,n,no
+Gos_052,Gosling,6/7/18,y,0,0,1,1,< 0.01g,0.009,9,9,no,m,n,no
+Gos_054,Gosling,6/7/18,y,0,0,1,1,< 0.01g,0.009,9,9,no,m,n,no
+Gos_055,Gosling,6/7/18,y,0,0,1,1,< 0.01g,0.009,9,9,no,m,n,no
+RSL_035,Roselle,6/4/18,y,0,0,2,2,< 0.01g,0.009,9,4.5,no,m,y,yes
+RSL_040,Roselle,6/4/18,y,0,0,5,5,< 0.01g,0.009,9,1.8,no,f,n,no
+RSL_042,Roselle,6/4/18,y,0,0,1,1,< 0.01g,0.009,9,9,no,f,n,no
+RSL_043,Roselle,6/4/18,y,0,0,2,2,< 0.01g,0.009,9,4.5,no,f,n,no
+RSL_047,Roselle,6/4/18,y,0,0,7,7,< 0.01g,0.009,9,1.285714286,no,f,n,no
+Gos_041,Gosling,6/6/18,y,0,0,1,1,0.07,0.07,70,70,yes,m,n,no
+Gos_053,Gosling,6/7/18,y,0,0,5,5,0.08,0.08,80,16,yes,f,n,no
+Gos_044,Gosling,6/6/18,y,0,0,2,2,0.09,0.09,90,45,yes,f,n,no
+Gos_042,Gosling,6/6/18,y,0,0,6,6,0.15,0.15,150,25,yes,f,n,no
+Gos_051,Gosling,6/6/18,y,0,0,2,2,0.15,0.15,150,75,yes,f,n,no
+Gos_017,Gosling,6/6/18,y,0,0,1,1,0.25,0.25,250,250,yes,f,n,no
+Gos_061,Gosling,6/7/18,y,0,0,7,7,0.29,0.29,290,41.42857143,yes,f,n,no
+Gos_060,Gosling,6/7/18,y,0,0,1,1,0.35,0.35,350,350,yes,m,n,no
+Gos_059,Gosling,6/7/18,y,0,0,2,2,0.41,0.41,410,205,yes,m,n,no
+Gos_039,Gosling,6/6/18,y,0,0,4,4,0.47,0.47,470,117.5,yes,m,n,no
+Gos_057,Gosling,6/7/18,y,0,0,30,30,0.63,0.63,630,21,yes,m,n,no
+Gos_058,Gosling,6/7/18,y,0,0,8,8,0.82,0.82,820,102.5,yes,m,n,no
+Gos_037,Gosling,6/6/18,y,0,0,6,6,1.07,1.07,1070,178.3333333,yes,f,n,no
+RSL_028,Roselle,6/4/18,y,0,0,4,4,0.11,0.11,110,27.5,yes,f,n,no
+RSL_058,Roselle,6/4/18,y,0,0,3,3,0.15,0.15,150,50,yes,m,n,no
+RSL_032,Roselle,6/4/18,y,0,0,5,5,0.35,0.35,350,70,yes,m,n,no
+Gos_002,Gosling,6/6/18,n,0,0,0,,,,,,,m,n,no
+Gos_003,Gosling,6/6/18,n,0,0,0,,,,,,,f,n,no
+Gos_004,Gosling,6/6/18,n,0,0,0,,,,,,,f,n,no
+Gos_005,Gosling,6/6/18,n,0,0,0,,,,,,,f,n,no
+Gos_005.B,Gosling,6/6/18,n,0,0,0,,,,,,,f,n,no
+Gos_006,Gosling,6/6/18,n,0,0,0,,,,,,,f,n,no
+Gos_007,Gosling,6/6/18,n,0,0,0,,,,,,,f,n,no
+Gos_008,Gosling,6/6/18,n,0,0,0,,,,,,,m,n,no
+Gos_009,Gosling,6/6/18,n,0,0,0,,,,,,,f,n,no
+Gos_010,Gosling,6/6/18,n,0,0,0,,,,,,,f,n,no
+Gos_011,Gosling,6/6/18,n,0,0,0,,,,,,,f,n,no
+Gos_013,Gosling,6/6/18,n,0,0,0,,,,,,,m,n,no
+Gos_014,Gosling,6/6/18,n,0,0,0,,,,,,,f,n,no
+Gos_015,Gosling,6/6/18,n,0,0,0,,,,,,,m,n,no
+Gos_016,Gosling,6/6/18,n,0,0,0,,,,,,,m,n,no
+Gos_018,Gosling,6/6/18,n,0,0,0,,,,,,,m,n,no
+Gos_019,Gosling,6/6/18,n,0,0,0,,,,,,,m,n,no
+Gos_020,Gosling,6/6/18,n,0,0,0,,,,,,,m,n,no
+Gos_021,Gosling,6/6/18,n,0,0,0,,,,,,,m,n,no
+Gos_022,Gosling,6/6/18,n,0,0,0,,,,,,,m,n,no
+Gos_024,Gosling,6/6/18,n,0,0,0,,,,,,,m,n,no
+Gos_025,Gosling,6/6/18,n,0,0,0,,,,,,,f,n,no
+Gos_027,Gosling,6/6/18,n,0,0,0,,,,,,,m,n,no
+Gos_028,Gosling,6/6/18,n,0,0,0,,,,,,,m,n,no
+Gos_029,Gosling,6/6/18,n,0,0,0,,,,,,,m,n,no
+Gos_031,Gosling,6/6/18,n,0,0,0,,,,,,,m,n,no
+Gos_032,Gosling,6/6/18,n,0,0,0,,,,,,,m,n,no
+Gos_033,Gosling,6/6/18,n,0,0,0,,,,,,,m,n,no
+Gos_034,Gosling,6/6/18,n,0,0,0,,,,,,,m,n,no
+Gos_035,Gosling,6/6/18,n,0,0,0,,,,,,,m,n,no
+Gos_036,Gosling,6/6/18,n,0,0,0,,,,,,,m,n,no
+RSL_001,Roselle,6/4/18,n,0,0,0,,,,,,,m,n,no
+RSL_003,Roselle,6/4/18,n,0,0,0,,,,,,,m,n,no
+RSL_004,Roselle,6/4/18,n,0,0,0,,,,,,,f,n,no
+RSL_005,Roselle,6/4/18,n,0,0,0,,,,,,,f,n,no
+RSL_006,Roselle,6/4/18,n,0,0,0,,,,,,,m,n,no
+RSL_007,Roselle,6/4/18,n,0,0,0,,,,,,,m,n,no
+RSL_018,Roselle,6/4/18,n,0,0,0,,,,,,,m,n,no
+RSL_019,Roselle,6/4/18,n,0,0,0,,,,,,,m,n,no
+RSL_020,Roselle,6/4/18,n,0,0,0,,,,,,,f,n,no
+RSL_021,Roselle,6/4/18,n,0,0,0,,,,,,,m,y,yes
+RSL_023,Roselle,6/4/18,n,0,0,0,,,,,,,f,n,no
+RSL_027,Roselle,6/4/18,n,0,0,0,,,,,,,m,n,no
+RSL_053,Roselle,6/4/18,n,0,0,0,,,,,,,f,n,no
+RSL_057,Roselle,6/4/18,n,0,0,0,,,,,,,m,n,no
+RSL_059,Roselle,6/4/18,n,0,0,0,,,,,,,f,n,no
+RSL_060,Roselle,6/4/18,n,0,0,0,,,,,,,m,n,no
+RSL_061,Roselle,6/4/18,n,0,0,0,,,,,,,m,n,no
+Gos_056,Gosling,6/7/18,y,0.5,1,1,1,< 0.01g,0.009,9,9,no,m,n,no
+Gos_045,Gosling,6/6/18,y,0.5,1,14,14,0.14,0.14,140,10,yes,m,n,no
+RSL_025,Roselle,6/4/18,y,1,2,1,1,< 0.01g,0.009,9,9,no,f,y,yes
+RSL_031,Roselle,6/4/18,y,1,2,1,1,< 0.01g,0.009,9,9,no,f,y,no
+RSL_034,Roselle,6/4/18,y,1,2,1,1,< 0.01g,0.009,9,9,no,m,y,yes
+RSL_041,Roselle,6/4/18,y,1,2,3,3,< 0.01g,0.009,9,3,no,f,n,no
+RSL_044,Roselle,6/4/18,y,1,2,1,1,< 0.01g,0.009,9,9,no,f,n,no
+RSL_045,Roselle,6/4/18,y,1,2,1,1,< 0.01g,0.009,9,9,no,f,n,no
+RSL_046,Roselle,6/4/18,y,1,2,2,2,< 0.01g,0.009,9,4.5,no,f,n,no
+RSL_048,Roselle,6/4/18,y,1,2,2,2,< 0.01g,0.009,9,4.5,no,m,y,yes
+RSL_049,Roselle,6/4/18,y,1,2,1,1,< 0.01g,0.009,9,9,no,f,y,yes
+RSL_050,Roselle,6/4/18,y,1,2,1,1,< 0.01g,0.009,9,9,no,f,n,no
+RSL_052,Roselle,6/4/18,y,1,2,2,2,< 0.01g,0.009,9,4.5,no,f,n,no
+RSL_055,Roselle,6/4/18,y,1,2,1,1,< 0.01g,0.009,9,9,no,f,n,no
+RSL_062,Roselle,6/4/18,y,1,2,1,1,0.13,0.13,130,130,yes,m,n,no
+RSL_051,Roselle,6/4/18,y,1,2,1,1,0.16,0.16,160,160,yes,f,n,no
+RSL_030,Roselle,6/4/18,y,1,2,8,8,0.19,0.19,190,23.75,yes,f,n,no
+RSL_029,Roselle,6/4/18,y,1,2,3,3,0.3,0.3,300,100,yes,f,n,no
+RSL_033,Roselle,6/4/18,y,1,2,2,2,0.5,0.5,500,250,yes,f,n,no
+RSL_008,Roselle,6/4/18,n,1,2,0,,,,,,,m,n,no
+RSL_009,Roselle,6/4/18,n,1,2,0,,,,,,,m,y,yes
+RSL_012,Roselle,6/4/18,n,1,2,0,,,,,,,m,n,no
+RSL_013,Roselle,6/4/18,n,1,2,0,,,,,,,m,n,no
+RSL_015,Roselle,6/4/18,n,1,2,0,,,,,,,m,n,no
+RSL_016,Roselle,6/4/18,n,1,2,0,,,,,,,m,y,yes
+RSL_024,Roselle,6/4/18,n,1,2,0,,,,,,,m,n,no
+RSL_036,Roselle,6/4/18,y,2,3,1,1,< 0.01g,0.009,9,9,no,f,n,no
+RSL_037,Roselle,6/4/18,y,2,3,1,1,< 0.01g,0.009,9,9,no,m,n,no
+RSL_038,Roselle,6/4/18,y,2,3,1,1,< 0.01g,0.009,9,9,no,f,n,no
+RSL_039,Roselle,6/4/18,y,2,3,2,2,< 0.01g,0.009,9,4.5,no,f,n,no
+RSL_002,Roselle,6/4/18,y,2,3,1,1,0.04,0.04,40,40,yes,m,n,no
+RSL_011,Roselle,6/4/18,y,2,3,3,3,0.05,0.05,50,16.66666667,yes,m,n,no
+RSL_056,Roselle,6/4/18,y,2,3,4,4,0.12,0.12,120,30,yes,f,n,no
+RSL_010,Roselle,6/4/18,n,2,3,0,,,,,,,f,n,no
+RSL_014,Roselle,6/4/18,n,2,3,0,,,,,,,f,y,yes
+RSL_026,Roselle,6/4/18,n,2,3,0,,,,,,,f,y,yes
+RSL_017,Roselle,6/4/18,n,2.5,4,0,,,,,,,f,n,no
+RSL_022,Roselle,6/4/18,n,2.5,4,0,,,,,,,f,n,no
+RSL_054,Roselle,6/4/18,n,2.5,4,0,,,,,,,f,n,no
