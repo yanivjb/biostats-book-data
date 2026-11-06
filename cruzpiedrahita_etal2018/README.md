@@ -1,11 +1,11 @@
-# Cruz&l_H2Obalance_frogs_CO_DataDryad.xlsx
+# Cruz_et_al_H2Obalance_frogs_CO_DataDryad.csv
 
 **Paper:** Cruz-Piedrahita et al. 2018. Life on the edge: ecophysiological adaptations of frogs to tropical semiarid environments. Physiological and Biochemical Zoology  
 https://doi.org/10.1086/695705
 
 **Data:** https://doi.org/10.5061/dryad.jm838
 
-This folder contains only `Cruz&l_H2Obalance_frogs_CO_DataDryad.xlsx` from the original deposit (downloaded 2026-11-06, unmodified). Please cite both the paper and the dataset.
+This folder contains `Cruz_et_al_H2Obalance_frogs_CO_DataDryad.csv`, made from `Cruz&l_H2Obalance_frogs_CO_DataDryad.xlsx` in the original deposit. Only the file format changed (Excel to CSV, so it loads with `read_csv()`); the values are the authors'. The file was renamed to drop the `&` from the authors' name for it. Please cite both the paper and the dataset (see CITATION.md).
 
 _Below: the authors' README (README_for_Cruz&l_H2Obalance_frogs_CO_DataDryad.rtf), converted from RTF to plain text_
 

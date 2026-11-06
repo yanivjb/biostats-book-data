@@ -1,11 +1,11 @@
-# ade5868_Data_S1_to_S6.xlsx
+# ade5868_Data_S1_Breeding_Telo_Ad.csv, ade5868_Data_S4_Morpho_d12.csv
 
 **Paper:** Meillère et al. 2024. Pre- and postnatal noise directly impairs avian development, with fitness consequences. Science  
 https://doi.org/10.1126/science.ade5868
 
 **Data:** https://doi.org/10.5061/dryad.47d7wm3mk
 
-This folder contains only `ade5868_Data_S1_to_S6.xlsx` from the original deposit (downloaded 2026-11-06, unmodified). Please cite both the paper and the dataset.
+This folder contains `ade5868_Data_S1_Breeding_Telo_Ad.csv`, `ade5868_Data_S4_Morpho_d12.csv`, made from sheet "Data_S1_Breeding_Telo_Ad" of `ade5868_Data_S1_to_S6.xlsx`; sheet "Data_S4_Morpho_d12" of `ade5868_Data_S1_to_S6.xlsx` in the original deposit. Only the file format changed (Excel to CSV, so it loads with `read_csv()`); the values are the authors'. Two of the six sheets are included, one CSV each: `ade5868_Data_S1_Breeding_Telo_Ad.csv` (adult telomeres before and after breeding) and `ade5868_Data_S4_Morpho_d12.csv` (nestling size at day 12). The other sheets described below are not in this folder. Please cite both the paper and the dataset (see CITATION.md).
 
 _Below: the authors' README (README.md), NOT trimmed automatically - edit by hand_
 

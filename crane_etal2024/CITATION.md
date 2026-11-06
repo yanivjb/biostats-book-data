@@ -1,6 +1,6 @@
 # How to cite these data
 
-If you use `Data_from_-Effect_of_parasite_infection_and_invasion_history_on_feeding__growth_and_energy_allocation_of_cane_toads.xlsx` please cite both the paper and the dataset.
+If you use `Crane_etal2024_cane_toads.csv` please cite both the paper and the dataset.
 
 ## Paper
 

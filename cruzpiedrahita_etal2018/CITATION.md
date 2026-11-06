@@ -1,6 +1,6 @@
 # How to cite these data
 
-If you use `Cruz&l_H2Obalance_frogs_CO_DataDryad.xlsx` please cite both the paper and the dataset.
+If you use `Cruz_et_al_H2Obalance_frogs_CO_DataDryad.csv` please cite both the paper and the dataset.
 
 ## Paper
 

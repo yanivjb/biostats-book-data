@@ -1,11 +1,11 @@
-# Fucus_Morphology.xlsx
+# Fucus_Morphology.csv
 
 **Paper:** An evolutionary mosaic challenges traditional monitoring of a foundation species in a coastal environment - the Baltic Fucus vesiculosus  
 https://zenodo.org/records/14161399
 
 **Data:** https://doi.org/10.5061/dryad.q83bk3jsh
 
-This folder contains only `Fucus_Morphology.xlsx` from the original deposit (downloaded 2026-11-06, unmodified). Please cite both the paper and the dataset.
+This folder contains `Fucus_Morphology.csv`, made from `Fucus_Morphology.xlsx` in the original deposit. Only the file format changed (Excel to CSV, so it loads with `read_csv()`); the values are the authors'. Please cite both the paper and the dataset (see CITATION.md).
 
 _Below: the authors' README (README.md), cut by hand to the section on this file_
 

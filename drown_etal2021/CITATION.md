@@ -1,6 +1,6 @@
 # How to cite these data
 
-If you use `Drown_physiological_plasticity_2021.xlsx` please cite both the paper and the dataset.
+If you use `Drown_physiological_plasticity_2021.csv` please cite both the paper and the dataset.
 
 ## Paper
 

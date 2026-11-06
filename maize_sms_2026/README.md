@@ -1,11 +1,11 @@
-# result_3.2.xlsx
+# result_3.2.csv
 
 **Paper:** Effects of treated spent mushroom substrate on soil physicochemical properties and growth performance of maize (manuscript)  
 https://doi.org/10.5061/dryad.63xsj3vhm
 
 **Data:** https://doi.org/10.5061/dryad.63xsj3vhm
 
-This folder contains only `result_3.2.xlsx` from the original deposit (downloaded 2026-11-06, unmodified). Please cite both the paper and the dataset.
+This folder contains `result_3.2.csv`, made from `result_3.2.xlsx` in the original deposit. Only the file format changed (Excel to CSV, so it loads with `read_csv()`); the values are the authors'. Please cite both the paper and the dataset (see CITATION.md).
 
 _Below: the authors' README (README.md), cut by hand to the section on this file_
 

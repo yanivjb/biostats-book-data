@@ -1,11 +1,11 @@
-# Functional_traits.xlsx
+# Functional_traits.csv
 
 **Paper:** Zhou et al. 2024. Balancing the nutrient needs: Optimising growth in Malus sieversii seedlings. Plant Cell & Environment  
 https://pubmed.ncbi.nlm.nih.gov/39188105/
 
 **Data:** https://doi.org/10.5061/dryad.brv15dvj0
 
-This folder contains only `Functional_traits.xlsx` from the original deposit (downloaded 2026-11-05, unmodified). Please cite both the paper and the dataset.
+This folder contains `Functional_traits.csv`, made from `Functional_traits.xlsx` in the original deposit. Only the file format changed (Excel to CSV, so it loads with `read_csv()`); the values are the authors'. Please cite both the paper and the dataset (see CITATION.md).
 
 _Below: the authors' README (README.md), NOT trimmed automatically - edit by hand_
 

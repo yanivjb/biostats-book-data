@@ -1,6 +1,6 @@
 # How to cite these data
 
-If you use `Fucus_Morphology.xlsx` please cite both the paper and the dataset.
+If you use `Fucus_Morphology.csv` please cite both the paper and the dataset.
 
 ## Paper
 

@@ -1,11 +1,11 @@
-# data_comp.xlsx
+# data_comp.csv
 
 **Paper:** Santema et al. 2023. Sexual selection for extreme physical performance in a polygynous bird is associated with exceptional sex differences in oxygen carrying capacity. Biology Letters  
 https://doi.org/10.1098/rsbl.2023.0391
 
 **Data:** https://doi.org/10.5061/dryad.pzgmsbcss
 
-This folder contains only `data_comp.xlsx` from the original deposit (downloaded 2026-11-05, unmodified). Please cite both the paper and the dataset.
+This folder contains `data_comp.csv`, made from `data_comp.xlsx` in the original deposit. Only the file format changed (Excel to CSV, so it loads with `read_csv()`); the values are the authors'. Please cite both the paper and the dataset (see CITATION.md).
 
 _Below: the authors' README (README.md), cut by hand to the section on this file_
 

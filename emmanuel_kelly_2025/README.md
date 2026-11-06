@@ -1,3 +1,15 @@
+# Trazodone_Recovery_Case_Controls.csv
+
+**Paper:** Joseph et al. 2025. Preanesthetic Administration of Trazodone Does Not Impact Anesthetic Recovery Scores in Horses. Animals 15: 2907  
+https://doi.org/10.3390/ani15192907
+
+**Data:** https://doi.org/10.5061/dryad.4qrfj6qpv
+
+This folder contains `Trazodone_Recovery_Case_Controls.csv`, made from sheets "Control Horses" and "Cases" of `Trazodone_Recovery_Case_Controls.xlsx` in the original deposit. Only the file format changed (Excel to CSV, so it loads with `read_csv()`); the values are the authors'. The authors kept controls and trazodone cases on two sheets; here they are stacked into one table with a new first column, `group` (`control` or `trazodone`). The cases sheet's `Additional Recovery (Y/N)` column was renamed `Additional Recovery Sedation (Y/N)` to match the controls sheet, and `Recovery (Good/Bad)` was recorded only for cases, so it is blank for controls. Please cite both the paper and the dataset (see CITATION.md).
+
+_Below: the authors' README_
+
+---
 # Preanesthetic administration of trazodone does not impact anesthetic recovery scores
 
 Dataset DOI: [10.5061/dryad.4qrfj6qpv](10.5061/dryad.4qrfj6qpv)

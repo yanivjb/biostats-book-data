@@ -1,6 +1,6 @@
 # How to cite these data
 
-If you use `Trazodone_Recovery_Case_Controls.xlsx` please cite both the paper and the dataset.
+If you use `Trazodone_Recovery_Case_Controls.csv` please cite both the paper and the dataset.
 
 ## Paper
 

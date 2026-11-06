@@ -1,6 +1,6 @@
 # How to cite these data
 
-If you use `data_comp.xlsx` please cite both the paper and the dataset.
+If you use `data_comp.csv` please cite both the paper and the dataset.
 
 ## Paper
 

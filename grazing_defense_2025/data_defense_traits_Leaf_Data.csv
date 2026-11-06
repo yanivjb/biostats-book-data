@@ -1,0 +1,110 @@
+Site,Treatment,Vegetation type,Sample_id,Species,Functional group,Leaf Si (g kg-1),Leaf phenolics (g kg-1)
+s1,Grazed,Typical steppe,1,Leymus chinensis,Grass,5.59921,21.9568055555556
+s1,Ungrazed,Typical steppe,2,Leymus chinensis,Grass,9.060975,17.97334
+s2,Ungrazed,Typical steppe,3,Stipa krylovii,Grass,4.911905,8.07282608695652
+s3,Grazed,Typical steppe,4,Potentilla bifurca,Forb,,57.02875
+s3,Grazed,Typical steppe,5,Leymus chinensis,Grass,7.229875,21.8700197628458
+s3,Grazed,Typical steppe,6,Cleistogenes squarrosa,Grass,,16.4222509960159
+s3,Ungrazed,Typical steppe,7,Leymus chinensis,Grass,7.4480525,24.2184782608696
+s3,Ungrazed,Typical steppe,8,Allium polyrhizum,Forb,,18.7148611111111
+s3,Ungrazed,Typical steppe,9,Potentilla bifurca,Forb,2.9348525,75.8909722222222
+s4,Grazed,Meadow steppe,10,Leymus chinensis,Grass,8.077705,23.6717131474104
+s4,Grazed,Meadow steppe,11,Potentilla bifurca,Forb,1.35097,89.9753162055336
+s4,Grazed,Meadow steppe,12,Pulsatilla turczaninovii,Forb,1.41499,73.8296640316206
+s4,Grazed,Meadow steppe,13,Artemisia tanacetifolia,Forb,5.05714,75.2974505928854
+s4,Grazed,Meadow steppe,14,Thermopsis lanceolata,Legume,1.506605,56.0694466403162
+s4,Ungrazed,Meadow steppe,15,Vicia amoena,Legume,1.559045,57.3904545454545
+s4,Ungrazed,Meadow steppe,16,Potentilla bifurca,Forb,0.88555,97.9417131474104
+s4,Ungrazed,Meadow steppe,17,Pulsatilla turczaninovii,Forb,1.510265,64.3968055555556
+s4,Ungrazed,Meadow steppe,18,Artemisia tanacetifolia,Forb,2.5921475,96.4335770750988
+s4,Ungrazed,Meadow steppe,19,Thermopsis lanceolata,Legume,1.8144675,41.9786956521739
+s4,Ungrazed,Meadow steppe,20,Leymus chinensis,Grass,6.25691,18.6414741035857
+s5,Grazed,Meadow steppe,21,Leymus chinensis,Grass,7.2860775,22.4881274900398
+s5,Grazed,Meadow steppe,22,Potentilla bifurca,Forb,1.006615,78.87474
+s5,Ungrazed,Meadow steppe,23,Potentilla bifurca,Forb,1.1074325,121.092391304348
+s5,Ungrazed,Meadow steppe,24,Leymus chinensis,Grass,3.8671125,18.2727777777778
+s6,Grazed,Meadow steppe,25,Leymus chinensis,Grass,4.769995,23.1356944444444
+s6,Grazed,Meadow steppe,26,Carex stenophylloides,Sedge,8.1228975,22.42954
+s6,Grazed,Meadow steppe,27,Potentilla tanacetifolia ,Forb,6.5980225,21.600438247012
+s6,Grazed,Meadow steppe,28,Potentilla bifurca,Forb,1.382355,97.2583333333334
+s6,Grazed,Meadow steppe,29,Potentilla acaulis,Forb,10.5838825,23.523764940239
+s6,Grazed,Meadow steppe,30,Stipa krylovii,Grass,7.58514,12.3783333333333
+s6,Ungrazed,Meadow steppe,31,Potentilla tanacetifolia ,Forb,2.498575,31.04486
+s6,Ungrazed,Meadow steppe,32,Carex stenophylloides,Sedge,8.4663275,21.2829051383399
+s6,Ungrazed,Meadow steppe,33,Potentilla bifurca,Forb,0.793545,136.95388
+s6,Ungrazed,Meadow steppe,34,Potentilla acaulis,Forb,6.2111375,24.1155577689243
+s6,Ungrazed,Meadow steppe,35,Leymus chinensis,Grass,6.8005425,17.4666600790514
+s6,Ungrazed,Meadow steppe,36,Stipa krylovii,Grass,7.847435,12.8714940239044
+s7,Grazed,Meadow steppe,37,Leymus chinensis,Grass,13.8655775,19.8151185770751
+s7,Ungrazed,Meadow steppe,38,Leymus chinensis,Grass,9.13412,18.4941106719368
+s8,Grazed,Desert steppe,39,Caragana stenophylla,Legume,3.0899,10.2745059288538
+s8,Grazed,Desert steppe,40,Cleistogenes squarrosa,Grass,6.385255,17.0140438247012
+s8,Grazed,Desert steppe,41,Stipa krylovii,Grass,7.773995,13.167390438247
+s8,Ungrazed,Desert steppe,42,Allium polyrhizum,Forb,,18.789422310757
+s8,Ungrazed,Desert steppe,43,Allium mongolicum,Forb,3.1772375,16.3570833333333
+s8,Ungrazed,Desert steppe,44,Caragana stenophylla,Legume,3.2460125,27.4476086956522
+s8,Ungrazed,Desert steppe,45,Cleistogenes squarrosa,Grass,8.37693,12.2797011952191
+s8,Ungrazed,Desert steppe,46,Stipa krylovii,Grass,5.673015,11.4941666666667
+s9,Grazed,Desert steppe,47,Kochia prostrata,Forb,17.037415,26.525
+s9,Grazed,Desert steppe,48,Cleistogenes squarrosa,Grass,7.908415,17.23064
+s9,Grazed,Desert steppe,49,Neopallasia pectinata,Forb,8.8129725,32.4194444444444
+s9,Grazed,Desert steppe,50,Artemisia frigida,Forb,15.5629675,34.1877777777778
+s9,Grazed,Desert steppe,51,Stipa krylovii,Grass,7.4883075,11.9838047808765
+s9,Ungrazed,Desert steppe,52,Kochia prostrata,Forb,3.149465,28.621837944664
+s9,Ungrazed,Desert steppe,53,Neopallasia pectinata,Forb,3.081105,40.99704
+s9,Ungrazed,Desert steppe,54,Artemisia frigida,Forb,2.37775,33.465533596838
+s9,Ungrazed,Desert steppe,55,Cleistogenes squarrosa,Grass,8.145935,13.611235059761
+s9,Ungrazed,Desert steppe,56,Stipa breviflora,Grass,10.3245575,11.5399601593625
+s10,Grazed,Desert steppe,57,Convolvulus ammannii,Forb,16.2581225,30.2364031620553
+s10,Grazed,Desert steppe,58,Aster altaicus,Forb,17.5854975,60.9546613545817
+s10,Grazed,Desert steppe,59,Stipa krylovii,Grass,9.1164375,12.3783333333333
+s10,Ungrazed,Desert steppe,60,Convolvulus ammannii,Forb,12.1311925,47.9966205533597
+s10,Ungrazed,Desert steppe,61,Aster altaicus,Forb,4.4733925,69.2397609561753
+s10,Ungrazed,Desert steppe,62,Stipa krylovii,Grass,7.5363475,11.3019565217391
+s11,Grazed,Desert steppe,63,Leymus chinensis,Grass,13.2768175,
+s11,Grazed,Desert steppe,64,Cleistogenes squarrosa,Grass,7.7713625,14.8834722222222
+s11,Grazed,Desert steppe,65,Caragana microphylla,Legume,2.0331225,25.6408333333333
+s11,Grazed,Desert steppe,66,Artemisia frigida,Forb,5.92554,38.4665338645418
+s11,Grazed,Desert steppe,67,Allium ramosum,Forb,1.6786425,28.66822
+s11,Grazed,Desert steppe,68,Stipa krylovii,Grass,9.5765375,12.18028
+s11,Ungrazed,Desert steppe,69,Leymus chinensis,Grass,7.425225,22.281
+s11,Ungrazed,Desert steppe,70,Caragana microphylla,Legume,1.5783775,28.1101593625498
+s11,Ungrazed,Desert steppe,71,Artemisia frigida,Forb,2.080745,38.1706374501992
+s11,Ungrazed,Desert steppe,72,Cleistogenes squarrosa,Grass,8.5137675,14.6468725099602
+s11,Ungrazed,Desert steppe,73,Allium ramosum,Forb,0.9302225,23.3758167330677
+s11,Ungrazed,Desert steppe,74,Stipa krylovii,Grass,10.2651675,10.8616205533597
+s12,Grazed,Typical steppe,75,Carex stenophylloides,Sedge,15.829795,19.90436
+s12,Grazed,Typical steppe,76,Cleistogenes squarrosa,Grass,14.8072325,18.3473320158103
+s12,Grazed,Typical steppe,77,Potentilla tanacetifolia ,Forb,17.73711,30.00508
+s12,Grazed,Typical steppe,78,Artemisia frigida,Forb,9.86937,29.7960671936759
+s12,Grazed,Typical steppe,79,Medicago ruthenica,Legume,3.4249925,19.7463888888889
+s12,Grazed,Typical steppe,80,Aster altaicus,Forb,6.038565,43.4715277777778
+s12,Grazed,Typical steppe,81,Stipa krylovii,Grass,13.32964,11.0520833333333
+s12,Ungrazed,Typical steppe,82,Carex stenophylloides,Sedge,14.2013775,36.2473107569721
+s12,Ungrazed,Typical steppe,83,Cleistogenes squarrosa,Grass,9.557035,12.6730555555556
+s12,Ungrazed,Typical steppe,84,Potentilla tanacetifolia ,Forb,5.6033025,39.95726
+s12,Ungrazed,Typical steppe,85,Artemisia frigida,Forb,3.2362825,37.5753359683794
+s12,Ungrazed,Typical steppe,86,Medicago ruthenica,Legume,1.24759,23.4304166666667
+s12,Ungrazed,Typical steppe,87,Aster altaicus,Forb,4.0089575,71.59628
+s12,Ungrazed,Typical steppe,88,Stipa krylovii,Grass,8.1095425,8.31824
+s13,Grazed,Typical steppe,89,Cleistogenes squarrosa,Grass,,19.6771115537849
+s13,Grazed,Typical steppe,90,Leymus chinensis,Grass,9.8832525,13.96276
+s13,Grazed,Typical steppe,91,Stipa krylovii,Grass,12.0589925,12.8204166666667
+s13,Grazed,Typical steppe,92,Oxytropis racemosa,Legume,4.3924775,59.86162
+s13,Grazed,Typical steppe,93,Oxytropis racemosa,Legume,6.992915,20.49852
+s13,Ungrazed,Typical steppe,94,Leymus chinensis,Grass,,16.732766798419
+s13,Ungrazed,Typical steppe,95,Stipa krylovii,Grass,8.843715,10.2745059288538
+s13,Ungrazed,Typical steppe,96,Oxytropis racemosa,Legume,4.220275,62.98096
+s13,Ungrazed,Typical steppe,97,Oxytropis racemosa,Legume,7.762375,22.9883333333333
+s14,Grazed,Desert,98,Enneapogon borealis,Grass,,21.4296837944664
+s14,Grazed,Desert,99,Reaumuria songarica,Shrub,2.7459175,67.6649604743083
+s14,Grazed,Desert,100,Salsola passerina,Semi-shrub,14.3333825,8.51316205533597
+s14,Ungrazed,Desert,101,Enneapogon borealis,Grass,13.669615,23.7781422924901
+s14,Ungrazed,Desert,102,Reaumuria songarica,Shrub,1.7292325,51.6339243027888
+s14,Ungrazed,Desert,103,Salsola passerina,Semi-shrub,3.700805,30.0334860557769
+s15,Grazed,Desert,104,Cleistogenes squarrosa,Grass,,14.0188353413655
+s15,Grazed,Desert,105,Lappula myosotis,Forb,1.1886275,11.7422924901186
+s15,Grazed,Desert,106,Peganum multisectum,Forb,2.3971975,11.1994444444444
+s15,Ungrazed,Desert,107,Cleistogenes squarrosa,Grass,,15.5516438356164
+s15,Ungrazed,Desert,108,Lappula myosotis,Forb,2.06985,14.854
+s15,Ungrazed,Desert,109,Peganum multisectum,Forb,3.5598,9.72583333333333

@@ -1,6 +1,6 @@
 # How to cite these data
 
-If you use `Walther_et_al._2024_raw_data_240909.xlsx` please cite both the paper and the dataset.
+If you use `Walther_etal2024_Figure5d_feeding.csv` please cite both the paper and the dataset.
 
 ## Paper
 

@@ -1,6 +1,6 @@
 # How to cite these data
 
-If you use `Functional_traits.xlsx` please cite both the paper and the dataset.
+If you use `Functional_traits.csv` please cite both the paper and the dataset.
 
 ## Paper
 

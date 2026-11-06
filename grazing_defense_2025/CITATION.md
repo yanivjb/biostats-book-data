@@ -1,6 +1,6 @@
 # How to cite these data
 
-If you use `data_defense_traits.xlsx` please cite both the paper and the dataset.
+If you use `data_defense_traits_Leaf_Data.csv` please cite both the paper and the dataset.
 
 ## Paper
 

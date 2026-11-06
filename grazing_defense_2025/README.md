@@ -1,11 +1,11 @@
-# data_defense_traits.xlsx
+# data_defense_traits_Leaf_Data.csv
 
 **Paper:** Grazing disrupts the trade-off between silica- and phenol-based plant defenses along an aridity gradient in grasslands (submitted to Functional Ecology)  
 https://doi.org/10.5061/dryad.31zcrjf1d
 
 **Data:** https://doi.org/10.5061/dryad.31zcrjf1d
 
-This folder contains only `data_defense_traits.xlsx` from the original deposit (downloaded 2026-11-06, unmodified). Please cite both the paper and the dataset.
+This folder contains `data_defense_traits_Leaf_Data.csv`, made from sheet "Leaf_Data" of `data_defense_traits.xlsx` in the original deposit. Only the file format changed (Excel to CSV, so it loads with `read_csv()`); the values are the authors'. Only the `Leaf_Data` sheet is included. The community-level sheet described below (`Community_Data`) is not in this folder. Please cite both the paper and the dataset (see CITATION.md).
 
 _Below: the authors' README (README.md), NOT trimmed automatically - edit by hand_
 

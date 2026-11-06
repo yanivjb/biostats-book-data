@@ -1,6 +1,6 @@
 # How to cite these data
 
-If you use `result_3.2.xlsx` please cite both the paper and the dataset.
+If you use `result_3.2.csv` please cite both the paper and the dataset.
 
 ## Paper
 

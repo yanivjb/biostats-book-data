@@ -1,6 +1,6 @@
 # How to cite these data
 
-If you use `Appendix_Raw_Winglength.xlsx` please cite both the paper and the dataset.
+If you use `Brehm_etal2019_wing_length.csv` please cite both the paper and the dataset.
 
 ## Paper
 

@@ -1,6 +1,6 @@
 # How to cite these data
 
-If you use `ade5868_Data_S1_to_S6.xlsx` please cite both the paper and the dataset.
+If you use `ade5868_Data_S1_Breeding_Telo_Ad.csv`, `ade5868_Data_S4_Morpho_d12.csv` please cite both the paper and the dataset.
 
 ## Paper
 

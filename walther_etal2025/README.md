@@ -1,11 +1,11 @@
-# Walther_et_al._2024_raw_data_240909.xlsx
+# Walther_etal2024_Figure5d_feeding.csv
 
 **Paper:** Walther et al. 2025. A fungal endophyte alters poplar leaf chemistry, deters insect feeding and shapes insect community assembly. Ecology Letters  
 https://doi.org/10.1111/ele.70007
 
 **Data:** https://doi.org/10.5061/dryad.3xsj3txqt
 
-This folder contains only `Walther_et_al._2024_raw_data_240909.xlsx` from the original deposit (downloaded 2026-11-06, unmodified). Please cite both the paper and the dataset.
+This folder contains `Walther_etal2024_Figure5d_feeding.csv`, made from sheet "Figure 5d" of `Walther_et_al._2024_raw_data_240909.xlsx` in the original deposit. Only the file format changed (Excel to CSV, so it loads with `read_csv()`); the values are the authors'. Only the `Figure 5d` sheet (the leaf-disc feeding choice test) is included; the other sheets described below are not in this folder. Please cite both the paper and the dataset (see CITATION.md).
 
 _Below: the authors' README (README.md), cut by hand to the section on this file_
 
