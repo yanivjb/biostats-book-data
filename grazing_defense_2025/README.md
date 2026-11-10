@@ -1,129 +1,76 @@
-# data_defense_traits_Leaf_Data.csv
+# Grazing, aridity and plant defences
 
-**Paper:** Grazing disrupts the trade-off between silica- and phenol-based plant defenses along an aridity gradient in grasslands (submitted to Functional Ecology)  
-https://doi.org/10.5061/dryad.31zcrjf1d
+**Paper:** Yan et al. (2025). Grazing disrupts the trade-off between silica- and phenol-based plant defences along an aridity gradient in grasslands. Functional Ecology. https://doi.org/10.1111/1365-2435.70206
 
-**Data:** https://doi.org/10.5061/dryad.31zcrjf1d
+**Original data:** [10.5061/dryad.31zcrjf1d](https://doi.org/10.5061/dryad.31zcrjf1d)
 
-This folder contains `data_defense_traits_Leaf_Data.csv`, made from sheet "Leaf_Data" of `data_defense_traits.xlsx` in the original deposit. Only the file format changed (Excel to CSV, so it loads with `read_csv()`); the values are the authors'. Only the `Leaf_Data` sheet is included. The community-level sheet described below (`Community_Data`) is not in this folder. Please cite both the paper and the dataset (see CITATION.md).
+This README describes the teaching files in `grazing_defense_2025`. It adapts the authors’ documentation to the files present in this folder, checked 9 November 2026. File counts and notes about the teaching CSVs come from inspecting those files; they are not additional statements by the original authors. Cite both the paper and the original dataset. `CITATION.md` provides citation information; the paper link above identifies the published article where an older citation file is outdated.
 
-_Below: the authors' README (README.md), NOT trimmed automatically - edit by hand_
+## Files included
 
----
+| File | Contents |
+| --- | --- |
+| `data_defense_traits.csv` | Community-level measurements: 90 rows, three quadrats in each grazed/ungrazed area at each of 15 sites. This is the CSV version of `Community_Data`. |
+| `data_defense_traits_Leaf_Data.csv` | Species-associated leaf samples: 109 rows from 29 species at 15 sites. |
+| `data_defense_traits.xlsx` | Original workbook, including `Community_Data` and `Leaf_Data`. It overlaps the CSVs; it is not another independent dataset. |
+| `CITATION.md` | Citation information. |
 
-# **README for Dataset: Plant defense Trait Responses to Grazing along an aridity gradient in Inner Mongolian Grasslands**
+The community CSV is **not** the leaf-sample table. Some numeric values in the community CSV are rounded relative to the workbook, and some have trailing spaces. Keep the workbook as the reference for original precision. The data files have not been changed by this README.
 
-**Dataset:** data_defense_traits.xlsx
+## Reading the CSVs
 
-**Related Manuscript:** Grazing disrupts the trade-off between silica- and phenol-based plant defenses along an aridity gradient in grasslands
+```r
+community <- readr::read_csv("data_defense_traits.csv")
+leaves <- readr::read_csv("data_defense_traits_Leaf_Data.csv")
+```
 
-**Authors:** Kaicun Yan, Wen Xia, Ketao Yu, Xiaoyu Yang, Xiaomin Wang, Jianmin Wang, Yi Zhou, Xin Jing, Haiyang Zhang, Yong Jiang, Xingguo Han, Lingfei Yu
+Column names contain spaces, units and some full-width punctuation. Use the exact names returned by `names(community)` or `names(leaves)`; in R, put nonstandard names in backticks when referring to them directly.
 
-**Correspondence:** Lingfei Yu
+## Collection and row meaning
 
-**Repository:** Dryad Digital Repository
+At each Inner Mongolian site, researchers sampled an area exposed to livestock grazing and an adjacent fenced area protected for 3–26 years. Sampling took place in August 2017–2018. Community measurements describe quadrats; leaf measurements describe collected species-associated samples, generally pooling leaves from multiple plants. `Sample_id` identifies a row/sample, not an independently assigned treatment. Quadrats within an area and samples from the same species or site share conditions.
 
-**1. Overview**
+## Community CSV columns
 
-This dataset accompanies the manuscript titled “Grazing disrupts the trade-off between silica- and phenol-based plant defenses along an aridity gradient in grasslands” (submitted to *Functional Ecology*). Data were collected from a field study across a natural aridity gradient in the grasslands of Inner Mongolia, China. The study used a paired design of grazing exclusion (fenced) versus grazing to examine how aridity and grazing interact to affect plant defensive traits (silicon and phenolics). The dataset includes two files:
+| Column | Meaning and units |
+| --- | --- |
+| `Site` | Site code; 15 sites. |
+| `Treatment` | `Grazed` or `Ungrazed`. |
+| `Age` | Fence age in years; grazed observations are coded 0. This is not plant age. |
+| `Vegetation type` | Meadow steppe, typical steppe, desert steppe or desert. |
+| `Sample_id` | Sample identifier in this table. |
+| `Phenolics(g kg-1)` | Community plant phenolic concentration, g/kg dry material. |
+| `Si (g kg-1)` | Community plant silicon concentration, g/kg dry material. |
+| `C（%）` | Plant carbon concentration, percent. |
+| `N（%）` | Plant nitrogen concentration, percent. |
+| `P（g kg-1）` | Plant phosphorus concentration, g/kg. |
+| `Forb biomass (g m-2)` | Forb aboveground biomass, g/m². |
+| `Grass biomass (g m-2)` | Grass aboveground biomass, g/m². |
+| `Biomass (g m-2)` | Total aboveground biomass, g/m². |
+| `Soil N （g kg-1）` | Soil nitrogen concentration, g/kg. |
+| `Soil P （g kg-1）` | Soil phosphorus concentration, g/kg. |
+| `Soil available Si （mg kg-1）` | Plant-available soil silicon, mg/kg. |
+| `Soil pH` | Soil pH; unitless. |
+| `SWC（%）` | Soil water content, percent. |
+| `Aridity` | The paper defines aridity as 1 minus the aridity index (precipitation/potential evapotranspiration); higher values mean drier conditions. |
+| `MAP` | Mean annual precipitation, mm. |
+| `MAT` | Mean annual temperature, °C. |
 
-·        **Plant community-level data**: Plant community and soil variables across sites and treatments.
+## Leaf CSV columns
 
-·        **Leaf-level data**: Leaf defensive traits of species common to both grazing treatments.
+| Column | Meaning and units |
+| --- | --- |
+| `Site` | Site code. |
+| `Treatment` | `Grazed` or `Ungrazed`. |
+| `Vegetation type` | Vegetation category. |
+| `Sample_id` | Sample identifier in the leaf table; not a cross-table join key. |
+| `Species` | Scientific name as supplied; some names contain nonbreaking or trailing spaces. |
+| `Functional group` | Grass, forb, legume, sedge, shrub or semi-shrub. |
+| `Leaf Si (g kg-1)` | Leaf silicon concentration, g/kg dry material. |
+| `Leaf phenolics (g kg-1)` | Leaf phenolic concentration, g/kg dry material. |
 
-**2. Data Collection Methods**
+## Missing values and relationships between files
 
-·        **Site Selection**: 15 sites were established along a natural aridity gradient in Inner Mongolia.
+Blank cells in the leaf CSV represent missing measurements: 9 silicon and 1 phenolic value. The community CSV has no blank data cells. Numeric zero is a recorded value, not a missing-value code.
 
-·        **Experimental Design**: Each site contained paired plots:
-
-Ungrazed: Plots protected from livestock grazing.
-
-Grazed: Plots under ongoing livestock grazing.
-
-·        **Plant Community Sampling**: Aboveground biomass was harvested by species. Soil samples were collected for nutrient and property analysis.
-
-·        **Leaf Trait Sampling**: Leaves from species present in both grazing treatments at each site were sampled and analyzed for defensive traits (silicon, phenolics).
-
-·        **Climate Data**: Aridity Index were derived from the Global Aridity Index Database v2. Mean Annual Precipitation (MAP) and Mean Annual Temperature (MAT) were obtained for each site from the China Meteorological Data Service Center ([http://data.cma.cn/en)](http://data.cma.cn/en\)).
-
-**3. File Descriptions**
-
-**·        Sheet: Community_Data**
-
-**Description**: Contains plant community biomass, soil properties, and site-level climate variables.
-
-**Key Variables**:
-
-§  Site, Treatment, Age (fence age), Vegetation_type
-
-§  Phenolics, Si, C, N, P (leaf traits from community-level samples)
-
-§  Forb_biomass, Grass_biomass, Biomass (community biomass)
-
-§  Soil_N, Soil_P, Soil_available_Si, Soil_pH, SWC (soil properties)
-
-§  Aridity, MAP, MAT (climate variables)
-
-**·        Sheet: Leaf_Data**
-
-**Description**: Contains species-specific leaf traits from samples collected in both grazing treatments.
-
-**Key Variables**:
-
-§  Site, Treatment, Vegetation_type, Sample_id
-
-§  Species, Functional group
-
-§  Leaf Si, Leaf phenolics (defensive traits)
-
-**4. Data Dictionary**
-
-**4.1 Sheet: Community_Data**
-
-| **Column Name**         | **Unit / Format** | **Description**                                                |
-| :---------------------- | :---------------- | :------------------------------------------------------------- |
-| **Site**                | Text              | Unique identifier for each sampling location.                  |
-| **Treatment**           | Text              | Grassland management: Ungrazed (grazing exclusion) or Grazed.  |
-| **Age**                 | Years (yr)        | Age of the grazing exclusion fence. 0  for grazed plots.       |
-| **Vegetation\_type**    | Text              | Dominant grassland type (e.g., Typical Steppe, Desert Steppe). |
-| **Sample\_id**          | Text              | Unique identifier for each sample.                             |
-| **Phenolics**           | g kg⁻¹            | Plant community-level phenolic concentration.                  |
-| **Si**                  | g kg⁻¹            | Plant community-level silicon concentration.                   |
-| **C**                   | %                 | Plant community-level carbon concentration.                    |
-| **N**                   | %                 | Plant community-level nitrogen concentration.                  |
-| **P**                   | g kg⁻¹            | Plant community-level phosphorus concentration.                |
-| **Forb\_biomass**       | g m⁻²             | Aboveground biomass of forbs.                                  |
-| **Grass\_biomass**      | g m⁻²             | Aboveground biomass of grasses.                                |
-| **Biomass**             | g m⁻²             | Total aboveground plant community biomass.                     |
-| **Soil\_N**             | g kg⁻¹            | Total soil nitrogen concentration.                             |
-| **Soil\_P**             | g kg⁻¹            | Total soil phosphorus concentration.                           |
-| **Soil\_available\_Si** | mg kg⁻¹           | Bioavailable silicon concentration in soil.                    |
-| **Soil\_pH**            | -                 | Soil pH measured in a soil-water solution.                     |
-| **SWC**                 | %                 | Soil Water Content.                                            |
-| **Aridity**             | Unitless          | Aridity Index for the site.                                    |
-| **MAP**                 | mm                | Mean Annual Precipitation.                                     |
-| **MAT**                 | °C                | Mean Annual Temperature.                                       |
-
-**4.2 Sheet: Leaf_Data**
-
-| **Column Name**      | **Unit / Format** | **Description**                                                     |
-| :------------------- | :---------------- | :------------------------------------------------------------------ |
-| **Site**             | Text              | Unique identifier for each sampling location.                       |
-| **Treatment**        | Text              | Grassland management: Ungrazed or Grazed.                           |
-| **Vegetation\_type** | Text              | Dominant grassland type.                                            |
-| **Sample\_id**       | Text              | Unique identifier for each sample.                                  |
-| **Species**          | Text              | Scientific name of the sampled species.                             |
-| **Functional group** | Text              | Plant functional group (e.g., Grass, Forb).                         |
-| **Leaf Si**          | g kg⁻¹            | Silicon concentration in leaf tissue of the sampled species.        |
-| **Leaf phenolics**   | g kg⁻¹            | Total phenolic concentration in leaf tissue of the sampled species. |
-
-**5. Usage Notes**
-
-·        Missing data are represented as NA.
-
-·        All chemical analyses were performed using standard laboratory protocols detailed in the associated manuscript.
-
-·        The two files can be linked via Site and Treatment for integrated analyses.
-
-·        Leaf trait data include only species that were present in both grazing treatments at each site, enabling direct comparisons of intraspecific trait variation.
+The tables have different observational units. Site and treatment connect them conceptually, but each site–treatment appears several times in each table: a direct join on those two columns creates multiple matches and duplicates rows. Sample identifiers do not establish matching between quadrats and species samples. Some site–species combinations in the leaf CSV occur in only one treatment despite the intended matched-species design.
