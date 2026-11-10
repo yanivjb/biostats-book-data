@@ -1,108 +1,100 @@
-# Jones-et-al_Raw_Individual_Data.csv
+# Squash bee heat tolerance, parasites and site conditions
 
-**Paper:** Jones et al. 2024. Body mass, temperature, and pathogen intensity differentially affect critical thermal maxima in a solitary bee. Ecology and Evolution  
-https://doi.org/10.1002/ece3.10945
+**Paper:** Jones et al. (2024). Body mass, temperature, and pathogen intensity differentially affect critical thermal maxima and their population-level variation in a solitary bee. Ecology and Evolution. https://doi.org/10.1002/ece3.10945
 
-**Data:** https://doi.org/10.5061/dryad.hhmgqnkp9
+**Original data:** [10.5061/dryad.hhmgqnkp9](https://doi.org/10.5061/dryad.hhmgqnkp9)
 
-This folder contains only `Jones-et-al_Raw_Individual_Data.csv` from the original deposit (downloaded 2026-11-06, unmodified). Please cite both the paper and the dataset.
+This README describes the teaching files in `jones_etal2024`. It adapts the authors’ documentation to the files present in this folder, checked 9 November 2026. File counts and notes about the teaching CSVs come from inspecting those files; they are not additional statements by the original authors. Cite both the paper and the original dataset. `CITATION.md` provides citation information; the paper link above identifies the published article where an older citation file is outdated.
 
-_Below: the authors' README (README.md), trimmed to the section on this file_
+## Files included
 
----
+| File | Contents |
+| --- | --- |
+| `Jones-et-al_Raw_Individual_Data.csv` | 420 bees: 220 females and 200 males from 14 farms, with mass, heat tolerance and molecular parasite measurements. |
+| `Jones-et-al_Raw_Site_Data.csv` | 28 site–sex summaries: one female and one male row at each of 14 sites, with environmental measurements. |
+| `CITATION.md` | Citation information. |
 
-# Body mass, temperature, and pathogen intensity differentially affect critical thermal maxima and their population-level variation in a solitary bee
+## Reading and linking the data
 
-*Access the full article with contact information here*:
+```r
+bees <- readr::read_csv("Jones-et-al_Raw_Individual_Data.csv")
+sites <- readr::read_csv("Jones-et-al_Raw_Site_Data.csv")
+```
 
-Jones, L. J., Miller, D. A., Schilder, R. J., López-Uribe, M. M. (2024). Body mass, temperature, and pathogen intensity differentially affect critical thermal maxima and their population-level variation in a solitary bee. *Ecology and Evolution*, *14*(2), e10945. <https://doi.org/10.1002/ECE3.10945>
+The site table is unique by **Site and Sex together**, not by Site alone. Joining on Site alone duplicates each bee into two summary rows. Site climate/soil values are repeated for the sexes; 28 summary rows do not represent 28 independently sampled environments. The site means and standard deviations summarize the individual data and are not an independent dataset to append to the bees.
 
-*Raw data and R code are available here*: <https://doi.org/10.5061/dryad.hhmgqnkp9>
+## Collection and row meaning
 
-## General Information
+Wild squash bees were collected from Pennsylvania pumpkin/squash farms in July–August 2019, transported on ice, and allowed to recover. They were warmed from 23°C at 0.25°C/min until neuromuscular failure. Individual rows represent bees; qPCR technical replicates were summarized within each bee. Site, collection date and transport duration are linked. The paper identifies `epl0331` and `epl0647` as poor-condition observations; they remain in the supplied file. Unheated controls described by the paper are not included as separate rows here.
 
-The raw data presented in Jones et al. (2024) are included. This study aimed to understand what abiotic and biotic factors, such as temperature and pathogen intensity, influence heat tolerance and its variation among natural populations of the solitary bee *Xenoglossa pruinosa*. Data per individual *Xenoglossa pruinosa*, including date and location of collection, mass, CTmax, and parasite intensity, are included in file 'Jones-et-al_Raw_Individual_Data.csv'. Data summarized per collection site, including environmental data and bee data averages per sex at each site, are included in file 'Jones-et-al_Raw_Site_Data.csv'. Please review the methods (2.1-2.4) and extended methods (Appendix) sections in Jones et al. (2024) for information on data collection.
+## Individual CSV columns
 
-*Collection year*: 2019
+| Column | Meaning and units |
+| --- | --- |
+| `Sample ID` | Unique bee identifier; header includes a space. |
+| `Species` | Species identification; all records are Xenoglossa_pruinosa. |
+| `Sex` | Female or Male. |
+| `Collection_Date` | Field collection date as month/day/year. |
+| `Site` | Collection locality code/name. |
+| `Latitude` | Site latitude, decimal degrees. |
+| `Longitude` | Site longitude, decimal degrees. |
+| `Time_Chill_Coma_minutes` | Time on ice during transport, minutes; shared by bees from a site. |
+| `Mass_Before_CTmax_mg` | Mass before the heat-tolerance test, mg. |
+| `Mass_After_CTmax_mg` | Mass after the test, mg. |
+| `deltaMass_mg` | Mass after minus mass before, mg. Negative values represent loss. |
+| `CTmax_Celsius` | Critical thermal maximum, °C: loss of neuromuscular control during warming. |
+| `Time_to_CTmax_min` | Stored test-time variable, labelled minutes. It equals 4 × CTmax in this CSV; because the protocol starts at 23°C, its interpretation as elapsed time requires clarification. |
+| `28sReferenceGene_RawCT_Mean` | Mean qPCR cycle threshold for the reference gene across technical replicates. |
+| `Trypanosome_RawCT_Mean` | Mean qPCR cycle threshold for trypanosomes. |
+| `Trypanosome_DeltaCT` | Target cycle threshold minus reference-gene threshold. |
+| `Trypanosome_ddCT` | DeltaCT relative to the assay’s base sample, as supplied. |
+| `Trypanosome_2^-ddCT` | Relative molecular intensity before logarithmic transformation. |
+| `Trypanosome_log(2^-ddCT)` | Log10 of the relative intensity. |
+| `Trypanosome_RelativeIntensity_AdjustedforThreshold` | Log10 relative intensity for detections; set to 0 when the raw cycle threshold exceeds the negative-detection cutoff. Already transformed; not an untransformed parasite count. |
+| `Vairimorpha_apis_RawCT_Mean` | Mean qPCR cycle threshold for Vairimorpha apis. |
+| `Vairimorpha_apis_DeltaCT` | Target cycle threshold minus reference-gene threshold. |
+| `Vairimorpha_apis_ddCT` | DeltaCT relative to the assay’s base sample, as supplied. |
+| `Vairimorpha_apis_2^-ddCT` | Relative molecular intensity before logarithmic transformation. |
+| `Vairimorpha_apis_log(2^-ddCT)` | Log10 of the relative intensity. |
+| `Vairimorpha_apis_RelativeIntensity_AdjustedforThreshold` | Log10 relative intensity for detections; set to 0 when the raw cycle threshold exceeds the negative-detection cutoff. Already transformed; not an untransformed parasite count. |
+| `Spiroplasma_apis_RawCT_Mean` | Mean qPCR cycle threshold for Spiroplasma apis. |
+| `Spiroplasma_apis_DeltaCT` | Target cycle threshold minus reference-gene threshold. |
+| `Spiroplasma_apis_ddCT` | DeltaCT relative to the assay’s base sample, as supplied. |
+| `Spiroplasma_apis_2^-ddCT` | Relative molecular intensity before logarithmic transformation. |
+| `Spiroplasma_apis_log(2^-ddCT)` | Log10 of the relative intensity. |
+| `Spiroplasma_apis_RelativeIntensity_AdjustedforThreshold` | Log10 relative intensity for detections; set to 0 when the raw cycle threshold exceeds the negative-detection cutoff. Already transformed; not an untransformed parasite count. |
 
-*Collection sites*: 14 *Cucurbita* (e.g., pumpkin and squash) farms in Pennsylvania (USA)
+The parasite columns are alternative stages of the same molecular assay, not independent parasite measurements. Raw CT here means **PCR cycle threshold**, whereas CTmax means **critical thermal maximum**; these are different quantities. Relative molecular intensities are assay-specific and should not be interpreted as directly comparable absolute counts across parasite groups.
 
-*Study organism*: 220 female and 200 male squash bees (*Xenoglossa pruinosa*)
+## Site CSV columns
 
-## Data&#x20;
+| Column | Meaning and units |
+| --- | --- |
+| `Site` | Collection locality identifier. |
+| `Latitude` | Site latitude, decimal degrees. |
+| `Longitude` | Site longitude, decimal degrees. |
+| `Species` | Species of pooled individuals. |
+| `Sex` | Sex represented by this summary row. |
+| `Average_Mass_mg` | Mean initial mass for this site–sex group, mg. |
+| `StandardDeviation_Mass_mg` | SD of initial mass for the site–sex group, mg. |
+| `Time_Chill_Coma_minutes` | Transport time on ice, minutes. |
+| `CTmax_Average_Celsius` | Mean CTmax for the site–sex group, °C. |
+| `CTmax_StandardDeviation_Celsius` | SD of CTmax for the site–sex group, °C. |
+| `Soil_Composition` | Soil texture classification. |
+| `Proportion_Sand_%` | Sand percentage. |
+| `Proportion_Silt_%` | Silt percentage. |
+| `Proportion_Clay_%` | Clay percentage. |
+| `HOBO_Probe_August_Daily_Average_Tmin_Celsius` | HOBO-probe average daily minimum temperature, °C. Header says August while the original README description says July; month needs clarification. |
+| `HOBO_Probe_August_Daily_Average_Tmax_Celsius` | HOBO-probe average daily maximum temperature, °C; same month-label discrepancy as above. |
+| `PestWatch_July_Daily_Average_Tmin_Celsius` | Modelled average daily minimum temperature for July 2019, °C. |
+| `PestWatch_July_Daily_Average_Tmax_Celsius` | Modelled average daily maximum temperature for July 2019, °C. |
+| `PestWatch_August_Daily_Average_Tmin_Celsius` | Modelled average daily minimum temperature for August 2019, °C. |
+| `PestWatch_August_Daily_Average_Tmax_Celsius` | Modelled average daily maximum temperature for August 2019, °C. |
+| `PRISM_Precipitation_July_mm` | Mean daily precipitation during July 2019 from PRISM, mm, according to the paper’s methods. |
+| `SoilTexture_PC1` | First principal-component score from soil sand/silt/clay percentages; a derived summary. |
+| `SoilTexture_PC2` | Second soil-texture principal-component score. |
+| `SoilTexture_PC3` | Third soil-texture principal-component score. |
 
-#### Jones-et-al\_Raw\_Individual\_Data.csv
+## Missing values and derived quantities
 
-A. 	Sample ID - unique ID assigned to each individual.
-
-B.	Species - species identification of that individual (identification provided by Laura J. Jones).
-
-C.	Sex - sex of the individual.
-
-D.	Collection_Date - date that the individual was collected from the field.
-
-E.	Site - site ID (town) that the individual was collected from.
-
-F.	Latitude - abbreviated latitude for the site that the individual was collected from.
-
-G.	Longitude - abbreviated longitude for the site that the individual was collected from.
-
-H.	Time_Chill_Coma_minutes - the amount of time (minutes) that the individual was kept in chill coma (i.e., on ice) during transport.
-
-I.	Mass_Before_CTmax_mg - the mass of the individual collected before CTmax experiments were performed.
-
-J.	Mass_After_CTmax_mg - the mass of the individual collected after CTmax experiments were performed.
-
-K.	deltaMass_mg - the difference in mass before and after the CTmax experiment.
-
-L.	CTmax_Celsius - the critical thermal maximum (CTmax) recorded for that individual using a ramping rate of + 0.25 °C/min.
-
-M.	Time_to_CTmax_min - the total time that the individual was kept in the temperature ramping experiment before reaching their CTmax.
-
-N.	28sReferenceGene_RawCT_Mean - the average cycle threshold (CT) between the three replicates for the quantification of the 28S reference gene for Apocrita for that individual.
-
-O.	Trypanosome_RawCT_Mean - the average cycle threshold (CT) between the three replicates for the quantification of trypanosomes for that individual.
-
-P.	Trypanosome_DeltaCT - the average CT for trypanosomes for the individual minus the average CT for the reference gene for the same individual.
-
-Q.	Trypanosome_ddCT - the delta CT for trypanosomes for the individual minus the maximum delta CT calculated for trypanosomes (within this dataset).
-
-R.	Trypanosome_2^-ddCT - the 2^(-ddCT for trypanosomes) for that individual.
-
-S.	Trypanosome_log(2^-ddCT) - the log10(2^-ddCT for trypanosomes) for that individual.
-
-T.	Trypanosome_RelativeIntensity_AdjustedforThreshold -  the relative quantification for trypanosomes within the cycle threshold of < 35, where any sample with a raw CT mean greater than 35 is considered negative (zero).
-
-U.	Vairimorpha_apis_RawCT_Mean - the average cycle threshold (CT) between the three replicates for the quantification of *Vairimorpha apis* for that individual.
-
-V.	Vairimorpha_apis_DeltaCT - the average CT for *Vairimorpha apis* for the individual minus the average CT for the reference gene for the same individual.
-
-W.	Vairimorpha_apis_ddCT - the delta CT for *Vairimorpha apis* for the individual minus the maximum delta CT calculated for *Vairimorpha apis* (within this dataset).
-
-X.	Vairimorpha_apis_2^-ddCT - the 2^(-ddCT for *Vairimorpha apis*) for that individual.
-
-Y.	Vairimorpha_apis_log(2^-ddCT) - the log10(2^-ddCT for *Vairimorpha apis*) for that individual.
-
-Z.	Vairimorpha_apis_RelativeIntensity_AdjustedforThreshold -  the relative quantification for *Vairimorpha apis* within the cycle threshold of < 35, where any sample with a raw CT mean greater than 35 is considered negative (zero).
-
-AA.	Spiroplasma_apis_RawCT_Mean - the average cycle threshold (CT) between the three replicates for the quantification of *Spiroplasma apis* for that individual.
-
-AB.	Spiroplasma_apis_DeltaCT  - the average CT for *Spiroplasma apis* for the individual minus the average CT for the reference gene for the same individual.
-
-AC.	Spiroplasma_apis_ddCT - the delta CT for *Spiroplasma apis* for the individual minus the maximum delta CT calculated for *Spiroplasma apis* (within this dataset).
-
-AD.	Spiroplasma_apis_2^-ddCT - the 2^(-ddCT for *Spiroplasma apis*) for that individual.
-
-AE.	Spiroplasma_apis_log(2^-ddCT) - the log10(2^-ddCT for *Spiroplasma apis*) for that individual.
-
-AF.	Spiroplasma_apis_RelativeIntensity_AdjustedforThreshold -  the relative quantification for *Spiroplasma apis* within the cycle threshold of < 35, where any sample with a raw CT mean greater than 35 is considered negative (zero).
-
-\__________________________________\_
-
-## Software and Packages
-
-All analyses were conducted in R (v.4.1.2) and can be reviewed in file 'Jones-et-al_R_Code.R'. Detailed description of analysis and packages used can be reviewed in the methods (2.5) and extended methods (Appendix) sections in Jones et al. (2024).
-
-##### Relevant Information for Analyses
-
-We performed all analyses with and without two individuals (sample IDs epl0331 and epl0647) because these were considered in poor condition and outliers within the dataset. In Jones et al. (2024), we present the analyses that exclude these individuals.
+Neither CSV contains blank/`NA` data cells in the current copy. Threshold-adjusted parasite zeros indicate negative detections under the authors’ rule, not missing measurements or demonstrated complete absence. The soil percentages are parts of one composition. Principal components, molecular transformations, mass differences and site summaries are derived variables; their definitions matter when interpreting relationships. HOBO month labels and the elapsed-time variable need clarification as noted above; this README does not silently correct either file.
