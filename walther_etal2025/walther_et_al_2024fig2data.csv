@@ -1,0 +1,81 @@
+﻿treatment,endophyte,herbivory,concentration,unit,compound
+c,0,0,1.642524378,mg/g,Salicin
+c,0,0,1.911242264,mg/g,Salicin
+c,0,0,1.757180915,mg/g,Salicin
+c,0,0,1.668997496,mg/g,Salicin
+ch,0,1,2.174601544,mg/g,Salicin
+ch,0,1,1.849464301,mg/g,Salicin
+ch,0,1,1.994614903,mg/g,Salicin
+ch,0,1,1.851762222,mg/g,Salicin
+e,1,0,1.977069164,mg/g,Salicin
+e,1,0,2.26933754,mg/g,Salicin
+e,1,0,1.980700642,mg/g,Salicin
+e,1,0,2.263638414,mg/g,Salicin
+eh,1,1,3.183333441,mg/g,Salicin
+eh,1,1,3.038105585,mg/g,Salicin
+eh,1,1,2.989358817,mg/g,Salicin
+eh,1,1,3.485366209,mg/g,Salicin
+c,0,0,49.196795,mg/g,Salicortin
+c,0,0,58.99493134,mg/g,Salicortin
+c,0,0,51.21113267,mg/g,Salicortin
+c,0,0,47.11481758,mg/g,Salicortin
+ch,0,1,61.05059648,mg/g,Salicortin
+ch,0,1,51.81593698,mg/g,Salicortin
+ch,0,1,56.00546509,mg/g,Salicortin
+ch,0,1,40.39104421,mg/g,Salicortin
+e,1,0,49.13648772,mg/g,Salicortin
+e,1,0,58.05014081,mg/g,Salicortin
+e,1,0,47.13693478,mg/g,Salicortin
+e,1,0,61.87681423,mg/g,Salicortin
+eh,1,1,47.78040251,mg/g,Salicortin
+eh,1,1,74.4665843,mg/g,Salicortin
+eh,1,1,61.28502303,mg/g,Salicortin
+eh,1,1,65.73610899,mg/g,Salicortin
+c,0,0,0.563253711,mg/g,nigracin
+c,0,0,0.589740654,mg/g,nigracin
+c,0,0,0.587333121,mg/g,nigracin
+c,0,0,0.601285639,mg/g,nigracin
+ch,0,1,0.647664969,mg/g,nigracin
+ch,0,1,0.574144563,mg/g,nigracin
+ch,0,1,0.631965901,mg/g,nigracin
+ch,0,1,0.618434643,mg/g,nigracin
+e,1,0,0.678745508,mg/g,nigracin
+e,1,0,0.745047939,mg/g,nigracin
+e,1,0,0.664176823,mg/g,nigracin
+e,1,0,0.724848727,mg/g,nigracin
+eh,1,1,0.830752316,mg/g,nigracin
+eh,1,1,0.944550777,mg/g,nigracin
+eh,1,1,0.841766211,mg/g,nigracin
+eh,1,1,1.00717979,mg/g,nigracin
+c,0,0,24.83353606,mg/g,Homalosid D
+c,0,0,28.81937169,mg/g,Homalosid D
+c,0,0,25.69039759,mg/g,Homalosid D
+c,0,0,25.74527318,mg/g,Homalosid D
+ch,0,1,30.91647788,mg/g,Homalosid D
+ch,0,1,25.24890994,mg/g,Homalosid D
+ch,0,1,27.89211486,mg/g,Homalosid D
+ch,0,1,20.38618255,mg/g,Homalosid D
+e,1,0,25.32217913,mg/g,Homalosid D
+e,1,0,29.65842389,mg/g,Homalosid D
+e,1,0,23.94738709,mg/g,Homalosid D
+e,1,0,32.64802412,mg/g,Homalosid D
+eh,1,1,26.43592534,mg/g,Homalosid D
+eh,1,1,40.07776645,mg/g,Homalosid D
+eh,1,1,30.58414994,mg/g,Homalosid D
+eh,1,1,33.91954853,mg/g,Homalosid D
+c,0,0,2.795118175,mg/g, salicortin-6-benzoat 
+c,0,0,4.427004648,mg/g, salicortin-6-benzoat 
+c,0,0,2.430056155,mg/g, salicortin-6-benzoat 
+c,0,0,2.27970961,mg/g, salicortin-6-benzoat 
+ch,0,1,3.833759796,mg/g, salicortin-6-benzoat 
+ch,0,1,4.556432471,mg/g, salicortin-6-benzoat 
+ch,0,1,4.18238655,mg/g, salicortin-6-benzoat 
+ch,0,1,3.817434625,mg/g, salicortin-6-benzoat 
+e,1,0,2.258631128,mg/g, salicortin-6-benzoat 
+e,1,0,3.69457355,mg/g, salicortin-6-benzoat 
+e,1,0,2.260280879,mg/g, salicortin-6-benzoat 
+e,1,0,4.747475845,mg/g, salicortin-6-benzoat 
+eh,1,1,3.734434486,mg/g, salicortin-6-benzoat 
+eh,1,1,7.053436262,mg/g, salicortin-6-benzoat 
+eh,1,1,5.624699289,mg/g, salicortin-6-benzoat 
+eh,1,1,5.589997156,mg/g, salicortin-6-benzoat 
