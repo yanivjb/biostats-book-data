@@ -1,19 +1,30 @@
-# Stress, anxiety and pain threshold — data
+# Stress, emotion and the point at which heat hurts — data
 
 ## Files
 
 | File | Contents |
 |---|---|
-| `Castellano_2025_project.csv` | Project data file. |
-| `CITATION.md` | Paper and source-data citations. |
+| [Castellano_2025_project.csv](Castellano_2025_project.csv) | Ready-to-load CSV; 41 rows. One participant record with heat-pain threshold, perceived-stress and anxiety scores. |
+| [original_data/](original_data/) | Input tables retained before this script’s preparation; see the provenance record in that folder. |
+| [prepare_data.R](prepare_data.R) | Commented R script that reproduces the prepared CSV file(s) from those inputs. |
+| [README.md](README.md) | File structure, rows, column definitions, missing values and preparation. |
+| [CITATION.md](CITATION.md) | Paper and original-source citations and source terms. |
 
-## Rows and collection
+## Data collection
 
-41 rows. Forty-one healthy young volunteers supplied questionnaire scores and underwent thermal pain-threshold testing. The study also recorded EEG; the project CSV contains participant-level psychological and pain measurements.
+Forty-one healthy young volunteers supplied questionnaire scores and underwent thermal pain-threshold testing. The study also recorded EEG; the project CSV contains participant-level psychological and pain measurements.
 
-## Preparation of this CSV
+## Prepared tables
 
 One record per participant, with thermal pain threshold, PSS_TOT and STAI_TOT renamed. No questionnaire item scores were newly calculated.
+
+original_data contains the input table used for this teaching file, before the filtering, aggregation and calculations in prepare_data.R. Where the deposit was an Excel/SPSS workbook, this is a CSV export of its named worksheet/table (the original workbook remains at the cited deposit); it is not a byte-identical copy of the original workbook. No sequence files are included.
+
+The ready file(s) can be loaded directly with `readr::read_csv()`. `NA` denotes a missing value, not zero.
+
+## Reproducing preparation
+
+With tidyverse installed, run `Rscript prepare_data.R` from this folder, or give Rscript the path to the script. It reads only the files in `original_data/` and writes the ready CSV file(s) named above. The comments document selections, row summaries, differences and missing-value rules.
 
 ## Columns and codes
 
@@ -28,11 +39,8 @@ One record per participant, with thermal pain threshold, PSS_TOT and STAI_TOT re
 
 `NA` denotes a missing measurement or a summary with a missing required component; it is not a measured zero. Missing values were not replaced by zero.
 
+## Sources
 
-## Sources and citation
+**Paper:** Castellano, P., Leu, C., Mazzetti, M., & Liberati, G. (2025). Using fast periodic visual stimulation to investigate the processing of health-related images in the human brain. Scientific Reports, 15(1), 45597. https://doi.org/10.1038/s41598-025-29515-z
 
-See [CITATION.md](CITATION.md) for the paper, original dataset and source terms.
-
-Paper: https://doi.org/10.1038/s41598-025-29515-z
-
-Original data: https://osf.io/9423j/
+**Original data:** Leu, C., Castellano, P., & Liberati, G. (n.d.). Fast periodic visual stimulation to study the processing of health-related images in the human brain [Data and materials]. OSF. https://osf.io/9423j/ (accessed 10 November 2026).

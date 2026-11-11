@@ -1,17 +1,34 @@
-# Ibiza wall lizard bite force — data
+# The machinery behind a lizard’s bite — data
 
-## Project data files
+## Files
 
 | File | Contents |
 |---|---|
-| `Supplementary_Data_Sheet_2.csv` | Project data file. |
-| `CITATION.md` | Paper and source-data citations. |
+| [ready_data.csv](ready_data.csv) | Ready-to-load CSV; 307 rows. All 307 lizards and source measurements in a standard comma-separated CSV. |
+| [original_data/](original_data/) | Input tables retained before this script’s preparation; see the provenance record in that folder. |
+| [prepare_data.R](prepare_data.R) | Commented R script that reproduces the prepared CSV file(s) from those inputs. |
+| [README.md](README.md) | File structure, rows, column definitions, missing values and preparation. |
+| [CITATION.md](CITATION.md) | Paper and original-source citations and source terms. |
 
-## Collection and row meaning
+## Data collection
 
 Researchers captured adult lizards by lasso at sites on Ibiza, Formentera, and nearby islets during September–October 2022 and May 2023. Each performed three bite trials, separated by rest periods, using an instrument with approximately standardized gape. The teaching file retains 307 lizards with complete focal measurements, grouped into 11 locations; two locations also distinguish lighthouse and shoreline samples. MAX records the highest of three bite-force measurements from each lizard.
 
-## Column definitions and source documentation
+## Prepared tables
+
+The source uses semicolons; ready_data.csv uses commas. All 307 rows, columns and measurements are retained; no biological transformations were applied.
+
+These are the source teaching tables previously linked from this folder; they are retained byte-for-byte in original_data. The original published deposit is cited below.
+
+The ready file(s) can be loaded directly with `readr::read_csv()`. `NA` denotes a missing value, not zero.
+
+## Reproducing preparation
+
+With tidyverse installed, run `Rscript prepare_data.R` from this folder, or give Rscript the path to the script. It reads only the files in `original_data/` and writes the ready CSV file(s) named above. The comments document selections, row summaries, differences and missing-value rules.
+
+The following source definitions also describe unchanged columns in the prepared file. Renamed, suffixed and added columns are defined above. Source filenames here refer to `original_data/`.
+
+## Source column definitions
 
 ## Description of the data and file structure
 
@@ -56,7 +73,8 @@ This Dryad dataset includes data derived from the following sources:
 * Lluch i Dubon, 1997. Geografia de les Illes Balears. Lleonard Muntaner Editor.
 * Rodríguez, V., Brown, R.P., Terrasa, B., Pérez‐Mellado, V., Castro, J.A., Picornell, A., Ramon, M.M., 2013. Multilocus genetic diversity and historical biogeography of the endemic wall lizard from Ibiza and Formentera, *Podarcis pityusensis * (Squamata: Lacertidae). Molecular Ecology 22, 4829–4841. [https://doi.org/10.1111/mec.12443](https://doi.org/10.1111/mec.12443)
 
+## Sources
 
-## Sources and citation
+**Paper:** Woodgate, S. C., Pérez-Cembranos, A., Pérez-Mellado, V., & Müller, J. (2025). Microgeographic diversity does not drive macroevolutionary divergence in bite force of the Ibiza wall lizard, Podarcis pityusensis. Evolution, 79(10), 2144-2155. https://doi.org/10.1093/evolut/qpaf140
 
-See [CITATION.md](CITATION.md) for the paper, original dataset and source terms.
+**Original data:** Woodgate, S. C., Pérez-Cembranos, A., Pérez-Mellado, V., & Müller, J. (2025). Microgeographic diversity does not drive macroevolutionary divergence in bite force of the Ibiza wall lizard, Podarcis pityusensis (Version 4) [Dataset]. Dryad. https://doi.org/10.5061/DRYAD.HHMGQNKT8

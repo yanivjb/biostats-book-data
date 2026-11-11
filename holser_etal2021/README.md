@@ -1,34 +1,34 @@
-# How do maternal size and age relate to elephant seal pup growth? — data
+# Raising a pup on a fasting mother’s reserves — data
 
-## Project data files
+## Files
 
 | File | Contents |
 |---|---|
-| `WeanMass_BirthMass_AdultMass_Dryad.csv` | Project data file. |
-| `CITATION.md` | Paper and source-data citations. |
+| [ready_data.csv](ready_data.csv) | Ready-to-load CSV; 86 rows. One row per mother at her earliest recorded breeding year, retaining maternal and pup measurements and source identifiers. |
+| [original_data/](original_data/) | Input tables retained before this script’s preparation; see the provenance record in that folder. |
+| [prepare_data.R](prepare_data.R) | Commented R script that reproduces the prepared CSV file(s) from those inputs. |
+| [README.md](README.md) | File structure, rows, column definitions, missing values and preparation. |
+| [CITATION.md](CITATION.md) | Paper and original-source citations and source terms. |
 
-## Collection and row meaning
+## Data collection
 
-Researchers studied breeding females and pups at Año Nuevo, California, during 1991–2019. These records come from selected mother–pup pairs involved in physiological and instrumentation studies, rather than a random sample of all breeding females. The file contains 98 mother–year records from 86 mothers. Arrival and birth masses were reconstructed from measurements and life-stage corrections; those calculations use some of the same recorded quantities.
+Researchers studied breeding females and pups at Año Nuevo, California, during 1991–2019. These records come from selected mother–pup pairs involved in physiological and instrumentation studies, rather than a random sample of all breeding females. The source table contains 98 mother–year records from 86 mothers. Arrival and birth masses were reconstructed from measurements and life-stage corrections; those calculations use some of the same recorded quantities.
 
-## Column definitions and source documentation
+## Prepared tables
 
-## Files included
+One row per mother: the earliest recorded BreedYear was retained before checking missing measurements. All source variables remain. mother_year_records counts how many source mother-year records were available. No reconstructed mass calculations were changed.
 
-| File | Contents |
-| --- | --- |
-| `PupMass_MomMass_Dryad.csv` | 281 mother–pup breeding records; maternal and pup masses, year, pup age and sex. Does not include maternal age. |
-| `WeanMass_BirthMass_AdultMass_Dryad.csv` | 98 records from 86 mothers, including maternal age and complete maternal-arrival and pup-weaning masses. |
-| `CITATION.md` | Citation information. |
+These are the source teaching tables previously linked from this folder; they are retained byte-for-byte in original_data. The original published deposit is cited below.
 
-All 98 mother–year combinations in the second file also occur in the first. The files are overlapping selections with different columns and numerical precision, overlapping selections of records. The second file retains decimal mass values where the broader file often contains rounded values.
+The ready file(s) can be loaded directly with `readr::read_csv()`. `NA` denotes a missing value, not zero.
 
-## Reading the data
+## Reproducing preparation
 
-```r
-broad <- readr::read_csv("PupMass_MomMass_Dryad.csv")
-weaning <- readr::read_csv("WeanMass_BirthMass_AdultMass_Dryad.csv")
-```
+With tidyverse installed, run `Rscript prepare_data.R` from this folder, or give Rscript the path to the script. It reads only the files in `original_data/` and writes the ready CSV file(s) named above. The comments document selections, row summaries, differences and missing-value rules.
+
+The following source definitions also describe unchanged columns in the prepared file. Renamed, suffixed and added columns are defined above. Source filenames here refer to `original_data/`.
+
+## Source column definitions
 
 ## Collection and row meaning
 
@@ -54,9 +54,8 @@ Data were collected at Año Nuevo, California, through physiological studies and
 
 Use `AnimalID` together with `BreedYear` to identify mother–year records, checking for duplicate keys before joining. Missing IDs do not identify a single shared mother. Some mother IDs appear in more than one breeding year. Reconstructed maternal arrival and pup birth masses use some of the same recorded inputs. No colony-density variable is included in either CSV. The other Dryad file, `AdultFemale_Skipped_Dryad.csv`, is not present in this folder and is not documented here.
 
+## Sources
 
-## Sources and citation
+**Paper:** Holser, R. R., Crocker, D. E., Robinson, P. W., Condit, R., & Costa, D. P. (2021). Density-dependent effects on reproductive output in a capital breeding carnivore, the northern elephant seal (Mirounga angustirostris). Proceedings of the Royal Society B: Biological Sciences, 288(1960), 20211258. https://doi.org/10.1098/rspb.2021.1258
 
-See [CITATION.md](CITATION.md) for the paper, original dataset and source terms.
-
-Paper: https://doi.org/10.1098/rspb.2021.1258
+**Original data:** Costa, D., Holser, R., Crocker, D., Robinson, P., McDonald, G., Fowler, M., Hassrick, J., Hückstädt, L., Peterson, S., Simmons, S., & Keates, T. (2021). Data from: Density-dependent effects on reproductive output in a capital breeding carnivore, the northern elephant seal (Mirounga angustirostris) (Version 11) [Dataset]. Dryad. https://doi.org/10.7291/D1K099

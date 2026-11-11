@@ -1,38 +1,35 @@
-# How does maternal size relate to reproductive investment? — data
+# How mothers invest in amphibian offspring — data
 
-## Project data files
+## Files
 
 | File | Contents |
 |---|---|
-| `EggsToad.csv` | Project data file. |
-| `EggsWood.csv` | Project data file. |
-| `CITATION.md` | Paper and source-data citations. |
+| [ready_EggsToad.csv](ready_EggsToad.csv) | Ready-to-load CSV; 50 rows. Maternal and clutch measurements for 50 American toad females from five populations. |
+| [ready_EggsWood.csv](ready_EggsWood.csv) | Ready-to-load CSV; 48 rows. Maternal and clutch measurements for 48 wood frog females from four populations. |
+| [original_data/](original_data/) | Input tables retained before this script’s preparation; see the provenance record in that folder. |
+| [prepare_data.R](prepare_data.R) | Commented R script that reproduces the prepared CSV file(s) from those inputs. |
+| [README.md](README.md) | File structure, rows, column definitions, missing values and preparation. |
+| [CITATION.md](CITATION.md) | Paper and original-source citations and source terms. |
 
-## Collection and row meaning
+## Data collection
 
 Researchers sampled breeding amphibians around Baltimore in 2009–2010. The reproductive data come from subsets of gravid females whose eggs were counted and measured. Mean egg diameter was based on 40 mature eggs per female; a row therefore describes a female and her clutch, not one egg. The toad file contains 50 females from five populations; the wood frog file contains 48 females from four populations.
 
-## Column definitions and source documentation
+## Prepared tables
 
-## Files included
+All source rows and columns are retained. Only CSV formatting and the missing-value marker (NA) are standardised; no biological grouping, exclusions or transformations are applied.
 
-| File | Contents |
-| --- | --- |
-| `femalestoadage.csv` | 172 breeding female American toads, with population, body measurement and estimated age. |
-| `EggsToad.csv` | 50 female American toads, with body and clutch measurements. |
-| `EggsWood.csv` | 48 female wood frogs, with body and clutch measurements and estimated age. |
-| `README_for_EggsToad.rtf`, `README_for_EggsWood.rtf` | Original author documentation. These files also describe datasets not included in this teaching folder. |
-| `CITATION.md` | Citation information. |
+These are the source teaching tables previously linked from this folder; they are retained byte-for-byte in original_data. The original published deposit is cited below.
 
-The three CSVs represent different tables or subsets of the study. They contain no shared individual identifier, so row order or population alone must not be used to pair animals across files. Other age, male, or population-summary files described in the original RTF documents are not included here.
+The ready file(s) can be loaded directly with `readr::read_csv()`. `NA` denotes a missing value, not zero.
 
-## Reading the data
+## Reproducing preparation
 
-```r
-age_data <- readr::read_csv("femalestoadage.csv")
-toad_eggs <- readr::read_csv("EggsToad.csv")
-wood_eggs <- readr::read_csv("EggsWood.csv")
-```
+With tidyverse installed, run `Rscript prepare_data.R` from this folder, or give Rscript the path to the script. It reads only the files in `original_data/` and writes the ready CSV file(s) named above. The comments document selections, row summaries, differences and missing-value rules.
+
+The following source definitions also describe unchanged columns in the prepared file. Renamed, suffixed and added columns are defined above. Source filenames here refer to `original_data/`.
+
+## Source column definitions
 
 ## Collection and row meaning
 
@@ -78,9 +75,8 @@ The original RTF column descriptions do not agree cleanly with the actual column
 
 Keep these columns as supplied; no names, values or units have been silently corrected. Clarify the mass definitions before reporting mass-based biological coefficients or per-egg quantities. SVL, clutch count, age where present, and egg diameter have clearer definitions. No blank or `NA` cells occur in these three CSVs; numeric zeros are not designated missing values. Population membership is observational and is not a randomized urbanization treatment.
 
+## Sources
 
-## Sources and citation
+**Paper:** Jennette, M. A., Snodgrass, J. W., & Forester, D. C. (2019). Variation in age, body size, and reproductive traits among urban and rural amphibian populations. Urban Ecosystems, 22(1), 137-147. https://doi.org/10.1007/s11252-018-0801-7
 
-See [CITATION.md](CITATION.md) for the paper, original dataset and source terms.
-
-Paper: https://doi.org/10.1007/s11252-018-0801-7
+**Original data:** Jennette, M. A., Snodgrass, J. W., & Forester, D. C. (2019). Data from: Variation in age, body size, and reproductive traits among urban and rural amphibian populations (Version 1) [Dataset]. Dryad. https://doi.org/10.5061/DRYAD.8P165G9

@@ -1,0 +1,65 @@
+treatment,endophyte,herbivory,concentration,unit,compound
+c,0,0,0.57,µg/mg,catechin
+c,0,0,0.89,µg/mg,catechin
+c,0,0,0.76,µg/mg,catechin
+c,0,0,0.33,µg/mg,catechin
+ch,0,1,1.32,µg/mg,catechin
+ch,0,1,0.52,µg/mg,catechin
+ch,0,1,1.31,µg/mg,catechin
+ch,0,1,0.54,µg/mg,catechin
+e,1,0,0.46,µg/mg,catechin
+e,1,0,0.78,µg/mg,catechin
+e,1,0,0.49,µg/mg,catechin
+e,1,0,0.82,µg/mg,catechin
+eh,1,1,0.58,µg/mg,catechin
+eh,1,1,0.84,µg/mg,catechin
+eh,1,1,1.44,µg/mg,catechin
+eh,1,1,0.81,µg/mg,catechin
+c,0,0,11.13888427,µg/g,Coumaric Acid
+c,0,0,10.25156913,µg/g,Coumaric Acid
+c,0,0,11.61874972,µg/g,Coumaric Acid
+c,0,0,12.38654838,µg/g,Coumaric Acid
+ch,0,1,11.76553885,µg/g,Coumaric Acid
+ch,0,1,9.311195721,µg/g,Coumaric Acid
+ch,0,1,13.78578723,µg/g,Coumaric Acid
+ch,0,1,11.58280157,µg/g,Coumaric Acid
+e,1,0,6.51793367,µg/g,Coumaric Acid
+e,1,0,9.244464961,µg/g,Coumaric Acid
+e,1,0,7.894873271,µg/g,Coumaric Acid
+e,1,0,8.473436271,µg/g,Coumaric Acid
+eh,1,1,8.744151879,µg/g,Coumaric Acid
+eh,1,1,8.011346764,µg/g,Coumaric Acid
+eh,1,1,9.502141343,µg/g,Coumaric Acid
+eh,1,1,10.39074039,µg/g,Coumaric Acid
+c,0,0,6.97958268,µg/g,Caffeic acid
+c,0,0,5.618370746,µg/g,Caffeic acid
+c,0,0,5.416672879,µg/g,Caffeic acid
+c,0,0,7.930549329,µg/g,Caffeic acid
+ch,0,1,4.858582407,µg/g,Caffeic acid
+ch,0,1,7.114381239,µg/g,Caffeic acid
+ch,0,1,5.874606766,µg/g,Caffeic acid
+ch,0,1,5.524286389,µg/g,Caffeic acid
+e,1,0,6.510235206,µg/g,Caffeic acid
+e,1,0,7.600139109,µg/g,Caffeic acid
+e,1,0,8.888613729,µg/g,Caffeic acid
+e,1,0,6.336361086,µg/g,Caffeic acid
+eh,1,1,11.51797223,µg/g,Caffeic acid
+eh,1,1,10.61936768,µg/g,Caffeic acid
+eh,1,1,9.832810809,µg/g,Caffeic acid
+eh,1,1,7.71068237,µg/g,Caffeic acid
+c,0,0,30.96457244,µg/g,Ferulic Acid
+c,0,0,23.08948999,µg/g,Ferulic Acid
+c,0,0,26.39649722,µg/g,Ferulic Acid
+c,0,0,25.98137836,µg/g,Ferulic Acid
+ch,0,1,21.95399857,µg/g,Ferulic Acid
+ch,0,1,27.60665951,µg/g,Ferulic Acid
+ch,0,1,29.62574076,µg/g,Ferulic Acid
+ch,0,1,33.28186295,µg/g,Ferulic Acid
+e,1,0,16.10672874,µg/g,Ferulic Acid
+e,1,0,22.32934143,µg/g,Ferulic Acid
+e,1,0,28.31937261,µg/g,Ferulic Acid
+e,1,0,20.67268779,µg/g,Ferulic Acid
+eh,1,1,20.82328679,µg/g,Ferulic Acid
+eh,1,1,17.6353051,µg/g,Ferulic Acid
+eh,1,1,20.19114141,µg/g,Ferulic Acid
+eh,1,1,25.92886932,µg/g,Ferulic Acid

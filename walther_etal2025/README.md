@@ -1,38 +1,35 @@
-# Can a fungal endophyte change a tree’s chemical defences? — data
+# A fungus inside a leaf and the insects outside it — data
 
-## Project data files
+## Files
 
 | File | Contents |
 |---|---|
-| `walther_et_al_2024fig2data.csv` | Project data file. |
-| `walther_et_al_2024fig3data.csv` | Project data file. |
-| `CITATION.md` | Paper and source-data citations. |
+| [ready_walther_et_al_2024fig2data.csv](ready_walther_et_al_2024fig2data.csv) | Ready-to-load CSV; 80 rows. Concentrations of five salicinoids in leaves from the 16 trees in the endophyte–herbivory experiment. |
+| [ready_walther_et_al_2024fig3data.csv](ready_walther_et_al_2024fig3data.csv) | Ready-to-load CSV; 64 rows. Concentrations of four other phenolic compounds from the same experiment, with the measurement unit recorded for each compound. |
+| [original_data/](original_data/) | Input tables retained before this script’s preparation; see the provenance record in that folder. |
+| [prepare_data.R](prepare_data.R) | Commented R script that reproduces the prepared CSV file(s) from those inputs. |
+| [README.md](README.md) | File structure, rows, column definitions, missing values and preparation. |
+| [CITATION.md](CITATION.md) | Paper and original-source citations and source terms. |
 
-## Collection and row meaning
+## Data collection
 
 Researchers grew genetically identical black poplar cuttings under controlled conditions. Sixteen young trees received combinations of fungal inoculation or mock treatment and herbivory or no herbivory, with four trees per combination. Fifteen days after inoculation, herbivory trees received caterpillars for 48 hours before leaves were collected for chemical analysis. The chemistry files contain five salicinoids and four other phenolics measured from these trees.
 
-## Column definitions and source documentation
+## Prepared tables
 
-## Files included
+All source rows and columns are retained. Only CSV formatting and the missing-value marker (NA) are standardised; no biological grouping, exclusions or transformations are applied. The two files remain separate compound tables. No tree IDs link compounds, so no tree-by-compound table was fabricated. The same sixteen trees underlie these chemistry measurements.
 
-| File | Contents |
-| --- | --- |
-| `walther_et_al_2024fig2data.csv` | Figure 2 leaf chemistry: 80 rows, five salicinoids, four treatment combinations and four observations per compound–treatment combination. |
-| `walther_et_al_2024fig3data.csv` | Figure 3 leaf chemistry: 64 rows, four phenolic compounds, four treatment combinations and four observations per compound–treatment combination. |
-| `Walther_etal2024_Figure5d_feeding.csv` | Figure 5d choice assay: 56 insects, each offered stachydrine-treated and control leaf discs. |
-| `Walther_et_al._2024_raw_data_240909.xlsx` | Original multi-sheet workbook. The three CSVs above correspond to `Figure 2`, `Figure 3` and `Figure 5d`; other sheets contain additional experiments or derived results. |
-| `CITATION.md` | Citation information. |
+These are the source teaching tables previously linked from this folder; they are retained byte-for-byte in original_data. The original published deposit is cited below.
 
-The CSVs and corresponding workbook sheets overlap; do not append them as additional observations. Figure 3 catechin concentrations are rounded to two decimals in the teaching CSV relative to the workbook. Other exported numbers may have less displayed precision. The workbook preserves the source values.
+The ready file(s) can be loaded directly with `readr::read_csv()`. `NA` denotes a missing value, not zero.
 
-## Reading the CSVs
+## Reproducing preparation
 
-```r
-chem2 <- readr::read_csv("walther_et_al_2024fig2data.csv")
-chem3 <- readr::read_csv("walther_et_al_2024fig3data.csv")
-feeding <- readr::read_csv("Walther_etal2024_Figure5d_feeding.csv")
-```
+With tidyverse installed, run `Rscript prepare_data.R` from this folder, or give Rscript the path to the script. It reads only the files in `original_data/` and writes the ready CSV file(s) named above. The comments document selections, row summaries, differences and missing-value rules.
+
+The following source definitions also describe unchanged columns in the prepared file. Renamed, suffixed and added columns are defined above. Source filenames here refer to `original_data/`.
+
+## Source column definitions
 
 ## Leaf chemistry: Figures 2 and 3
 
@@ -62,9 +59,8 @@ Each insect had access to both treated and control discs. The two consumption me
 
 The feeding CSV has no blank data cells. Zero consumption is a recorded observation. It describes a chemical choice assay, distinct from the plant inoculation/herbivory experiment in Figures 2 and 3. Rows cannot be joined across those experiments as if they represented the same plant or insect.
 
+## Sources
 
-## Sources and citation
+**Paper:** Walther, C., Vallet, M., Reichelt, M., Giri, P., Rothe, B., Negwer, E. J., van Berkum, P. M., Gershenzon, J., & Unsicker, S. B. (2025). A Fungal Endophyte Alters Poplar Leaf Chemistry, Deters Insect Feeding and Shapes Insect Community Assembly. Ecology Letters, 28(2), e70007. https://doi.org/10.1111/ele.70007
 
-See [CITATION.md](CITATION.md) for the paper, original dataset and source terms.
-
-Paper: https://doi.org/10.1111/ele.70007
+**Original data:** Walther, C., Vallet, M., Reichelt, M., Giri, P., Rothe, B., Negwer, E., van Berkum, P. M., Gershenzon, J., & Unsicker, S. (2024). Data from: A fungal endophyte alters poplar leaf chemistry, deters insect feeding, and shapes insect community assembly (Version 8) [Dataset]. Dryad. https://doi.org/10.5061/DRYAD.3XSJ3TXQT

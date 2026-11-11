@@ -1,0 +1,323 @@
+colonyID,individual,isa,site,thermal.tolerance.trait,thermal.tolerance,tester,heat.block,date.tt,time.of.day,age.days,initial.weight,habitat,treatment
+WAY_104,1,8,matzenbaum,ctmax,38,ARY,3,11/11/2018,21:10,125,0.0081,rural,21
+WAY_104,2,8,matzenbaum,ctmax,37,ARY,3,11/11/2018,21:10,125,0.0139,rural,21
+WAY_104,3,8,matzenbaum,ctmax,38,ARY,3,11/11/2018,21:10,125,0.0134,rural,21
+WAY_104,4,8,matzenbaum,ctmax,38,ARY,3,11/11/2018,21:10,125,0.0098,rural,21
+WAY_104,5,8,matzenbaum,ctmax,38,ARY,3,11/11/2018,21:10,125,0.0096,rural,21
+WAY_104,6,8,matzenbaum,ctmax,36,ARY,3,11/11/2018,21:10,125,0.009,rural,21
+WAY_104,7,8,matzenbaum,ctmax,36,ARY,3,11/11/2018,21:10,125,0.0136,rural,21
+WAY_104,8,8,matzenbaum,ctmax,36,ARY,3,11/11/2018,21:10,125,0.0144,rural,21
+WAY_104,9,8,matzenbaum,ctmax,37,ARY,3,11/11/2018,21:10,125,0.0083,rural,21
+WAY_104,10,8,matzenbaum,ctmax,37,ARY,3,11/11/2018,21:10,125,0.0078,rural,21
+WAY_104,11,8,matzenbaum,ctmin,11,ARY,2,11/11/2018,21:20,125,0.0094,rural,21
+WAY_104,12,8,matzenbaum,ctmin,11,ARY,2,11/11/2018,21:20,125,0.0128,rural,21
+WAY_104,13,8,matzenbaum,ctmin,5,ARY,2,11/11/2018,21:20,125,0.0073,rural,21
+WAY_104,14,8,matzenbaum,ctmin,9,ARY,2,11/11/2018,21:20,125,0.0116,rural,21
+WAY_104,15,8,matzenbaum,ctmin,5,ARY,2,11/11/2018,21:20,125,0.0113,rural,21
+WAY_104,16,8,matzenbaum,ctmin,8,ARY,2,11/11/2018,21:20,125,0.0137,rural,21
+WAY_104,17,8,matzenbaum,ctmin,7,ARY,2,11/11/2018,21:20,125,0.0103,rural,21
+WAY_104,18,8,matzenbaum,ctmin,10,ARY,2,11/11/2018,21:20,125,0.0125,rural,21
+WAY_104,19,8,matzenbaum,ctmin,6,ARY,2,11/11/2018,21:20,125,0.0137,rural,21
+WAY_104,20,8,matzenbaum,ctmin,10,ARY,2,11/11/2018,21:20,125,0.0104,rural,21
+WAY_134,1,8,matzenbaum,ctmax,38,ARY,3,11/12/2018,12:50,121,0.0193,rural,29
+WAY_134,2,8,matzenbaum,ctmax,38,ARY,3,11/12/2018,12:50,121,0.0124,rural,29
+WAY_134,3,8,matzenbaum,ctmax,37,ARY,3,11/12/2018,12:50,121,0.0123,rural,29
+WAY_134,4,8,matzenbaum,ctmax,38,ARY,3,11/12/2018,12:50,121,0.0143,rural,29
+WAY_134,5,8,matzenbaum,ctmax,40,ARY,3,11/12/2018,12:50,121,0.0125,rural,29
+WAY_134,6,8,matzenbaum,ctmax,38,ARY,3,11/12/2018,12:50,121,0.0169,rural,29
+WAY_134,7,8,matzenbaum,ctmax,38,ARY,3,11/12/2018,12:50,121,0.012,rural,29
+WAY_134,8,8,matzenbaum,ctmin,10,ARY,2,11/12/2018,13:10,121,0.0145,rural,29
+WAY_134,9,8,matzenbaum,ctmin,13,ARY,2,11/12/2018,13:10,121,0.0116,rural,29
+WAY_134,10,8,matzenbaum,ctmin,11,ARY,2,11/12/2018,13:10,121,0.0104,rural,29
+WAY_134,11,8,matzenbaum,ctmin,6,ARY,2,11/12/2018,13:10,121,0.013,rural,29
+WAY_134,12,8,matzenbaum,ctmin,6,ARY,2,11/12/2018,13:10,121,0.0127,rural,29
+WAY_134,13,8,matzenbaum,ctmin,12,ARY,2,11/12/2018,13:10,121,0.0125,rural,29
+WAY_134,14,8,matzenbaum,ctmin,9,ARY,2,11/12/2018,13:10,121,0.0077,rural,29
+WAY_147,1,8,matzenbaum,ctmax,38,ARY,3,11/13/2018,19:20,118,0.022,rural,29
+WAY_147,2,8,matzenbaum,ctmax,38,ARY,3,11/13/2018,19:20,118,0.01,rural,29
+WAY_147,3,8,matzenbaum,ctmax,38,ARY,3,11/13/2018,19:20,118,0.0202,rural,29
+WAY_147,4,8,matzenbaum,ctmax,39,ARY,3,11/13/2018,19:20,118,0.0163,rural,29
+WAY_147,5,8,matzenbaum,ctmax,39,ARY,3,11/13/2018,19:20,118,0.027,rural,29
+WAY_147,6,8,matzenbaum,ctmin,14,ARY,2,11/13/2018,19:00,118,0.0188,rural,29
+WAY_147,7,8,matzenbaum,ctmin,16,ARY,2,11/13/2018,19:00,118,0.0138,rural,29
+WAY_147,8,8,matzenbaum,ctmin,15,ARY,2,11/13/2018,19:00,118,0.0196,rural,29
+WAY_147,9,8,matzenbaum,ctmin,12,ARY,2,11/13/2018,19:00,118,0.0211,rural,29
+WAY_147,10,8,matzenbaum,ctmin,14,ARY,2,11/13/2018,19:00,118,0.0184,rural,29
+WAY_148,1,14,whitesburg,ctmax,39,ARY,3,11/10/2018,14:10,115,0.0259,rural,29
+WAY_148,2,14,whitesburg,ctmax,38,ARY,3,11/10/2018,14:10,115,0.0245,rural,29
+WAY_148,3,14,whitesburg,ctmax,38,ARY,3,11/10/2018,14:10,115,0.0256,rural,29
+WAY_148,4,14,whitesburg,ctmax,38,ARY,3,11/10/2018,14:10,115,0.0174,rural,29
+WAY_148,5,14,whitesburg,ctmax,38,ARY,3,11/10/2018,14:10,115,0.0202,rural,29
+WAY_148,6,14,whitesburg,ctmin,14,ARY,2,11/10/2018,14:40,115,0.0218,rural,29
+WAY_148,7,14,whitesburg,ctmin,8,ARY,2,11/10/2018,14:40,115,0.0259,rural,29
+WAY_148,8,14,whitesburg,ctmin,14,ARY,2,11/10/2018,14:40,115,0.0268,rural,29
+WAY_148,9,14,whitesburg,ctmin,9,ARY,2,11/10/2018,14:40,115,0.0206,rural,29
+WAY_148,10,14,whitesburg,ctmin,11,ARY,2,11/10/2018,14:40,115,0.0249,rural,29
+WAY_148,11,14,whitesburg,ctmin,9,ARY,2,11/10/2018,14:40,115,0.0169,rural,29
+WAY_182,1,5,west geauga,ctmax,38,ARY,3,11/13/2018,17:00,108,0.0079,rural,21
+WAY_182,2,5,west geauga,ctmax,37,ARY,3,11/13/2018,17:00,108,0.0091,rural,21
+WAY_182,3,5,west geauga,ctmax,39,ARY,3,11/13/2018,17:00,108,0.0081,rural,21
+WAY_182,4,5,west geauga,ctmax,37,ARY,3,11/13/2018,17:00,108,0.0076,rural,21
+WAY_182,5,5,west geauga,ctmax,39,ARY,3,11/13/2018,17:00,108,0.0075,rural,21
+WAY_182,6,5,west geauga,ctmax,39,ARY,3,11/13/2018,17:00,108,0.0091,rural,21
+WAY_182,7,5,west geauga,ctmax,39,ARY,3,11/13/2018,17:00,108,0.0089,rural,21
+WAY_182,18,5,west geauga,ctmax,39,ARY,3,11/13/2018,17:00,108,0.0079,rural,21
+WAY_182,19,5,west geauga,ctmax,39,ARY,3,11/13/2018,17:00,108,0.0051,rural,21
+WAY_182,20,5,west geauga,ctmax,39,ARY,3,11/13/2018,17:00,108,0.008,rural,21
+WAY_182,8,5,west geauga,ctmin,2,ARY,2,11/13/2018,17:00,108,0.0091,rural,21
+WAY_182,9,5,west geauga,ctmin,6,ARY,2,11/13/2018,17:00,108,0.0077,rural,21
+WAY_182,10,5,west geauga,ctmin,2,ARY,2,11/13/2018,17:00,108,0.0067,rural,21
+WAY_182,11,5,west geauga,ctmin,2,ARY,2,11/13/2018,17:00,108,0.0094,rural,21
+WAY_182,12,5,west geauga,ctmin,8,ARY,2,11/13/2018,17:00,108,0.0099,rural,21
+WAY_182,13,5,west geauga,ctmin,6,ARY,2,11/13/2018,17:00,108,0.0078,rural,21
+WAY_182,14,5,west geauga,ctmin,7,ARY,2,11/13/2018,17:00,108,0.0077,rural,21
+WAY_182,15,5,west geauga,ctmin,4,ARY,2,11/13/2018,17:00,108,0.0078,rural,21
+WAY_182,16,5,west geauga,ctmin,2,ARY,2,11/13/2018,17:00,108,0.0057,rural,21
+WAY_182,17,5,west geauga,ctmin,5,ARY,2,11/13/2018,17:00,108,0.0085,rural,21
+WAY_192,1,5,west geauga,ctmax,40,ARY,3,11/13/2018,17:30,84,0.0089,rural,29
+WAY_192,2,5,west geauga,ctmax,39,ARY,3,11/13/2018,17:30,84,0.0113,rural,29
+WAY_192,3,5,west geauga,ctmax,39,ARY,3,11/13/2018,17:30,84,0.0135,rural,29
+WAY_192,4,5,west geauga,ctmax,40,ARY,3,11/13/2018,17:30,84,0.0074,rural,29
+WAY_192,5,5,west geauga,ctmax,40,ARY,3,11/13/2018,17:30,84,0.0124,rural,29
+WAY_192,16,5,west geauga,ctmax,38,ARY,3,11/13/2018,17:30,84,0.0097,rural,29
+WAY_192,17,5,west geauga,ctmax,40,ARY,3,11/13/2018,17:30,84,0.0054,rural,29
+WAY_192,18,5,west geauga,ctmax,40,ARY,3,11/13/2018,17:30,84,0.0072,rural,29
+WAY_192,19,5,west geauga,ctmax,36,ARY,3,11/13/2018,17:30,84,0.016,rural,29
+WAY_192,20,5,west geauga,ctmax,38,ARY,3,11/13/2018,17:30,84,0.0048,rural,29
+WAY_192,6,5,west geauga,ctmin,15,ARY,2,11/13/2018,17:40,84,0.0093,rural,29
+WAY_192,7,5,west geauga,ctmin,13,ARY,2,11/13/2018,17:40,84,0.011,rural,29
+WAY_192,8,5,west geauga,ctmin,9,ARY,2,11/13/2018,17:40,84,0.0078,rural,29
+WAY_192,9,5,west geauga,ctmin,15,ARY,2,11/13/2018,17:40,84,0.0099,rural,29
+WAY_192,10,5,west geauga,ctmin,7,ARY,2,11/13/2018,17:40,84,0.0091,rural,29
+WAY_192,11,5,west geauga,ctmin,9,ARY,2,11/13/2018,17:40,84,0.0048,rural,29
+WAY_192,12,5,west geauga,ctmin,11,ARY,2,11/13/2018,17:40,84,0.0061,rural,29
+WAY_192,13,5,west geauga,ctmin,13,ARY,2,11/13/2018,17:40,84,0.0091,rural,29
+WAY_192,14,5,west geauga,ctmin,15,ARY,2,11/13/2018,17:40,84,0.0095,rural,29
+WAY_192,15,5,west geauga,ctmin,13,ARY,2,11/13/2018,17:40,84,0.0076,rural,29
+WAY_201,1,16,n chagrin,ctmax,38,ARY,3,11/13/2018,19:20,80,0.0043,rural,21
+WAY_201,2,16,n chagrin,ctmax,38,ARY,3,11/13/2018,19:20,80,0.0048,rural,21
+WAY_201,3,16,n chagrin,ctmax,38,ARY,3,11/13/2018,19:20,80,0.0044,rural,21
+WAY_201,4,16,n chagrin,ctmax,37,ARY,3,11/13/2018,19:20,80,0.0062,rural,21
+WAY_201,5,16,n chagrin,ctmax,37,ARY,3,11/13/2018,19:20,80,0.0036,rural,21
+WAY_201,6,16,n chagrin,ctmin,6,ARY,2,11/13/2018,19:00,80,0.0038,rural,21
+WAY_201,7,16,n chagrin,ctmin,7,ARY,2,11/13/2018,19:00,80,0.0037,rural,21
+WAY_201,8,16,n chagrin,ctmin,6,ARY,2,11/13/2018,19:00,80,0.004,rural,21
+WAY_201,9,16,n chagrin,ctmin,7,ARY,2,11/13/2018,19:00,80,0.0042,rural,21
+WAY_201,10,16,n chagrin,ctmin,5,ARY,2,11/13/2018,19:00,80,0.0035,rural,21
+WAY_31,1,10,case farm,ctmax,39,ARY,3,11/12/2018,19:00,151,0.0128,rural,21
+WAY_31,2,10,case farm,ctmax,39,ARY,3,11/12/2018,19:00,151,0.0131,rural,21
+WAY_31,3,10,case farm,ctmax,39,ARY,3,11/12/2018,19:00,151,0.0106,rural,21
+WAY_31,4,10,case farm,ctmax,39,ARY,3,11/12/2018,19:00,151,0.0154,rural,21
+WAY_31,5,10,case farm,ctmax,40,ARY,3,11/12/2018,19:00,151,0.0128,rural,21
+WAY_31,11,10,case farm,ctmax,40,ARY,3,11/12/2018,19:00,151,0.011,rural,21
+WAY_31,12,10,case farm,ctmax,39,ARY,3,11/12/2018,19:00,151,0.0115,rural,21
+WAY_31,14,10,case farm,ctmax,39,ARY,3,11/12/2018,19:00,151,0.0094,rural,21
+WAY_31,6,10,case farm,ctmin,2,ARY,2,11/12/2018,19:00,151,0.0089,rural,21
+WAY_31,7,10,case farm,ctmin,4,ARY,2,11/12/2018,19:00,151,0.0081,rural,21
+WAY_31,8,10,case farm,ctmin,4,ARY,2,11/12/2018,19:00,151,0.0096,rural,21
+WAY_31,9,10,case farm,ctmin,6,ARY,2,11/12/2018,19:00,151,0.0116,rural,21
+WAY_31,10,10,case farm,ctmin,4,ARY,2,11/12/2018,19:00,151,0.0134,rural,21
+WAY_31,13,10,case farm,ctmin,3,ARY,2,11/12/2018,19:00,151,0.0087,rural,21
+WAY_40,1,10,case farm,ctmax,39,ARY,3,11/10/2018,15:15,147,0.0074,rural,21
+WAY_40,2,10,case farm,ctmax,39,ARY,3,11/10/2018,15:15,147,0.0077,rural,21
+WAY_40,3,10,case farm,ctmax,39,ARY,3,11/10/2018,15:15,147,0.0097,rural,21
+WAY_40,4,10,case farm,ctmax,39,ARY,3,11/10/2018,15:15,147,0.0083,rural,21
+WAY_40,5,10,case farm,ctmax,39,ARY,3,11/10/2018,15:15,147,0.0078,rural,21
+WAY_40,6,10,case farm,ctmax,39,ARY,3,11/10/2018,15:15,147,0.0075,rural,21
+WAY_40,7,10,case farm,ctmax,39,ARY,3,11/10/2018,15:15,147,0.0059,rural,21
+WAY_40,8,10,case farm,ctmax,38,ARY,3,11/10/2018,15:15,147,0.0085,rural,21
+WAY_40,9,10,case farm,ctmax,38,ARY,3,11/10/2018,15:15,147,0.0074,rural,21
+WAY_40,10,10,case farm,ctmax,38,ARY,3,11/10/2018,15:15,147,0.0087,rural,21
+WAY_40,11,10,case farm,ctmin,5,ARY,2,11/10/2018,15:30,147,0.0056,rural,21
+WAY_40,12,10,case farm,ctmin,1,ARY,2,11/10/2018,15:30,147,0.0084,rural,21
+WAY_40,13,10,case farm,ctmin,7,ARY,2,11/10/2018,15:30,147,0.0078,rural,21
+WAY_40,14,10,case farm,ctmin,16,ARY,2,11/10/2018,15:30,147,0.0072,rural,21
+WAY_40,15,10,case farm,ctmin,6,ARY,2,11/10/2018,15:30,147,0.0082,rural,21
+WAY_40,16,10,case farm,ctmin,6,ARY,2,11/10/2018,15:30,147,0.0075,rural,21
+WAY_40,17,10,case farm,ctmin,12,ARY,2,11/10/2018,15:30,147,0.0042,rural,21
+WAY_40,18,10,case farm,ctmin,15,ARY,2,11/10/2018,15:30,147,0.0061,rural,21
+WAY_40,19,10,case farm,ctmin,2,ARY,2,11/10/2018,15:30,147,0.0056,rural,21
+WAY_40,20,10,case farm,ctmin,3,ARY,2,11/10/2018,15:30,147,0.007,rural,21
+WAY_78,1,14,whitesburg,ctmax,39,ARY,3,11/10/2018,19:40,127,0.0098,rural,29
+WAY_78,2,14,whitesburg,ctmax,39,ARY,3,11/10/2018,19:40,127,0.009,rural,29
+WAY_78,3,14,whitesburg,ctmax,39,ARY,3,11/10/2018,19:40,127,0.0091,rural,29
+WAY_78,4,14,whitesburg,ctmax,39,ARY,3,11/10/2018,19:40,127,0.0163,rural,29
+WAY_78,5,14,whitesburg,ctmax,38,ARY,3,11/10/2018,19:40,127,0.0097,rural,29
+WAY_78,6,14,whitesburg,ctmax,38,ARY,3,11/10/2018,19:40,127,0.0091,rural,29
+WAY_78,7,14,whitesburg,ctmax,38,ARY,3,11/10/2018,19:40,127,0.0091,rural,29
+WAY_78,8,14,whitesburg,ctmin,12,ARY,2,11/10/2018,19:40,127,0.0088,rural,29
+WAY_78,9,14,whitesburg,ctmin,15,ARY,2,11/10/2018,19:40,127,0.0151,rural,29
+WAY_78,10,14,whitesburg,ctmin,15,ARY,2,11/10/2018,19:40,127,0.0084,rural,29
+WAY_78,11,14,whitesburg,ctmin,13,ARY,2,11/10/2018,19:40,127,0.0177,rural,29
+WAY_78,12,14,whitesburg,ctmin,16,ARY,2,11/10/2018,19:40,127,0.0094,rural,29
+WAY_78,13,14,whitesburg,ctmin,12,ARY,2,11/10/2018,19:40,127,0.0109,rural,29
+WAY_78,14,14,whitesburg,ctmin,15,ARY,2,11/10/2018,19:40,127,0.0097,rural,29
+WAY_98,1,7,chapin,ctmax,38,ARY,3,11/10/2018,20:15,124,0.0098,rural,21
+WAY_98,2,7,chapin,ctmax,40,ARY,3,11/10/2018,20:15,124,0.0103,rural,21
+WAY_98,3,7,chapin,ctmax,39,ARY,3,11/10/2018,20:15,124,0.0102,rural,21
+WAY_98,4,7,chapin,ctmax,39,ARY,3,11/10/2018,20:15,124,0.009,rural,21
+WAY_98,5,7,chapin,ctmax,38,ARY,3,11/10/2018,20:15,124,0.0083,rural,21
+WAY_98,6,7,chapin,ctmax,38,ARY,3,11/10/2018,20:15,124,0.0089,rural,21
+WAY_98,7,7,chapin,ctmax,39,ARY,3,11/10/2018,20:15,124,0.0057,rural,21
+WAY_98,8,7,chapin,ctmax,39,ARY,3,11/10/2018,20:15,124,0.0089,rural,21
+WAY_98,9,7,chapin,ctmax,37,ARY,3,11/10/2018,20:15,124,0.0106,rural,21
+WAY_98,11,7,chapin,ctmin,8,ARY,2,11/10/2018,20:15,124,0.0086,rural,21
+WAY_98,12,7,chapin,ctmin,11,ARY,2,11/10/2018,20:15,124,0.0098,rural,21
+WAY_98,13,7,chapin,ctmin,5,ARY,2,11/10/2018,20:15,124,0.0134,rural,21
+WAY_98,14,7,chapin,ctmin,4,ARY,2,11/10/2018,20:15,124,0.0102,rural,21
+WAY_98,15,7,chapin,ctmin,9,ARY,2,11/10/2018,20:15,124,0.0096,rural,21
+WAY_98,16,7,chapin,ctmin,12,ARY,2,11/10/2018,20:15,124,0.0103,rural,21
+WAY_98,17,7,chapin,ctmin,6,ARY,2,11/10/2018,20:15,124,0.0103,rural,21
+WAY_98,18,7,chapin,ctmin,6,ARY,2,11/10/2018,20:15,124,0.0121,rural,21
+WAY_111,1,75,cumberland,ctmax,39,ARY,3,11/11/2018,20:15,125,0.0135,urban,29
+WAY_111,2,75,cumberland,ctmax,39,ARY,3,11/11/2018,20:15,125,0.0166,urban,29
+WAY_111,3,75,cumberland,ctmax,37,ARY,3,11/11/2018,20:15,125,0.0124,urban,29
+WAY_111,4,75,cumberland,ctmax,39,ARY,3,11/11/2018,20:15,125,0.0128,urban,29
+WAY_111,5,75,cumberland,ctmax,39,ARY,3,11/11/2018,20:15,125,0.0134,urban,29
+WAY_111,6,75,cumberland,ctmax,39,ARY,3,11/11/2018,20:15,125,0.0157,urban,29
+WAY_111,7,75,cumberland,ctmax,39,ARY,3,11/11/2018,20:15,125,0.0148,urban,29
+WAY_111,8,75,cumberland,ctmax,37,ARY,3,11/11/2018,20:15,125,0.009,urban,29
+WAY_111,16,75,cumberland,ctmax,39,ARY,3,11/11/2018,20:15,125,0.012,urban,29
+WAY_111,17,75,cumberland,ctmax,39,ARY,3,11/11/2018,20:15,125,0.015,urban,29
+WAY_111,9,75,cumberland,ctmin,16,ARY,2,11/11/2018,20:15,125,0.0146,urban,29
+WAY_111,10,75,cumberland,ctmin,16,ARY,2,11/11/2018,20:15,125,0.016,urban,29
+WAY_111,11,75,cumberland,ctmin,15,ARY,2,11/11/2018,20:15,125,0.0213,urban,29
+WAY_111,12,75,cumberland,ctmin,12,ARY,2,11/11/2018,20:15,125,0.0154,urban,29
+WAY_111,13,75,cumberland,ctmin,11,ARY,2,11/11/2018,20:15,125,0.008,urban,29
+WAY_111,14,75,cumberland,ctmin,15,ARY,2,11/11/2018,20:15,125,0.0171,urban,29
+WAY_111,15,75,cumberland,ctmin,12,ARY,2,11/11/2018,20:15,125,0.0128,urban,29
+WAY_111,18,75,cumberland,ctmin,15,ARY,2,11/11/2018,20:15,125,0.0072,urban,29
+WAY_111,19,75,cumberland,ctmin,12,ARY,2,11/11/2018,20:15,125,0.0157,urban,29
+WAY_132,1,73,forest hill,ctmax,40,ARY,3,11/12/2018,10:50,121,0.0143,urban,29
+WAY_132,2,73,forest hill,ctmax,39,ARY,3,11/12/2018,10:50,121,0.0146,urban,29
+WAY_132,3,73,forest hill,ctmax,40,ARY,3,11/12/2018,10:50,121,0.0113,urban,29
+WAY_132,4,73,forest hill,ctmax,39,ARY,3,11/12/2018,10:50,121,0.0124,urban,29
+WAY_132,5,73,forest hill,ctmax,39,ARY,3,11/12/2018,10:50,121,0.0183,urban,29
+WAY_132,7,73,forest hill,ctmin,11,ARY,2,11/12/2018,11:30,121,0.017,urban,29
+WAY_132,8,73,forest hill,ctmin,11,ARY,2,11/12/2018,11:30,121,0.0147,urban,29
+WAY_132,9,73,forest hill,ctmin,11,ARY,2,11/12/2018,11:30,121,0.0136,urban,29
+WAY_132,10,73,forest hill,ctmin,12,ARY,2,11/12/2018,11:30,121,0.0144,urban,29
+WAY_132,11,73,forest hill,ctmin,11,ARY,2,11/12/2018,11:30,121,0.0196,urban,29
+WAY_137,1,57,garfield,ctmax,40,ARY,3,11/12/2018,18:10,121,0.0111,urban,29
+WAY_137,2,57,garfield,ctmax,38,ARY,3,11/12/2018,18:10,121,0.0145,urban,29
+WAY_137,3,57,garfield,ctmax,40,ARY,3,11/12/2018,18:10,121,0.0155,urban,29
+WAY_137,4,57,garfield,ctmax,39,ARY,3,11/12/2018,18:10,121,0.013,urban,29
+WAY_137,5,57,garfield,ctmax,39,ARY,3,11/12/2018,18:10,121,0.0131,urban,29
+WAY_137,6,57,garfield,ctmax,39,ARY,3,11/12/2018,18:10,121,0.0129,urban,29
+WAY_137,7,57,garfield,ctmax,39,ARY,3,11/12/2018,18:10,121,0.0111,urban,29
+WAY_137,16,57,garfield,ctmax,39,ARY,3,11/12/2018,18:10,121,0.0144,urban,29
+WAY_137,8,57,garfield,ctmin,14,ARY,2,11/12/2018,18:15,121,0.0187,urban,29
+WAY_137,9,57,garfield,ctmin,12,ARY,2,11/12/2018,18:15,121,0.0137,urban,29
+WAY_137,10,57,garfield,ctmin,14,ARY,2,11/12/2018,18:15,121,0.0159,urban,29
+WAY_137,11,57,garfield,ctmin,14,ARY,2,11/12/2018,18:15,121,0.016,urban,29
+WAY_137,12,57,garfield,ctmin,13,ARY,2,11/12/2018,18:15,121,0.0133,urban,29
+WAY_137,13,57,garfield,ctmin,13,ARY,2,11/12/2018,18:15,121,0.0135,urban,29
+WAY_137,14,57,garfield,ctmin,13,ARY,2,11/12/2018,18:15,121,0.0177,urban,29
+WAY_137,15,57,garfield,ctmin,13,ARY,2,11/12/2018,18:15,121,0.0134,urban,29
+WAY_142,1,73,forest hill,ctmax,37,ARY,3,11/12/2018,12:00,121,0.0062,urban,21
+WAY_142,2,73,forest hill,ctmax,37,ARY,3,11/12/2018,12:00,121,0.0041,urban,21
+WAY_142,3,73,forest hill,ctmax,38,ARY,3,11/12/2018,12:00,121,0.0053,urban,21
+WAY_142,4,73,forest hill,ctmax,38,ARY,3,11/12/2018,12:00,121,0.0045,urban,21
+WAY_142,5,73,forest hill,ctmax,38,ARY,3,11/12/2018,12:00,121,0.0049,urban,21
+WAY_142,6,73,forest hill,ctmax,37,ARY,3,11/12/2018,12:00,121,0.0056,urban,21
+WAY_142,7,73,forest hill,ctmax,38,ARY,3,11/12/2018,12:00,121,0.0054,urban,21
+WAY_142,8,73,forest hill,ctmax,38,ARY,3,11/12/2018,12:00,121,0.004,urban,21
+WAY_142,9,73,forest hill,ctmax,38,ARY,3,11/12/2018,12:00,121,0.0066,urban,21
+WAY_142,10,73,forest hill,ctmax,37,ARY,3,11/12/2018,12:00,121,0.0063,urban,21
+WAY_142,11,73,forest hill,ctmin,12,ARY,2,11/12/2018,12:15,121,0.0034,urban,21
+WAY_142,12,73,forest hill,ctmin,6,ARY,2,11/12/2018,12:15,121,0.0037,urban,21
+WAY_142,13,73,forest hill,ctmin,4,ARY,2,11/12/2018,12:15,121,0.0036,urban,21
+WAY_142,14,73,forest hill,ctmin,12,ARY,2,11/12/2018,12:15,121,0.0042,urban,21
+WAY_142,15,73,forest hill,ctmin,3,ARY,2,11/12/2018,12:15,121,0.0038,urban,21
+WAY_142,16,73,forest hill,ctmin,8,ARY,2,11/12/2018,12:15,121,0.0039,urban,21
+WAY_142,17,73,forest hill,ctmin,9,ARY,2,11/12/2018,12:15,121,0.0035,urban,21
+WAY_142,18,73,forest hill,ctmin,4,ARY,2,11/12/2018,12:15,121,0.0038,urban,21
+WAY_142,19,73,forest hill,ctmin,2,ARY,2,11/12/2018,12:15,121,0.0046,urban,21
+WAY_142,20,73,forest hill,ctmin,7,ARY,2,11/12/2018,12:15,121,0.0041,urban,21
+WAY_145,1,57,garfield,ctmax,39,ARY,3,11/12/2018,17:10,121,0.0135,urban,21
+WAY_145,2,57,garfield,ctmax,39,ARY,3,11/12/2018,17:10,121,0.0131,urban,21
+WAY_145,3,57,garfield,ctmax,39,ARY,3,11/12/2018,17:10,121,0.0125,urban,21
+WAY_145,4,57,garfield,ctmax,39,ARY,3,11/12/2018,17:10,121,0.0144,urban,21
+WAY_145,5,57,garfield,ctmax,40,ARY,3,11/12/2018,17:10,121,0.0113,urban,21
+WAY_145,6,57,garfield,ctmax,39,ARY,3,11/12/2018,17:10,121,0.0102,urban,21
+WAY_145,7,57,garfield,ctmax,39,ARY,3,11/12/2018,17:10,121,0.0125,urban,21
+WAY_145,15,57,garfield,ctmax,39,ARY,3,11/12/2018,17:10,121,0.012,urban,21
+WAY_145,16,57,garfield,ctmax,39,ARY,3,11/12/2018,17:10,121,0.0105,urban,21
+WAY_145,20,57,garfield,ctmax,39,ARY,3,11/12/2018,17:10,121,0.0133,urban,21
+WAY_145,8,57,garfield,ctmin,8,ARY,2,11/12/2018,17:20,121,0.013,urban,21
+WAY_145,9,57,garfield,ctmin,4,ARY,2,11/12/2018,17:20,121,0.0106,urban,21
+WAY_145,10,57,garfield,ctmin,6,ARY,2,11/12/2018,17:20,121,0.0121,urban,21
+WAY_145,11,57,garfield,ctmin,4,ARY,2,11/12/2018,17:20,121,0.0132,urban,21
+WAY_145,12,57,garfield,ctmin,7,ARY,2,11/12/2018,17:20,121,0.011,urban,21
+WAY_145,13,57,garfield,ctmin,7,ARY,2,11/12/2018,17:20,121,0.0101,urban,21
+WAY_145,14,57,garfield,ctmin,3,ARY,2,11/12/2018,17:20,121,0.011,urban,21
+WAY_145,17,57,garfield,ctmin,5,ARY,2,11/12/2018,17:20,121,0.0097,urban,21
+WAY_145,18,57,garfield,ctmin,3,ARY,2,11/12/2018,17:20,121,0.012,urban,21
+WAY_145,19,57,garfield,ctmin,8,ARY,2,11/12/2018,17:20,121,0.0104,urban,21
+WAY_68,1,57,garfield,ctmax,39,ARY,3,11/10/2018,16:25,135,0.0072,urban,21
+WAY_68,2,57,garfield,ctmax,39,ARY,3,11/10/2018,16:25,135,0.0101,urban,21
+WAY_68,3,57,garfield,ctmax,40,ARY,3,11/10/2018,16:25,135,0.0068,urban,21
+WAY_68,4,57,garfield,ctmax,38,ARY,3,11/10/2018,16:25,135,0.0081,urban,21
+WAY_68,5,57,garfield,ctmax,40,ARY,3,11/10/2018,16:25,135,0.0079,urban,21
+WAY_68,6,57,garfield,ctmax,39,ARY,3,11/10/2018,16:25,135,0.0093,urban,21
+WAY_68,7,57,garfield,ctmax,39,ARY,3,11/10/2018,16:25,135,0.0072,urban,21
+WAY_68,8,57,garfield,ctmax,40,ARY,3,11/10/2018,16:25,135,0.0062,urban,21
+WAY_68,9,57,garfield,ctmax,40,ARY,3,11/10/2018,16:25,135,0.0058,urban,21
+WAY_68,10,57,garfield,ctmin,10,ARY,2,11/10/2018,16:40,135,0.0076,urban,21
+WAY_68,11,57,garfield,ctmin,14,ARY,2,11/10/2018,16:40,135,0.0091,urban,21
+WAY_68,12,57,garfield,ctmin,15,ARY,2,11/10/2018,16:40,135,0.0047,urban,21
+WAY_68,13,57,garfield,ctmin,16,ARY,2,11/10/2018,16:40,135,0.0055,urban,21
+WAY_68,14,57,garfield,ctmin,16,ARY,2,11/10/2018,16:40,135,0.0053,urban,21
+WAY_68,15,57,garfield,ctmin,12,ARY,2,11/10/2018,16:40,135,0.0108,urban,21
+WAY_68,16,57,garfield,ctmin,16,ARY,2,11/10/2018,16:40,135,0.006,urban,21
+WAY_68,17,57,garfield,ctmin,16,ARY,2,11/10/2018,16:40,135,0.0036,urban,21
+WAY_70,1,94,zoo,ctmax,39,ARY,3,11/10/2018,17:55,133,0.0297,urban,29
+WAY_70,2,94,zoo,ctmax,39,ARY,3,11/10/2018,17:55,133,0.0187,urban,29
+WAY_70,3,94,zoo,ctmax,39,ARY,3,11/10/2018,17:55,133,0.0259,urban,29
+WAY_70,4,94,zoo,ctmax,39,ARY,3,11/10/2018,17:55,133,0.0278,urban,29
+WAY_70,5,94,zoo,ctmax,39,ARY,3,11/10/2018,17:55,133,0.023,urban,29
+WAY_70,6,94,zoo,ctmin,16,ARY,2,11/10/2018,17:55,133,0.0217,urban,29
+WAY_70,7,94,zoo,ctmin,16,ARY,2,11/10/2018,17:55,133,0.0191,urban,29
+WAY_70,8,94,zoo,ctmin,16,ARY,2,11/10/2018,17:55,133,0.027,urban,29
+WAY_70,9,94,zoo,ctmin,16,ARY,2,11/10/2018,17:55,133,0.0206,urban,29
+WAY_70,10,94,zoo,ctmin,16,ARY,2,11/10/2018,17:55,133,0.0249,urban,29
+WAY_83,1,68,canal,ctmax,40,ARY,3,11/10/2018,18:55,127,0.0125,urban,29
+WAY_83,2,68,canal,ctmax,40,ARY,3,11/10/2018,18:55,127,0.0186,urban,29
+WAY_83,3,68,canal,ctmax,40,ARY,3,11/10/2018,18:55,127,0.0132,urban,29
+WAY_83,4,68,canal,ctmax,40,ARY,3,11/10/2018,18:55,127,0.0132,urban,29
+WAY_83,5,68,canal,ctmax,40,ARY,3,11/10/2018,18:55,127,0.0125,urban,29
+WAY_83,6,68,canal,ctmax,39,ARY,3,11/10/2018,18:55,127,0.0201,urban,29
+WAY_83,7,68,canal,ctmax,40,ARY,3,11/10/2018,18:55,127,0.0091,urban,29
+WAY_83,8,68,canal,ctmax,39,ARY,3,11/10/2018,18:55,127,0.0128,urban,29
+WAY_83,9,68,canal,ctmax,39,ARY,3,11/10/2018,18:55,127,0.0126,urban,29
+WAY_83,10,68,canal,ctmax,40,ARY,3,11/10/2018,18:55,127,0.0145,urban,29
+WAY_83,11,68,canal,ctmin,8,ARY,2,11/10/2018,18:55,127,0.0192,urban,29
+WAY_83,12,68,canal,ctmin,8,ARY,2,11/10/2018,18:55,127,0.0169,urban,29
+WAY_83,13,68,canal,ctmin,13,ARY,2,11/10/2018,18:55,127,0.015,urban,29
+WAY_83,14,68,canal,ctmin,12,ARY,2,11/10/2018,18:55,127,0.0151,urban,29
+WAY_83,15,68,canal,ctmin,13,ARY,2,11/10/2018,18:55,127,0.0108,urban,29
+WAY_83,16,68,canal,ctmin,13,ARY,2,11/10/2018,18:55,127,0.0117,urban,29
+WAY_83,17,68,canal,ctmin,8,ARY,2,11/10/2018,18:55,127,0.0107,urban,29
+WAY_83,18,68,canal,ctmin,14,ARY,2,11/10/2018,18:55,127,0.0148,urban,29
+WAY_83,19,68,canal,ctmin,13,ARY,2,11/10/2018,18:55,127,0.0103,urban,29
+WAY_83,20,68,canal,ctmin,14,ARY,2,11/10/2018,18:55,127,0.013,urban,29
+WAY_92,1,68,canal,ctmax,39,ARY,3,11/10/2018,17:55,127,0.0066,urban,21
+WAY_92,2,68,canal,ctmax,39,ARY,3,11/10/2018,17:55,127,0.006,urban,21
+WAY_92,3,68,canal,ctmax,39,ARY,3,11/10/2018,17:55,127,0.0072,urban,21
+WAY_92,4,68,canal,ctmax,39,ARY,3,11/10/2018,17:55,127,0.0045,urban,21
+WAY_92,5,68,canal,ctmax,39,ARY,3,11/10/2018,17:55,127,0.0074,urban,21
+WAY_92,6,68,canal,ctmax,39,ARY,3,11/10/2018,17:55,127,0.007,urban,21
+WAY_92,7,68,canal,ctmax,39,ARY,3,11/10/2018,17:55,127,0.0077,urban,21
+WAY_92,8,68,canal,ctmax,40,ARY,3,11/10/2018,17:55,127,0.0075,urban,21
+WAY_92,9,68,canal,ctmax,38,ARY,3,11/10/2018,17:55,127,0.0054,urban,21
+WAY_92,10,68,canal,ctmax,40,ARY,3,11/10/2018,17:55,127,0.0076,urban,21
+WAY_92,11,68,canal,ctmin,5,ARY,2,11/10/2018,17:55,127,0.0073,urban,21
+WAY_92,12,68,canal,ctmin,14,ARY,2,11/10/2018,17:55,127,0.0055,urban,21
+WAY_92,13,68,canal,ctmin,3,ARY,2,11/10/2018,17:55,127,0.006,urban,21
+WAY_92,14,68,canal,ctmin,16,ARY,2,11/10/2018,17:55,127,0.0076,urban,21
+WAY_92,15,68,canal,ctmin,13,ARY,2,11/10/2018,17:55,127,0.007,urban,21
+WAY_92,16,68,canal,ctmin,6,ARY,2,11/10/2018,17:55,127,0.0076,urban,21
+WAY_92,17,68,canal,ctmin,3,ARY,2,11/10/2018,17:55,127,0.0069,urban,21
+WAY_92,18,68,canal,ctmin,6,ARY,2,11/10/2018,17:55,127,0.0077,urban,21
+WAY_92,19,68,canal,ctmin,6,ARY,2,11/10/2018,17:55,127,0.0058,urban,21
+WAY_92,20,68,canal,ctmin,10,ARY,2,11/10/2018,17:55,127,0.0074,urban,21

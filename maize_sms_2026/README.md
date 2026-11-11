@@ -1,13 +1,16 @@
-# Maize and spent mushroom substrate — data
+# Growing maize with the leftovers of mushroom farming — data
 
-## Project data files
+## Files
 
 | File | Contents |
 |---|---|
-| `result_3.2.csv` | Project data file. |
-| `CITATION.md` | Paper and source-data citations. |
+| [ready_data.csv](ready_data.csv) | Ready-to-load CSV; 24 rows. Growth, leaf and reproductive measurements from maize pots receiving different fertilizer and mushroom-substrate treatments. |
+| [original_data/](original_data/) | Input tables retained before this script’s preparation; see the provenance record in that folder. |
+| [prepare_data.R](prepare_data.R) | Commented R script that reproduces the prepared CSV file(s) from those inputs. |
+| [README.md](README.md) | File structure, rows, column definitions, missing values and preparation. |
+| [CITATION.md](CITATION.md) | Paper and original-source citations and source terms. |
 
-## Collection and row meaning
+## Data collection
 
 The Dryad record describes a 75-day greenhouse experiment at Universiti Putra Malaysia from February to April 2025. Maize was grown in pots containing 20 kg of tropical Ultisol soil, with moisture maintained at approximately 60–70% of water-holding capacity. Treatments were assigned in a completely randomized design with three pots per treatment.
 
@@ -15,7 +18,21 @@ The eight treatments comprised an untreated control, the recommended mineral fer
 
 The supplied plant file contains stem girth, height, leaf chlorophyll estimates, leaf area, cob dimensions and weight, grain number and estimated yield. These are different measurements from the same experimental pots, not separate sets of plants. Soil measurements are deposited separately. The repository provides study methods, but a complete paper was not available for this review.
 
-## Column definitions and source documentation
+## Prepared tables
+
+All source rows and columns are retained. Only CSV formatting and the missing-value marker (NA) are standardised; no biological grouping, exclusions or transformations are applied.
+
+These are the source teaching tables previously linked from this folder; they are retained byte-for-byte in original_data. The original published deposit is cited below.
+
+The ready file(s) can be loaded directly with `readr::read_csv()`. `NA` denotes a missing value, not zero.
+
+## Reproducing preparation
+
+With tidyverse installed, run `Rscript prepare_data.R` from this folder, or give Rscript the path to the script. It reads only the files in `original_data/` and writes the ready CSV file(s) named above. The comments document selections, row summaries, differences and missing-value rules.
+
+The following source definitions also describe unchanged columns in the prepared file. Renamed, suffixed and added columns are defined above. Source filenames here refer to `original_data/`.
+
+## Source column definitions
 
 ## Description of the data and file structure
 
@@ -74,9 +91,8 @@ At the time of submission, these data are not available through any other public
 
 No third-party data licenses apply because the deposited data are original research data produced by the authors.
 
+## Sources
 
-## Sources and citation
+**Paper:** A separate published paper has not been identified; the study is documented in the dataset record below.
 
-See [CITATION.md](CITATION.md) for the paper, original dataset and source terms.
-
-Paper: https://doi.org/10.5061/dryad.63xsj3vhm
+**Original data:** Bakar, Muhammad Wasil Bin Abu, Uddin, Md Kamal, Munna, Md Nayem Hasan, Zaibon, Syaharudin, Roslim, Muhammad Huzaifah, Umor, Noor Azrimi, & Alam, Md Jahangir. (2026). Effects of treated spent mushroom substrate on soil physicochemical properties and growth performance of maize (Zea mays L.) (Version 2) [Dataset]. Dryad. https://doi.org/10.5061/DRYAD.63XSJ3VHM

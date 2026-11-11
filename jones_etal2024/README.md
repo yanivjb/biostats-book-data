@@ -1,35 +1,34 @@
-# What makes a squash bee tolerate heat? — data
+# A crop pollinator’s life in the heat — data
 
-## Project data files
+## Files
 
 | File | Contents |
 |---|---|
-| `Jones-et-al_Raw_Individual_Data.csv` | Project data file. |
-| `Jones-et-al_Raw_Site_Data.csv` | Project data file. |
-| `CITATION.md` | Paper and source-data citations. |
+| [ready_data.csv](ready_data.csv) | Ready-to-load CSV; 420 rows. All 420 individual bee records with farm/sex environmental information already attached using Site and Sex. |
+| [original_data/](original_data/) | Input tables retained before this script’s preparation; see the provenance record in that folder. |
+| [prepare_data.R](prepare_data.R) | Commented R script that reproduces the prepared CSV file(s) from those inputs. |
+| [README.md](README.md) | File structure, rows, column definitions, missing values and preparation. |
+| [CITATION.md](CITATION.md) | Paper and original-source citations and source terms. |
 
-## Collection and row meaning
+## Data collection
 
 Researchers collected 420 adult bees at 14 farms in July–August 2019, with 30 bees per farm. Bees were transported on ice, then warmed from 23°C at 0.25°C per minute until loss of neuromuscular control. Critical thermal maximum (CTmax) is this endpoint temperature, not a measure of survival or reproduction under field conditions. The site table records the environment at each farm, with a separate summary row for each sex.
 
-## Column definitions and source documentation
+## Prepared tables
 
-## Files included
+One row per bee. Farm/sex records were attached using Site AND Sex, with no new or dropped bee rows. Original individual columns retain their names; shared column names from the farm/sex table receive _site_summary. The source definition below applies to each base name. Farm environmental measurements are repeated for bees from the same farm.
 
-| File | Contents |
-| --- | --- |
-| `Jones-et-al_Raw_Individual_Data.csv` | 420 bees: 220 females and 200 males from 14 farms, with mass, heat tolerance and molecular parasite measurements. |
-| `Jones-et-al_Raw_Site_Data.csv` | 28 site–sex summaries: one female and one male row at each of 14 sites, with environmental measurements. |
-| `CITATION.md` | Citation information. |
+These are the source teaching tables previously linked from this folder; they are retained byte-for-byte in original_data. The original published deposit is cited below.
 
-## Reading and linking the data
+The ready file(s) can be loaded directly with `readr::read_csv()`. `NA` denotes a missing value, not zero.
 
-```r
-bees <- readr::read_csv("Jones-et-al_Raw_Individual_Data.csv")
-sites <- readr::read_csv("Jones-et-al_Raw_Site_Data.csv")
-```
+## Reproducing preparation
 
-The site table is unique by **Site and Sex together**, not by Site alone. Joining on Site alone duplicates each bee into two summary rows. Site climate/soil values are repeated for the sexes; The 28 rows contain sex-specific summaries from 14 farms. The site means and standard deviations summarize the individual data and are calculated from the individual bee measurements.
+With tidyverse installed, run `Rscript prepare_data.R` from this folder, or give Rscript the path to the script. It reads only the files in `original_data/` and writes the ready CSV file(s) named above. The comments document selections, row summaries, differences and missing-value rules.
+
+The following source definitions also describe unchanged columns in the prepared file. Renamed, suffixed and added columns are defined above. Source filenames here refer to `original_data/`.
+
+## Source column definitions
 
 ## Collection and row meaning
 
@@ -107,9 +106,8 @@ The parasite columns store different stages of the same molecular assay. Raw CT 
 
 Neither CSV contains blank/`NA` data cells in the current copy. Threshold-adjusted parasite zeros indicate negative detections under the authors’ rule, not missing measurements or demonstrated complete absence. The soil percentages are parts of one composition. Principal components, molecular transformations, mass differences and site summaries are derived variables; their calculation definitions are recorded above. HOBO month labels and the elapsed-time variable need clarification as noted above; this README does not silently correct either file.
 
+## Sources
 
-## Sources and citation
+**Paper:** Jones, L. J., Miller, D. A., Schilder, R. J., & López‐Uribe, M. M. (2024). Body mass, temperature, and pathogen intensity differentially affect critical thermal maxima and their population‐level variation in a solitary bee. Ecology and Evolution, 14(2), e10945. https://doi.org/10.1002/ece3.10945
 
-See [CITATION.md](CITATION.md) for the paper, original dataset and source terms.
-
-Paper: https://doi.org/10.1002/ece3.10945
+**Original data:** Jones, L., Miller, D., Schilder, R., & López-Uribe, M. (2024). Body mass, temperature, and pathogen intensity differentially affect critical thermal maxima and their population-level variation in a solitary bee (Version 4) [Dataset]. Dryad. https://doi.org/10.5061/DRYAD.HHMGQNKP9

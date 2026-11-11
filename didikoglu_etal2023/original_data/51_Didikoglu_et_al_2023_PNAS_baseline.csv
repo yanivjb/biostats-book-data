@@ -1,0 +1,60 @@
+id,age,sex,caffeineGeneralUnit,smokeGeneralUnit,alcoholGeneralFreq,healthSubjRate,chronotypeSubjRate,PSQItotalScore,MCTQmsfsc,IPAQactivityCategory
+1,26-30,Male,4,Never,Special occasions,very good,Rather more an evening type than a morning type,3,6.303571429,Moderate
+2,26-30,Female,4,Never,Special occasions,very good,Definitely a morning type,7,4.75,Moderate
+3,51-55,Male,4,Never,1-2 in a week,very good,Rather more a morning type than an evening type,4,3.166666667,Moderate
+4,31-35,Male,3,Never,Never,good,Rather more a morning type than an evening type,4,4.482142857,Moderate
+5,36-40,Female,3,Never,3-4 in a week,very good,Definitely an evening type,4,5.660714286,High
+6,31-35,Female,3,Never,1-2 in a week,fair,Rather more an evening type than a morning type,4,3.06547619,High
+7,18-25,Male,0,Never,Never,very good,Rather more a morning type than an evening type,2,4.5,High
+8,26-30,Male,2,Never,1-2 in a week,good,Rather more a morning type than an evening type,9,4.035714286,Moderate
+9,26-30,Female,0,Never,Special occasions,good,Rather more an evening type than a morning type,2,5.428571429,Moderate
+10,31-35,Male,NA,Never,Never,good,Definitely an evening type,5,5.75,Moderate
+11,18-25,Female,4,Never,Never,fair,Definitely an evening type,6,6.666666667,High
+12,18-25,Female,2,Never,Special occasions,good,Rather more a morning type than an evening type,3,4.607142857,Moderate
+13,41-45,Female,3,Never,Special occasions,good,Rather more a morning type than an evening type,7,3.071428571,Moderate
+14,46-50,Female,7,Never,Special occasions,very good,Rather more a morning type than an evening type,2,3.404761905,High
+15,18-25,Female,1,Never,Special occasions,very good,Rather more a morning type than an evening type,5,5.154761905,Moderate
+16,26-30,Female,0,Never,Special occasions,good,Rather more a morning type than an evening type,7,3.803571429,Moderate
+17,26-30,Male,0,Never,Special occasions,very good,Definitely a morning type,3,4.261904762,High
+18,26-30,Female,3,Never,1-2 in a week,very good,Definitely a morning type,4,2.107142857,High
+19,46-50,Female,4,Never,3-4 in a week,good,Rather more a morning type than an evening type,4,3.601190476,Moderate
+20,31-35,Female,4,Never,Special occasions,very good,Definitely a morning type,3,2.976190476,High
+21,18-25,Female,2,Never,1-2 in a week,good,Definitely an evening type,4,8.071428571,High
+22,18-25,Female,2,Never,1-2 in a week,good,Rather more a morning type than an evening type,6,5.196428571,High
+23,18-25,Female,3,Never,Never,very good,Rather more an evening type than a morning type,1,4.530952381,High
+24,18-25,Female,1,Never,Never,poor,Definitely an evening type,10,5.053571429,Moderate
+25,18-25,Male,2,1-5,3-4 in a week,good,Definitely an evening type,9,7,Moderate
+26,18-25,Female,0,Never,Never,good,Rather more an evening type than a morning type,6,5.523809524,High
+27,18-25,Female,3,Never,Special occasions,good,Rather more an evening type than a morning type,5,4.702380952,High
+28,18-25,Male,2,Never,1-2 in a week,fair,Rather more a morning type than an evening type,5,3.541666667,High
+29,26-30,Female,2,Never,Special occasions,good,Rather more an evening type than a morning type,8,4.821428571,Moderate
+30,26-30,Female,1,Never,1-2 in a week,good,Rather more a morning type than an evening type,3,2.666666667,Moderate
+31,26-30,Male,5,1-5,Special occasions,good,Rather more an evening type than a morning type,3,6.476190476,High
+32,26-30,Female,9,Never,Never,good,Rather more a morning type than an evening type,2,0.583333333,High
+33,41-45,Male,5,10+,3-4 in a week,good,Rather more a morning type than an evening type,4,3.553571429,High
+34,31-35,Male,0,Never,3-4 in a week,good,Rather more a morning type than an evening type,3,4.226190476,High
+35,31-35,Female,2,Never,Special occasions,very good,Definitely an evening type,3,4.351190476,Moderate
+36,31-35,Female,4,Never,Special occasions,good,Definitely a morning type,8,2.476190476,High
+37,31-35,Female,3,1-5,Never,good,Rather more an evening type than a morning type,4,6.571428571,Moderate
+38,56- 60,Female,6,Never,Special occasions,poor,Rather more an evening type than a morning type,8,2.94047619,High
+39,26-30,Female,7,Never,Never,very good,Rather more an evening type than a morning type,1,5.625,Low
+40,18-25,Female,2,Never,1-2 in a week,good,Definitely a morning type,5,4.285714286,Moderate
+41,18-25,Male,4,Never,1-2 in a week,good,Rather more a morning type than an evening type,4,3.083333333,Moderate
+42,18-25,Female,6,Never,Special occasions,good,Definitely an evening type,8,6.607142857,Moderate
+43,18-25,Male,1,Never,1-2 in a week,good,Rather more a morning type than an evening type,5,6.31547619,Moderate
+44,26-30,Male,0,Never,Special occasions,good,Definitely an evening type,6,4.75,Moderate
+45,26-30,Male,4,Never,3-4 in a week,very good,Definitely an evening type,5,5.541666667,High
+46,18-25,Female,2,Never,3-4 in a week,very good,Rather more a morning type than an evening type,4,3.928571429,High
+47,31-35,Female,5,Never,Never,fair,Definitely an evening type,5,6.220238095,Moderate
+48,26-30,Male,4,5-10,1-2 in a week,good,Rather more a morning type than an evening type,6,8.25,High
+49,26-30,Male,2,Never,Never,fair,Rather more an evening type than a morning type,3,6.416666667,Moderate
+50,31-35,Female,4,Never,Never,good,Definitely an evening type,3,4.898809524,High
+51,26-30,Male,4,1-5,1-2 in a week,fair,Rather more a morning type than an evening type,8,3.767857143,High
+52,18-25,Female,1,Never,Special occasions,good,Rather more a morning type than an evening type,6,4.386904762,Moderate
+53,26-30,Female,2,Never,1-2 in a week,very good,Rather more a morning type than an evening type,4,3.821428571,High
+54,26-30,Female,4,Never,1-2 in a week,good,Rather more a morning type than an evening type,3,3.160714286,High
+55,18-25,Female,0,Never,Never,very good,Rather more an evening type than a morning type,8,4.339285714,High
+56,18-25,Female,0,Never,1-2 in a week,good,Rather more a morning type than an evening type,6,5.702380952,High
+57,41-45,Female,2,Never,Never,good,Rather more a morning type than an evening type,3,1.696428571,High
+58,18-25,Male,0,Never,1-2 in a week,very good,Definitely an evening type,3,7.726190476,Moderate
+59,18-25,Female,2,5-10,1-2 in a week,good,Definitely an evening type,11,7.035714286,Moderate

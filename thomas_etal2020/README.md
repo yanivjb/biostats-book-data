@@ -1,37 +1,34 @@
-# How do frog ecology and body size relate to eye size? — data
+# Seeing the world through a frog’s eyes — data
 
-## Project data files
+## Files
 
 | File | Contents |
 |---|---|
-| `Thomas_museum_specimens.csv` | Project data file. |
-| `Thomas_species_traits.csv` | Project data file. |
-| `CITATION.md` | Paper and source-data citations. |
+| [ready_data.csv](ready_data.csv) | Ready-to-load CSV; 220 rows. Species means of eye, corneal and body measurements for all 220 species, specimen counts and ecological categories already attached. |
+| [original_data/](original_data/) | Input tables retained before this script’s preparation; see the provenance record in that folder. |
+| [prepare_data.R](prepare_data.R) | Commented R script that reproduces the prepared CSV file(s) from those inputs. |
+| [README.md](README.md) | File structure, rows, column definitions, missing values and preparation. |
+| [CITATION.md](CITATION.md) | Paper and original-source citations and source terms. |
 
-## Collection and row meaning
+## Data collection
 
-Researchers measured 640 preserved adult museum specimens representing 220 frog species and 55 families, with one to seven specimens per species. The specimen CSV includes left and right eye diameter, corneal diameter, snout–vent length and preserved mass. Some measurements are missing, and sex is unknown for most specimens. The second CSV contains ecological categories compiled once for each of the 220 species. Left and right eyes were measured on each specimen.
+Researchers measured 640 preserved adult museum specimens representing 220 frog species and 55 families, with one to seven specimens per species. The source specimen table includes left and right eye diameter, corneal diameter, snout–vent length and preserved mass. Some measurements are missing, and sex is unknown for most specimens. A separate source table contains ecological categories compiled once for each of the 220 species. Left and right eyes were measured on each specimen.
 
-## Column definitions and source documentation
+## Prepared tables
 
-## Files included
+One row per species (Genus AND Species). eye_mm_mean and cornea_mm_mean first average the available left/right diameters within each specimen, then average available specimen values within species. SVL_mm_mean and Mass_g_mean average available specimen measurements. The corresponding _n columns count specimens with observed values for that measurement; specimens counts all source specimens. All-missing means are NA. Ecological categories and their source references were joined by Genus AND Species; Unknown remains a recorded category. Taxonomy and ecological column definitions below apply unchanged. No species were excluded for missing data.
 
-| File | Contents |
-| --- | --- |
-| `Thomas_museum_specimens.csv` | 640 preserved adult specimens from 220 species and 55 families. One row per museum specimen. |
-| `Thomas_species_traits.csv` | 220 species, with ecological categories and references. One row per species. |
-| `CITATION.md` | Citation information. |
+These are the source teaching tables previously linked from this folder; they are retained byte-for-byte in original_data. The original published deposit is cited below.
 
-The fresh-specimen validation dataset, broader vertebrate dataset and reference PDFs from the original deposit are not included. Full source citations for ecological classifications are available in the reference PDF on Dryad; the CSV retains abbreviated source references.
+The ready file(s) can be loaded directly with `readr::read_csv()`. `NA` denotes a missing value, not zero.
 
-## Reading and linking the data
+## Reproducing preparation
 
-```r
-specimens <- readr::read_csv("Thomas_museum_specimens.csv")
-traits <- readr::read_csv("Thomas_species_traits.csv")
-```
+With tidyverse installed, run `Rscript prepare_data.R` from this folder, or give Rscript the path to the script. It reads only the files in `original_data/` and writes the ready CSV file(s) named above. The comments document selections, row summaries, differences and missing-value rules.
 
-Use `Genus` and `Species` together to match the two tables. These keys are unique in the current traits table and cover all 220 species in the specimen table. Each specimen receives the ecological record for its species. The matching key is the combination of `Genus` and `Species`.
+The following source definitions also describe unchanged columns in the prepared file. Renamed, suffixed and added columns are defined above. Source filenames here refer to `original_data/`.
+
+## Source column definitions
 
 ## Museum specimen columns
 
@@ -88,9 +85,8 @@ Use `Genus` and `Species` together to match the two tables. These keys are uniqu
 
 The morphology file has 20 missing masses and some missing eye/cornea dimensions. Sex is unavailable for 611 specimens. Eye sides are paired within a specimen. Between one and seven specimens represent a species. Species were chosen to span taxonomic/ecological diversity rather than randomly sampled from all frogs; preserved tissues can differ from fresh tissues. Species share evolutionary history, and multiple specimens from one species share the same ecology.
 
+## Sources
 
-## Sources and citation
+**Paper:** Thomas, K. N., Gower, D. J., Bell, R. C., Fujita, M. K., Schott, R. K., & Streicher, J. W. (2020). Eye size and investment in frogs and toads correlate with adult habitat, activity pattern and breeding ecology. Proceedings of the Royal Society B: Biological Sciences, 287(1935), 20201393. https://doi.org/10.1098/rspb.2020.1393
 
-See [CITATION.md](CITATION.md) for the paper, original dataset and source terms.
-
-Paper: https://doi.org/10.1098/rspb.2020.1393
+**Original data:** Thomas, K. N., Gower, D. J., Bell, R. C., Fujita, M. K., Schott, R. K., & Streicher, J. W. (2020). Eye size and investment in frogs and toads correlate with adult habitat, activity pattern and breeding ecology (Version 5) [Dataset]. Dryad. https://doi.org/10.5061/DRYAD.1ZCRJDFQ7

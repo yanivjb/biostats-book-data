@@ -1,17 +1,34 @@
-# Zebra finch telomeres before and after breeding — data
+# The lasting imprint of a noisy early life — data
 
-## Project data files
+## Files
 
 | File | Contents |
 |---|---|
-| `ade5868_Data_S1_Breeding_Telo_Ad.csv` | Project data file. |
-| `CITATION.md` | Paper and source-data citations. |
+| [ready_data.csv](ready_data.csv) | Ready-to-load CSV; 40 rows. Adult telomere measurements before and after breeding, with early-life sound treatments and breeding information for 40 zebra finches. |
+| [original_data/](original_data/) | Input tables retained before this script’s preparation; see the provenance record in that folder. |
+| [prepare_data.R](prepare_data.R) | Commented R script that reproduces the prepared CSV file(s) from those inputs. |
+| [README.md](README.md) | File structure, rows, column definitions, missing values and preparation. |
+| [CITATION.md](CITATION.md) | Paper and original-source citations and source terms. |
 
-## Collection and row meaning
+## Data collection
 
 Zebra finches experienced traffic noise or zebra finch song during the last five days before hatching, during days 4–13 after hatching, or at both stages. Playbacks had comparable intensity, 65 dB. Nestlings returned to undisturbed parents during the day, allowing researchers to manipulate offspring sound exposure without exposing their parents. As adults, experimental birds bred with unmanipulated partners. This file follows 40 birds from the four combinations of prenatal and postnatal sound treatment. Each bird has adult telomere measurements before and after breeding. These 40 adults were retained from the larger developmental experiment; the four treatment groups contain 9–11 birds each.
 
-## Column definitions and source documentation
+## Prepared tables
+
+All source rows and columns are retained. Only CSV formatting and the missing-value marker (NA) are standardised; no biological grouping, exclusions or transformations are applied.
+
+These are the source teaching tables previously linked from this folder; they are retained byte-for-byte in original_data. The original published deposit is cited below.
+
+The ready file(s) can be loaded directly with `readr::read_csv()`. `NA` denotes a missing value, not zero.
+
+## Reproducing preparation
+
+With tidyverse installed, run `Rscript prepare_data.R` from this folder, or give Rscript the path to the script. It reads only the files in `original_data/` and writes the ready CSV file(s) named above. The comments document selections, row summaries, differences and missing-value rules.
+
+The following source definitions also describe unchanged columns in the prepared file. Renamed, suffixed and added columns are defined above. Source filenames here refer to `original_data/`.
+
+## Source column definitions
 
 ## Description of the data and file structure
 
@@ -166,9 +183,8 @@ R. PlateID : Identifier of the assay plate
 
 Cells with NA = not applicable
 
+## Sources
 
-## Sources and citation
+**Paper:** Meillère, A., Buchanan, K. L., Eastwood, J. R., & Mariette, M. M. (2024). Pre- and postnatal noise directly impairs avian development, with fitness consequences. Science, 384(6694), 475-480. https://doi.org/10.1126/science.ade5868
 
-See [CITATION.md](CITATION.md) for the paper, original dataset and source terms.
-
-Paper: https://doi.org/10.1126/science.ade5868
+**Original data:** Meillère, A., Buchanan, K., Eastwood, J., & Mariette, M. (2024). Pre- and postnatal noise directly impairs avian development, with fitness consequences (Version 4) [Dataset]. Dryad. https://doi.org/10.5061/DRYAD.47D7WM3MK

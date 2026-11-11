@@ -1,0 +1,25 @@
+treatment.id,plant.id,prey,uv,set,species,area_mm2,area_cm2,dry_weight_g,comment
+HA1F,X2,Arthropods,nonsterile,1,N. hemsleyana,9890.175,98.90174999999999,0.4486,
+HF1F,X9,Faeces,nonsterile,1,N. hemsleyana,5951.946,59.51946,0.3416,
+HAUV1F,X14,Arthropods,sterile,1,N. hemsleyana,1689.199,16.89199,0.1147,"L-3 was not harvested and it's leaf area not determined as it was too small. Therefore L-2 harvested, though this leaf is quite small too. A spare sample from the third youngest leaf (ID: HAUV1F-1 (L-1)) is available (0.485g; field: 0.54g) which can be used if sample weight is insufficient for analysis."
+HFUV1F,X32,Faeces,sterile,1,N. hemsleyana,7008.811,70.08811,0.3406,
+HF2F,X5,Faeces,nonsterile,2,N. hemsleyana,5571.319,55.713190000000004,NA,"leaf completely damaged, therefore excluded from nutrient analysis. Dry weigth measured in field: 0.84g"
+HFUV2F,X42,Faeces,sterile,2,N. hemsleyana,7833.341,78.33341,0.5126,
+HAUV2F,X19,Arthropods,sterile,2,N. hemsleyana,4002.693,40.02693,0.2353,
+HA2F,X43,Arthropods,nonsterile,2,N. hemsleyana,12936.033,129.36033,0.6527,
+HAUV3F,X47,Arthropods,sterile,3,N. hemsleyana,11179.956,111.79956,0.5302,
+HF3F,X18,Faeces,nonsterile,3,N. hemsleyana,12553.598,125.53598,0.6344,
+HFUV3F,X48,Faeces,sterile,3,N. hemsleyana,8353.971,83.53971,0.5195,
+HA3F,X40,Arthropods,nonsterile,3,N. hemsleyana,5132.257,51.32257,0.3621,
+HA4F,X59,Arthropods,nonsterile,4,N. hemsleyana,8699.599,86.99599,0.4603,
+HAUV4F,X61,Arthropods,sterile,4,N. hemsleyana,8303.203,83.03202999999999,0.583,
+HF4F,X57,Faeces,nonsterile,4,N. hemsleyana,14348.006,143.48005999999998,0.82,
+HFUV4F,X56,Faeces,sterile,4,N. hemsleyana,8875.85,88.7585,0.581,
+HFUV5F,X35,Faeces,sterile,5,N. hemsleyana,6522.283,65.22283,0.268,
+HF5F,X16,Faeces,nonsterile,5,N. hemsleyana,5210.835,52.10835,0.343,
+HAUV5F,X36,Arthropods,sterile,5,N. hemsleyana,7627.514,76.27514000000001,0.2593,
+HA5F,X70,Arthropods,nonsterile,5,N. hemsleyana,11610.469,116.10468999999999,0.6485,
+HFUV6F,X73,Faeces,sterile,6,N. hemsleyana,10677.305,106.77305,0.581,
+HAUV6F,X71,Arthropods,sterile,6,N. hemsleyana,5307.803,53.07803,0.4185,
+HA6F,X74,Arthropods,nonsterile,6,N. hemsleyana,6600.449,66.00448999999999,0.4902,
+HF6F,X54,Faeces,nonsterile,6,N. hemsleyana,NA,0,0.3677,Area measurement erroneous (32608.524mm2)! Correct value couldn’t be reconstructed -> exclude.

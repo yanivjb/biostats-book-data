@@ -1,21 +1,38 @@
-# Mummichog heat tolerance at two temperatures — data
+# Coastal fish in a warming world — data
 
-## Project data files
+## Files
 
 | File | Contents |
 |---|---|
-| `Drown_physiological_plasticity_2021.csv` | Project data file. |
-| `CITATION.md` | Paper and source-data citations. |
+| [ready_data.csv](ready_data.csv) | Ready-to-load CSV; 144 rows. One row per tagged fish, with both acclimation records, their recorded labels and the 28°C minus 12°C heat-tolerance difference. |
+| [original_data/](original_data/) | Input tables retained before this script’s preparation; see the provenance record in that folder. |
+| [prepare_data.R](prepare_data.R) | Commented R script that reproduces the prepared CSV file(s) from those inputs. |
+| [README.md](README.md) | File structure, rows, column definitions, missing values and preparation. |
+| [CITATION.md](CITATION.md) | Paper and original-source citations and source terms. |
 
-## Collection and row meaning
+## Data collection
 
 Fish were collected in September 2018 from three New Jersey sites: one warmed by power-station effluent and two nearby reference sites. Summer habitat temperatures averaged approximately 32°C at the effluent site and 28°C at the references. Fish were individually tagged, held under common laboratory conditions for more than six weeks, and given a simulated winter before acclimation treatments.
 
 Fish were acclimated to either 12°C or 28°C for at least four weeks. Whole-animal oxygen consumption was measured, followed one week later by a heat-tolerance test. Fish were then acclimated to the other temperature and tested again. Starting-temperature groups contained fish of both sexes from all populations. Fish identity, population, acclimation group, measurement dates and body mass are recorded.
 
-Heat tolerance was the water temperature at which a fish lost coordinated movement for at least five seconds during warming at 0.3°C per minute. Fish recovered after testing, but some died or were removed for declining condition; a probe-calibration problem also caused missing heat-tolerance values. The supplied file has 250 records from 144 tagged fish, with availability varying by trait.
+Heat tolerance was the water temperature at which a fish lost coordinated movement for at least five seconds during warming at 0.3°C per minute. Fish recovered after testing, but some died or were removed for declining condition; a probe-calibration problem also caused missing heat-tolerance values. The source table has 250 records from 144 tagged fish, with availability varying by trait.
 
-## Column definitions and source documentation
+## Prepared tables
+
+One row per Fish_ID. Source columns have _12 or _28 suffixes for the assigned acclimation temperature (degrees C). Both original sets of labels remain. Unsuffixed Population, Sex, Acclimation_Order and Habitat_temp are copied only when recorded nonmissing values agree, otherwise NA. label_conflict identifies disagreement in population, sex or starting order (three fish). CTMax_change_28_minus_12 = CTMax_28 minus CTMax_12, in degrees C; an absent measurement gives NA. No fish were removed.
+
+These are the source teaching tables previously linked from this folder; they are retained byte-for-byte in original_data. The original published deposit is cited below.
+
+The ready file(s) can be loaded directly with `readr::read_csv()`. `NA` denotes a missing value, not zero.
+
+## Reproducing preparation
+
+With tidyverse installed, run `Rscript prepare_data.R` from this folder, or give Rscript the path to the script. It reads only the files in `original_data/` and writes the ready CSV file(s) named above. The comments document selections, row summaries, differences and missing-value rules.
+
+The following source definitions also describe unchanged columns in the prepared file. Renamed, suffixed and added columns are defined above. Source filenames here refer to `original_data/`.
+
+## Source column definitions
 
 Please reference the notes at the end of this README for descriptions of abbreviations used, units for trait measures, and important information about metadata columns and missing data.
 
@@ -62,12 +79,12 @@ Whole animal metabolism, substrate specific cardiac metabolic rate and critical 
 | Additional Notes: For cardiac metabolic rate, a few individuals do not have heart mass data or cardiac metabolic rate for some substrates due to technical error. Additionally, due to a temperature probe calibration issue, 17 individuals also do not have critical thermal maximum data at a single acclimation temperature. Variation in sample size across traits is primarily due to post critical thermal maximum survival with a few individuals also removed from the experiment due to loss of body condition over time.  |  |  |
 
 
-## Sources and citation
-
-See [CITATION.md](CITATION.md) for the paper, original dataset and source terms.
-
-Paper: https://doi.org/10.1098/rsos.210440
-
 ## Record structure
 
 Three Fish_ID values have differing labels between their temperature records: G2G3O5 (Sex), G2R5R6 (Population), and G3G4R5 (Population, Sex and Acclimation_Order). The source labels are retained as recorded.
+
+## Sources
+
+**Paper:** Drown, M. K., DeLiberto, A. N., Ehrlich, M. A., Crawford, D. L., & Oleksiak, M. F. (2021). Interindividual plasticity in metabolic and thermal tolerance traits from populations subjected to recent anthropogenic heating. Royal Society Open Science, 8(7), 210440. https://doi.org/10.1098/rsos.210440
+
+**Original data:** Drown, Melissa, DeLiberto, Amanda, Ehrlich, Moritz, Crawford, Douglas, & Oleksiak, Marjorie. (2021). Interindividual plasticity in metabolic and thermal tolerance traits from populations subjected to recent anthropogenic heating (Version 4) [Dataset]. Dryad. https://doi.org/10.5061/DRYAD.0GB5MKM0W

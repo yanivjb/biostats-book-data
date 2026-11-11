@@ -1,17 +1,34 @@
-# Urban vs rural woodlouse heat tolerance — data
+# Woodlice facing city temperatures — data
 
-## Project data files
+## Files
 
 | File | Contents |
 |---|---|
-| `isopod_thermal_tolerance.csv` | Project data file. |
-| `CITATION.md` | Paper and source-data citations. |
+| [ready_data.csv](ready_data.csv) | Ready-to-load CSV; 20 rows. One row per colony with separate heat- and cold-tolerance means, animal counts, mean ages and masses, habitat, source site and rearing temperature. |
+| [original_data/](original_data/) | Input tables retained before this script’s preparation; see the provenance record in that folder. |
+| [prepare_data.R](prepare_data.R) | Commented R script that reproduces the prepared CSV file(s) from those inputs. |
+| [README.md](README.md) | File structure, rows, column definitions, missing values and preparation. |
+| [CITATION.md](CITATION.md) | Paper and original-source citations and source terms. |
 
-## Collection and row meaning
+## Data collection
 
-Researchers collected parents from urban and rural sites around Cleveland in 2018 and reared their offspring at daytime temperatures of 21°C or 29°C, with nights 5°C cooler and high humidity in both treatments. Offspring remained in shared containers until testing. The teaching file contains 322 animals from 20 colonies representing 11 source sites, a subset of the broader collection. Each animal underwent either a heat-limit or cold-limit test. Colony IDs identify animals reared together; animal numbers are reused within colonies.
+Researchers collected parents from urban and rural sites around Cleveland in 2018 and reared their offspring at daytime temperatures of 21°C or 29°C, with nights 5°C cooler and high humidity in both treatments. Offspring remained in shared containers until testing. The source animal table contains 322 animals from 20 colonies representing 11 source sites, a subset of the broader collection. Each animal underwent either a heat-limit or cold-limit test. Colony IDs identify animals reared together; animal numbers are reused within colonies.
 
-## Column definitions and source documentation
+## Prepared tables
+
+One row per colony, retaining source site, habitat, rearing treatment (degrees C) and isa. _ctmax and _ctmin identify separate groups of heat-tested and cold-tested animals. mean_tolerance_C is the arithmetic mean endpoint in degrees C, animals counts source rows, measured_tolerance counts observed endpoints, mean_age_days is age in days, and mean_initial_weight_g is initial mass in grams. Means omit missing values; all-missing means are NA. Source animal records remain in original_data.
+
+These are the source teaching tables previously linked from this folder; they are retained byte-for-byte in original_data. The original published deposit is cited below.
+
+The ready file(s) can be loaded directly with `readr::read_csv()`. `NA` denotes a missing value, not zero.
+
+## Reproducing preparation
+
+With tidyverse installed, run `Rscript prepare_data.R` from this folder, or give Rscript the path to the script. It reads only the files in `original_data/` and writes the ready CSV file(s) named above. The comments document selections, row summaries, differences and missing-value rules.
+
+The following source definitions also describe unchanged columns in the prepared file. Renamed, suffixed and added columns are defined above. Source filenames here refer to `original_data/`.
+
+## Source column definitions
 
 isopod_thermal tolerance
 
@@ -30,9 +47,8 @@ combined_age_body_mass
 
 This dataset contains 5 columns, including "colonyID", "age.days", "initial.weight", "habitat", and "treatment". Each row of the dataset represents the response of an individual isopod. colonyID – a unique but arbitrary alpha-numeric identifier for each group of isopods reared together in the lab (i.e., a replicate); multiple individual isopods were tested from the same replicate. age.days - the number of days an individual isopod spent in a temperature rearing treatment, that is, the number of days between said isopod's birth and its tolerance trial. initial.weight - mass in g of each individual isopod just prior to tolerance trials. habitat - a categorical variable denoting whether the individual F1 isopod's parents derived from an urban or rural field collection site. treatment - a categorical variable denoting whether an individual isopod was reared at a 21 or 29-degree temperature rearing treatment. Values are presented in units of degrees Celsius
 
+## Sources
 
-## Sources and citation
+**Paper:** Yilmaz, A. R., Diamond, S. E., & Martin, R. A. (2021). Evidence for the evolution of thermal tolerance, but not desiccation tolerance, in response to hotter, drier city conditions in a cosmopolitan, terrestrial isopod. Evolutionary Applications, 14(1), 12-23. https://doi.org/10.1111/eva.13052
 
-See [CITATION.md](CITATION.md) for the paper, original dataset and source terms.
-
-Paper: https://doi.org/10.1111/eva.13052
+**Original data:** Yilmaz, A. R., Diamond, S., & Martin, R. (2020). Data from: Evidence for the evolution of thermal tolerance but not desiccation tolerance in response to hotter, drier city conditions in a cosmopolitan, terrestrial isopod (Version 1) [Dataset]. Dryad. https://doi.org/10.5061/DRYAD.R4XGXD297

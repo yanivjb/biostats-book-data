@@ -1,17 +1,34 @@
-# Cane toads and lungworms from different sites — data
+# The costs of a lungworm invasion for cane toads — data
 
-## Project data files
+## Files
 
 | File | Contents |
 |---|---|
-| `Crane_etal2024_cane_toads.csv` | Project data file. |
-| `CITATION.md` | Paper and source-data citations. |
+| [ready_data.csv](ready_data.csv) | Ready-to-load CSV; 304 rows. Growth, food-consumption and organ measurements from cane toads in the lungworm-exposure experiment. |
+| [original_data/](original_data/) | Input tables retained before this script’s preparation; see the provenance record in that folder. |
+| [prepare_data.R](prepare_data.R) | Commented R script that reproduces the prepared CSV file(s) from those inputs. |
+| [README.md](README.md) | File structure, rows, column definitions, missing values and preparation. |
+| [CITATION.md](CITATION.md) | Paper and original-source citations and source terms. |
 
-## Collection and row meaning
+## Data collection
 
 Researchers bred toads from ten parental source sites, producing twelve families under laboratory conditions. At roughly six months old, 227 offspring were exposed to 50 lungworm larvae from one of six parasite sources; 77 received sham exposure. Toads were then housed individually, food consumption was monitored, and growth and organ masses were measured over approximately four months. At dissection, 100 exposed toads had adult worms.
 
-## Column definitions and source documentation
+## Prepared tables
+
+All source rows and columns are retained. Only CSV formatting and the missing-value marker (NA) are standardised; no biological grouping, exclusions or transformations are applied.
+
+These are the source teaching tables previously linked from this folder; they are retained byte-for-byte in original_data. The original published deposit is cited below.
+
+The ready file(s) can be loaded directly with `readr::read_csv()`. `NA` denotes a missing value, not zero.
+
+## Reproducing preparation
+
+With tidyverse installed, run `Rscript prepare_data.R` from this folder, or give Rscript the path to the script. It reads only the files in `original_data/` and writes the ready CSV file(s) named above. The comments document selections, row summaries, differences and missing-value rules.
+
+The following source definitions also describe unchanged columns in the prepared file. Renamed, suffixed and added columns are defined above. Source filenames here refer to `original_data/`.
+
+## Source column definitions
 
 # Data from: Effect of parasite infection and invasion history on feeding, growth and energy allocation of cane toads
 
@@ -92,9 +109,8 @@ Missing data code: na
 | SVL Growth rate (mm/day) | daily growth rate in snout-vent length during study |
 | Total food eaten (g) | amount of food consumed during study |
 
+## Sources
 
-## Sources and citation
+**Paper:** Crane, H. R., Rollins, L. A., Shine, R., & Brown, G. P. (2025). Effect of parasite infection and invasion history on feeding, growth, and energy allocation of cane toads. Biological Journal of the Linnean Society, 144(4), blae054. https://doi.org/10.1093/biolinnean/blae054
 
-See [CITATION.md](CITATION.md) for the paper, original dataset and source terms.
-
-Paper: https://doi.org/10.1093/biolinnean/blae054
+**Original data:** Brown, G. P. (2024). Data from: Effect of parasite infection and invasion history on feeding, growth and energy allocation of cane toads (Version 5) [Dataset]. Dryad. https://doi.org/10.5061/DRYAD.WM37PVMWD
