@@ -43,3 +43,7 @@ OutlierNote:  note of outlier BMR value for one individual
 See [CITATION.md](CITATION.md) for the paper, original dataset and source terms.
 
 Paper: https://doi.org/10.3389/fevo.2019.00381
+
+## CSV formatting
+
+Trailing empty OutlierNote fields are written explicitly in the teaching CSV; the recorded measurements and note text are unchanged.
