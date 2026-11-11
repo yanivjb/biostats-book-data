@@ -1,10 +1,17 @@
-# Elephant seal mothers and pups
+# How do maternal size and age relate to elephant seal pup growth? — data
 
-**Paper:** Holser et al. (2021). Density-dependent effects on reproductive output in a capital breeding carnivore, the northern elephant seal. Proceedings of the Royal Society B. https://doi.org/10.1098/rspb.2021.1258
+## Project data files
 
-**Original data:** [10.7291/D1K099](https://doi.org/10.7291/D1K099)
+| File | Contents |
+|---|---|
+| `WeanMass_BirthMass_AdultMass_Dryad.csv` | Project data file. |
+| `CITATION.md` | Paper and source-data citations. |
 
-This README describes the teaching files in `holser_etal2021`. It adapts the authors’ documentation to the files present in this folder, checked 9 November 2026. File counts and notes about the teaching CSVs come from inspecting those files; they are not additional statements by the original authors. Cite both the paper and the original dataset. `CITATION.md` provides citation information; the paper link above identifies the published article where an older citation file is outdated.
+## Collection and row meaning
+
+Researchers studied breeding females and pups at Año Nuevo, California, during 1991–2019. These records come from selected mother–pup pairs involved in physiological and instrumentation studies, rather than a random sample of all breeding females. The file contains 98 mother–year records from 86 mothers. Arrival and birth masses were reconstructed from measurements and life-stage corrections; those calculations use some of the same recorded quantities.
+
+## Column definitions and source documentation
 
 ## Files included
 
@@ -14,7 +21,7 @@ This README describes the teaching files in `holser_etal2021`. It adapts the aut
 | `WeanMass_BirthMass_AdultMass_Dryad.csv` | 98 records from 86 mothers, including maternal age and complete maternal-arrival and pup-weaning masses. |
 | `CITATION.md` | Citation information. |
 
-All 98 mother–year combinations in the second file also occur in the first. The files are overlapping selections with different columns and numerical precision, not independent datasets to append. The second file retains decimal mass values where the broader file often contains rounded values.
+All 98 mother–year combinations in the second file also occur in the first. The files are overlapping selections with different columns and numerical precision, overlapping selections of records. The second file retains decimal mass values where the broader file often contains rounded values.
 
 ## Reading the data
 
@@ -41,8 +48,15 @@ Data were collected at Año Nuevo, California, through physiological studies and
 | `PupSex` | `F` = female; `M` = male. |
 | `WeanMass` | Pup mass at weaning, kg, with fasting corrections where applicable in the study. |
 
-## Missing values and interpretation
+## Missing values and recorded calculations
 
-`NA` denotes missing information. The 98-row file has 9 missing pup ages, 9 missing estimated birth masses and 8 missing pup sexes; maternal age, arrival mass and weaning mass are complete. The broader file also has missing mother IDs and many missing weaning masses. Some broader-file `PupMass` entries are zero; these require clarification rather than automatic interpretation as plausible live-pup masses or conversion to missing data.
+`NA` denotes missing information. The 98-row file has 9 missing pup ages, 9 missing estimated birth masses and 8 missing pup sexes; maternal age, arrival mass and weaning mass are complete. The broader file also has missing mother IDs and many missing weaning masses. Some broader-file `PupMass` entries are zero; the source does not identify whether these are missing-value codes.
 
-Use `AnimalID` together with `BreedYear` to identify mother–year records, checking for duplicate keys before joining. Missing IDs do not identify a single shared mother. Repeated mothers and shared years limit independence. Reconstructed maternal arrival and pup birth masses can share inputs and errors. No colony-density variable is included in either CSV. The other Dryad file, `AdultFemale_Skipped_Dryad.csv`, is not present in this folder and is not documented here.
+Use `AnimalID` together with `BreedYear` to identify mother–year records, checking for duplicate keys before joining. Missing IDs do not identify a single shared mother. Some mother IDs appear in more than one breeding year. Reconstructed maternal arrival and pup birth masses use some of the same recorded inputs. No colony-density variable is included in either CSV. The other Dryad file, `AdultFemale_Skipped_Dryad.csv`, is not present in this folder and is not documented here.
+
+
+## Sources and citation
+
+See [CITATION.md](CITATION.md) for the paper, original dataset and source terms.
+
+Paper: https://doi.org/10.1098/rspb.2021.1258

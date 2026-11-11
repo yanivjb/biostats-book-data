@@ -1,19 +1,21 @@
-# result_3.2.csv
+# Maize and spent mushroom substrate — data
 
-**Paper:** Effects of treated spent mushroom substrate on soil physicochemical properties and growth performance of maize (manuscript)  
-https://doi.org/10.5061/dryad.63xsj3vhm
+## Project data files
 
-**Data:** https://doi.org/10.5061/dryad.63xsj3vhm
+| File | Contents |
+|---|---|
+| `result_3.2.csv` | Project data file. |
+| `CITATION.md` | Paper and source-data citations. |
 
-This folder contains `result_3.2.csv`, made from `result_3.2.xlsx` in the original deposit. Only the file format changed (Excel to CSV, so it loads with `read_csv()`); the values are the authors'. Please cite both the paper and the dataset (see CITATION.md).
+## Collection and row meaning
 
-_Below: the authors' README (README.md), cut by hand to the section on this file_
+The Dryad record describes a 75-day greenhouse experiment at Universiti Putra Malaysia from February to April 2025. Maize was grown in pots containing 20 kg of tropical Ultisol soil, with moisture maintained at approximately 60–70% of water-holding capacity. Treatments were assigned in a completely randomized design with three independent pots per treatment.
 
----
+The eight treatments comprised an untreated control, the recommended mineral fertilizer containing nitrogen, phosphorus and potassium (NPK), and six combinations of full recommended NPK with one of the two substrate types at 50%, 75% or 100% of the substrate rate. There were 24 pots. Treatment and pot-replication labels are recorded; replication labels repeat across treatments.
 
-# Effects of treated spent mushroom substrate on soil physicochemical properties and growth performance of maize (*Zea mays* L.)
+The supplied plant file contains stem girth, height, leaf chlorophyll estimates, leaf area, cob dimensions and weight, grain number and estimated yield. These are different measurements from the same experimental pots, not separate sets of plants. Soil measurements are deposited separately. The repository provides study methods, but a complete paper was not available for this review.
 
-Dataset DOI: [10.5061/dryad.63xsj3vhm](https://doi.org/10.5061/dryad.63xsj3vhm)
+## Column definitions and source documentation
 
 ## Description of the data and file structure
 
@@ -64,18 +66,6 @@ This file contains replicate-level measurements of maize growth and yield charac
 
 There are no blank cells, “NA” entries, or other missing-value codes in either data file. Numeric zero values are retained as recorded observations and are not used to indicate missing data.
 
-## Software and statistical analysis
-
-The dataset is provided in Microsoft Excel `.xlsx` format and can be viewed using the free and open-source software **LibreOffice Calc**, or any spreadsheet program that supports `.xlsx` files.
-
-Statistical analyses were conducted using **R version 4.3.1** and **JASP version 0.17.2**. The experiment followed a completely randomized design with eight treatments and three replications. Each soil physicochemical, maize growth, and yield variable was analyzed separately using one-way analysis of variance, with treatment included as the explanatory factor.
-
-Before ANOVA, the data and model residuals were examined for normality and homogeneity of variance. When the treatment effect was significant at the 5 % probability level, **p ≤ 0.05**, Tukey’s Honest Significant Difference test was used for pairwise comparisons among treatment means. Treatments assigned the same letter were considered not significantly different, whereas treatments with different letters were considered significantly different.
-
-The principal analyses can be reproduced in R using functions from the base **`stats`** package, including `aov()` for one-way ANOVA and `TukeyHSD()` for post-hoc comparisons. JASP was used through its graphical interface to conduct or verify the statistical analyses and review the outputs.
-
-No custom R scripts, macros, software project files, or executable code are included in this dataset submission.
-
 ## Access information
 
 At the time of submission, these data are not available through any other publicly accessible repository or website. The data were generated directly by the authors during the greenhouse pot experiment and were not derived from any external dataset or secondary data source.
@@ -83,3 +73,10 @@ At the time of submission, these data are not available through any other public
 The complete dataset will be publicly accessible through Dryad after publication of the dataset record. The final Dryad DOI should be used as the permanent link to the data once it has been assigned.
 
 No third-party data licenses apply because the deposited data are original research data produced by the authors.
+
+
+## Sources and citation
+
+See [CITATION.md](CITATION.md) for the paper, original dataset and source terms.
+
+Paper: https://doi.org/10.5061/dryad.63xsj3vhm

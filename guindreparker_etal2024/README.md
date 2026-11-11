@@ -1,23 +1,23 @@
-# egg.csv
+# Urban and rural starling eggs — data
 
-**Paper:** Guindre-Parker et al. 2024. No difference in reproductive investment or success across urban and rural breeding pairs in an urban-adapted songbird. Ornithology  
-https://par.nsf.gov/servlets/purl/10566208
+## Project data files
 
-**Data:** https://doi.org/10.5061/dryad.3n5tb2rt7
+| File | Contents |
+|---|---|
+| `egg.csv` | Project data file. |
+| `CITATION.md` | Paper and source-data citations. |
 
-This folder contains only `egg.csv` from the original deposit (downloaded 2026-11-05, unmodified). Please cite both the paper and the dataset.
+## Collection and row meaning
 
-_Below: the authors' README (README.md), trimmed to the section on this file_
+Researchers monitored nest boxes at four sites around Atlanta, Georgia, during 2020–2023: two urban and two rural sites. Site coverage changed over time: one rural site replaced another after renovations, and the second urban site was added in 2021. Urbanization was classified from surrounding vegetation, buildings and impervious surfaces; it was not experimentally assigned.
 
----
+Nest boxes were checked every few days during the March–June breeding season. Eggs were marked to follow laying, measured for length and width, and weighed. The supplied file contains 552 egg records with nesting identifiers, nesting-attempt number, lay date, egg age at measurement and clutch size. Multiple eggs belong to a nesting group; birds may also breed again during a season. Egg numbers are reused within nests, so they are not global individual identifiers.
 
-# No difference in reproductive investment or success across urban and rural breeding pairs in an urban-adapted songbird
-
-[https://doi.org/10.5061/dryad.3n5tb2rt7](https://doi.org/10.5061/dryad.3n5tb2rt7)
+## Column definitions and source documentation
 
 ## Description of the data and file structure
 
-Reproductive and environmental parameters collected for European starling nesting attempts from nest boxes in metro-atlanta. 
+Reproductive and environmental parameters collected for European starling nesting attempts from nest boxes in metro-atlanta.
 
 ### Files and variables
 
@@ -39,3 +39,9 @@ Reproductive and environmental parameters collected for European starling nestin
 * Clutch size: Number of eggs total in the nest
 * n/a values mean observation/measurement not collected
 
+
+## Sources and citation
+
+See [CITATION.md](CITATION.md) for the paper, original dataset and source terms.
+
+Paper: https://par.nsf.gov/servlets/purl/10566208

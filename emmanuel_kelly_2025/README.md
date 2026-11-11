@@ -1,18 +1,19 @@
-# Trazodone_Recovery_Case_Controls.csv
+# Trazodone and horse anesthesia recovery — data
 
-**Paper:** Joseph et al. 2025. Preanesthetic Administration of Trazodone Does Not Impact Anesthetic Recovery Scores in Horses. Animals 15: 2907  
-https://doi.org/10.3390/ani15192907
+## Project data files
 
-**Data:** https://doi.org/10.5061/dryad.4qrfj6qpv
+| File | Contents |
+|---|---|
+| `Trazodone_Recovery_Case_Controls.csv` | Project data file. |
+| `CITATION.md` | Paper and source-data citations. |
 
-This folder contains `Trazodone_Recovery_Case_Controls.csv`, made from sheets "Control Horses" and "Cases" of `Trazodone_Recovery_Case_Controls.xlsx` in the original deposit. Only the file format changed (Excel to CSV, so it loads with `read_csv()`); the values are the authors'. The authors kept controls and trazodone cases on two sheets; here they are stacked into one table with a new first column, `group` (`control` or `trazodone`). The cases sheet's `Additional Recovery (Y/N)` column was renamed `Additional Recovery Sedation (Y/N)` to match the controls sheet, and `Recovery (Good/Bad)` was recorded only for cases, so it is blank for controls. Please cite both the paper and the dataset (see CITATION.md).
+## Collection and row meaning
 
-_Below: the authors' README_
+Researchers reviewed North Carolina State University veterinary hospital records for horses anesthetized for orthopedic MRI between January 2022 and January 2025. Among 219 horses, 19 had received trazodone before anesthesia. For each treated horse, two untreated controls with similar age, sex and breed were selected, giving 57 horses. Horses with incomplete records, additional procedures after MRI, or euthanasia before recovery were excluded.
 
----
-# Preanesthetic administration of trazodone does not impact anesthetic recovery scores
+Treatment was chosen during clinical care rather than assigned randomly. Anesthetic protocols and doses varied at the anesthesiologist’s discretion. All horses received sedation during recovery and assistance from ropes when rising. Records include drug administration, complications, anesthesia duration, time to standing and a subjective recovery-quality score. Higher scores indicate smoother recovery; this hospital’s scale was not formally validated. Medical record and visit identifiers are retained.
 
-Dataset DOI: [10.5061/dryad.4qrfj6qpv](10.5061/dryad.4qrfj6qpv)
+## Column definitions and source documentation
 
 ## Description of the data and file structure
 
@@ -38,9 +39,9 @@ Retrospective data collected from medical records of horses anesthetized for ort
 * Procedure
 * Trazodone administration prior to anesthesia (Yes/No)
 * Trazodone dose (mg and mg/kg)
-* Trazodone administration frequency 
+* Trazodone administration frequency
 * Premedication administered (agent name)
-* Premedication Dose (mg and mg/kg) and route 
+* Premedication Dose (mg and mg/kg) and route
 * Additional premedication agent name
 * Additional premedication dose (mg, mg/kg) and route
 * Opioid administered (agent name)
@@ -84,10 +85,6 @@ Retrospective data collected from medical records of horses anesthetized for ort
 
 Routes: Intravenous - IV, Intramuscular - IM, Subcutaneous - SQ, Oral - PO
 
-## Code/software
-
-Excel
-
 ## Access information
 
 Other publicly accessible locations of the data:
@@ -98,3 +95,9 @@ Data was derived from the following sources:
 
 * None
 
+
+## Sources and citation
+
+See [CITATION.md](CITATION.md) for the paper, original dataset and source terms.
+
+Paper: https://doi.org/10.3390/ani15192907

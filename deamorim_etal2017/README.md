@@ -1,15 +1,17 @@
-# HeadLength.csv
+# Geckos on new reservoir islands — data
 
-**Paper:** de Amorim et al. 2017. Lizards on newly created islands independently and rapidly adapt in morphology and diet. PNAS  
-https://doi.org/10.1073/pnas.1709080114
+## Project data files
 
-**Data:** https://doi.org/10.5061/dryad.3nk78
+| File | Contents |
+|---|---|
+| `HeadLength.csv` | Project data file. |
+| `CITATION.md` | Paper and source-data citations. |
 
-This folder contains only `HeadLength.csv` from the original deposit (downloaded 2026-11-06, unmodified). Please cite both the paper and the dataset.
+## Collection and row meaning
 
-_Below: usage notes from the repository page (deposit has no README file), cut to the part about this file_
+Researchers compared five reservoir islands with five nearby mainland sites. The teaching file contains 92 geckos: 49 from islands and 43 from the mainland. Each lizard was measured for snout–vent length and head length using calipers; the same person made the measurements. Sex was recorded when identifiable. The file provides the individual lizard and site identifiers.
 
----
+## Column definitions and source documentation
 
 **HeadLength.csv**
 
@@ -28,3 +30,10 @@ sex: male, female, or unknown
 snout.vent.length_mm: the snout-vent length of the individual lizard
 
 head.length_mm: the length of the head of the individual lizard
+
+
+## Sources and citation
+
+See [CITATION.md](CITATION.md) for the paper, original dataset and source terms.
+
+Paper: https://doi.org/10.1073/pnas.1709080114

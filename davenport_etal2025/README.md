@@ -1,19 +1,17 @@
-# BodyLength.csv
+# Daphnia, a microsporidian parasite, and food — data
 
-**Paper:** Davenport et al. Resource quantity affects infection success and impacts of a microsporidian on hosts (preprint)  
-https://doi.org/10.5061/dryad.2v6wwpzzr
+## Project data files
 
-**Data:** https://doi.org/10.5061/dryad.2v6wwpzzr
+| File | Contents |
+|---|---|
+| `BodyLength.csv` | Project data file. |
+| `CITATION.md` | Paper and source-data citations. |
 
-This folder contains only `BodyLength.csv` from the original deposit (downloaded 2026-11-06, unmodified). Please cite both the paper and the dataset.
+## Collection and row meaning
 
-_Below: the authors' README (README.md), cut by hand to the part about this file_
+Researchers used one laboratory clone of Daphnia and one parasite isolate. After three generations under common conditions, young animals were housed individually and assigned to three food levels and either parasite exposure or a sham control. Medium food supplied 12.5% of the high-food concentration; low food supplied 6.25%. Food treatments continued after a 48-hour exposure period. Ten animals per treatment combination were measured during weekly feeding assays. The file contains 228 length measurements from 89 individual codes, taken 3, 10, 17 or 24 days after exposure. Not every animal was measured at every time point.
 
----
-
-# Data from: Resource quantity affects infection success and impacts of a microsporidian on hosts
-
-[https://doi.org/10.5061/dryad.2v6wwpzzr](https://doi.org/10.5061/dryad.2v6wwpzzr)
+## Column definitions and source documentation
 
 ## Description of the data and file structure
 
@@ -23,3 +21,8 @@ _Below: the authors' README (README.md), cut by hand to the part about this file
 
 
 BodyLength.csv: Individual = individual sample code. Treatment = unexposed (control) or exposed to parasite spores for the experiment. Food.Level = categorical resource quantity treatment for the experiment (high = high food, medium = 12.5% of the high food treatment, low = 6.25% of the high food treatment). Date = date of the assay. Day = number of days after the parasite exposure. Body.Length = body length of individual (micrometers).
+
+
+## Sources and citation
+
+See [CITATION.md](CITATION.md) for the paper, original dataset and source terms.

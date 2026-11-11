@@ -1,15 +1,17 @@
-# isopod_thermal_tolerance.csv
+# Urban vs rural woodlouse heat tolerance — data
 
-**Paper:** Yilmaz et al. 2021. Evidence for the evolution of thermal tolerance, but not desiccation tolerance, in a cosmopolitan terrestrial isopod. Evolutionary Applications  
-https://doi.org/10.1111/eva.13052
+## Project data files
 
-**Data:** https://doi.org/10.5061/dryad.r4xgxd297
+| File | Contents |
+|---|---|
+| `isopod_thermal_tolerance.csv` | Project data file. |
+| `CITATION.md` | Paper and source-data citations. |
 
-This folder contains only `isopod_thermal_tolerance.csv` from the original deposit (downloaded 2026-11-06, unmodified). Please cite both the paper and the dataset.
+## Collection and row meaning
 
-_Below: usage notes and methods from the repository page (deposit has no README file)_
+Researchers collected parents from urban and rural sites around Cleveland in 2018 and reared their offspring at daytime temperatures of 21°C or 29°C, with nights 5°C cooler and high humidity in both treatments. Offspring remained in shared containers until testing. The teaching file contains 322 animals from 20 colonies representing 11 source sites, a subset of the broader collection. Each animal underwent either a heat-limit or cold-limit test. Colony IDs identify animals reared together; animal numbers are reused within colonies.
 
----
+## Column definitions and source documentation
 
 isopod_thermal tolerance
 
@@ -29,5 +31,8 @@ combined_age_body_mass
 This dataset contains 5 columns, including "colonyID", "age.days", "initial.weight", "habitat", and "treatment". Each row of the dataset represents the response of an individual isopod. colonyID – a unique but arbitrary alpha-numeric identifier for each group of isopods reared together in the lab (i.e., a replicate); multiple individual isopods were tested from the same replicate. age.days - the number of days an individual isopod spent in a temperature rearing treatment, that is, the number of days between said isopod's birth and its tolerance trial. initial.weight - mass in g of each individual isopod just prior to tolerance trials. habitat - a categorical variable denoting whether the individual F1 isopod's parents derived from an urban or rural field collection site. treatment - a categorical variable denoting whether an individual isopod was reared at a 21 or 29-degree temperature rearing treatment. Values are presented in units of degrees Celsius
 
 
- 
+## Sources and citation
 
+See [CITATION.md](CITATION.md) for the paper, original dataset and source terms.
+
+Paper: https://doi.org/10.1111/eva.13052

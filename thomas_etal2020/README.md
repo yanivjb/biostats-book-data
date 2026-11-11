@@ -1,10 +1,18 @@
-# Frog eye morphology and species ecology
+# How do frog ecology and body size relate to eye size? — data
 
-**Paper:** Thomas et al. (2020). Eye size and investment in frogs and toads correlate with adult habitat, activity pattern and breeding ecology. Proceedings of the Royal Society B. https://doi.org/10.1098/rspb.2020.1393
+## Project data files
 
-**Original data:** [10.5061/dryad.1zcrjdfq7](https://doi.org/10.5061/dryad.1zcrjdfq7)
+| File | Contents |
+|---|---|
+| `Thomas_museum_specimens.csv` | Project data file. |
+| `Thomas_species_traits.csv` | Project data file. |
+| `CITATION.md` | Paper and source-data citations. |
 
-This README describes the teaching files in `thomas_etal2020`. It adapts the authors’ documentation to the files present in this folder, checked 9 November 2026. File counts and notes about the teaching CSVs come from inspecting those files; they are not additional statements by the original authors. Cite both the paper and the original dataset. `CITATION.md` provides citation information; the paper link above identifies the published article where an older citation file is outdated.
+## Collection and row meaning
+
+Researchers measured 640 preserved adult museum specimens representing 220 frog species and 55 families, with one to seven specimens per species. The specimen CSV includes left and right eye diameter, corneal diameter, snout–vent length and preserved mass. Some measurements are missing, and sex is unknown for most specimens. The second CSV contains ecological categories compiled once for each of the 220 species. Left and right eyes were measured on each specimen.
+
+## Column definitions and source documentation
 
 ## Files included
 
@@ -23,7 +31,7 @@ specimens <- readr::read_csv("Thomas_museum_specimens.csv")
 traits <- readr::read_csv("Thomas_species_traits.csv")
 ```
 
-Use `Genus` and `Species` together to match the two tables. These keys are unique in the current traits table and cover all 220 species in the specimen table. Matching a species trait to several specimens repeats species-level information; it does not create independent ecological observations. Do not append the tables or join on `Species` alone.
+Use `Genus` and `Species` together to match the two tables. These keys are unique in the current traits table and cover all 220 species in the specimen table. Each specimen receives the ecological record for its species. The matching key is the combination of `Genus` and `Species`.
 
 ## Museum specimen columns
 
@@ -39,7 +47,7 @@ Use `Genus` and `Species` together to match the two tables. These keys are uniqu
 | `Feng_tiplabel` | Exact-match label in the study’s reference phylogeny where available. |
 | `mod_tiplabel` | Modified phylogeny-matching label, including close-relative substitutions; not a specimen identifier. |
 | `Museum` | Collection: NHM = Natural History Museum, London; NCSM = North Carolina Museum of Natural Sciences; BNHS = Bombay Natural History Society. |
-| `SpecimenNumber` | Museum catalogue number. Interpret with museum/taxonomic context; it is not globally unique in this CSV. |
+| `SpecimenNumber` | Museum catalogue number. Catalogue numbers are reused across some museum/taxonomic combinations. |
 | `Sex` | Recorded sex where identified; most specimens lack this information, and capitalization varies. |
 | `Stage` | Life stage; all records are adult. |
 | `SVL_mm` | Snout–vent length, mm. |
@@ -76,6 +84,13 @@ Use `Genus` and `Species` together to match the two tables. These keys are uniqu
 
 ## Missing values and sampling
 
-`NA` and blank cells indicate unavailable information. Some ecological fields also use `Unknown`; treat that as unavailable classification when interpreting ecological categories. Do not confuse it with the biological categories `Both`, `No free-living larvae` or `No larvae`.
+`NA` and blank cells indicate unavailable information. Some ecological fields also use `Unknown` for an unavailable classification. Do not confuse it with the biological categories `Both`, `No free-living larvae` or `No larvae`.
 
 The morphology file has 20 missing masses and some missing eye/cornea dimensions. Sex is unavailable for 611 specimens. Eye sides are paired within a specimen. Between one and seven specimens represent a species. Species were chosen to span taxonomic/ecological diversity rather than randomly sampled from all frogs; preserved tissues can differ from fresh tissues. Species share evolutionary history, and multiple specimens from one species share the same ecology.
+
+
+## Sources and citation
+
+See [CITATION.md](CITATION.md) for the paper, original dataset and source terms.
+
+Paper: https://doi.org/10.1098/rspb.2020.1393

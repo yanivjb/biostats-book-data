@@ -1,10 +1,18 @@
-# Amphibian age, body size and reproductive investment
+# How does maternal size relate to reproductive investment? — data
 
-**Paper:** Jennette, Snodgrass and Forester (2019). Variation in age, body size, and reproductive traits among urban and rural amphibian populations. Urban Ecosystems 22:137–147. https://doi.org/10.1007/s11252-018-0801-7
+## Project data files
 
-**Original data:** [10.5061/dryad.8p165g9](https://doi.org/10.5061/dryad.8p165g9)
+| File | Contents |
+|---|---|
+| `EggsToad.csv` | Project data file. |
+| `EggsWood.csv` | Project data file. |
+| `CITATION.md` | Paper and source-data citations. |
 
-This README describes the teaching files in `jennette_etal2019`. It adapts the authors’ documentation to the files present in this folder, checked 9 November 2026. File counts and notes about the teaching CSVs come from inspecting those files; they are not additional statements by the original authors. Cite both the paper and the original dataset. `CITATION.md` provides citation information; the paper link above identifies the published article where an older citation file is outdated.
+## Collection and row meaning
+
+Researchers sampled breeding amphibians around Baltimore in 2009–2010. The reproductive data come from subsets of gravid females whose eggs were counted and measured. Mean egg diameter was based on 40 mature eggs per female; a row therefore describes a female and her clutch, not one egg. The toad file contains 50 females from five populations; the wood frog file contains 48 females from four populations. Mean egg diameter is based on 40 mature eggs per female.
+
+## Column definitions and source documentation
 
 ## Files included
 
@@ -56,7 +64,7 @@ Researchers sampled breeding adults at artificial wetlands in Baltimore County, 
 | Column | Meaning and units |
 | --- | --- |
 | `POP` | Population code: B = Rural A; E = Rural B; FP = Suburban; MP = Urban. |
-| `Mass` | Maternal mass value as supplied. The RTF instead names `Weight`; do not assume the description’s dry-mass units apply without clarification. |
+| `Mass` | Maternal mass value as supplied. The RTF instead names `Weight`; The source documentation does not establish consistent units for this field. |
 | `SVL` | Maternal snout–vent length, mm. |
 | `Age` | Estimated maternal age, years. |
 | `Egg.No` | Clutch size: number of mature ova. |
@@ -64,8 +72,15 @@ Researchers sampled breeding adults at artificial wetlands in Baltimore County, 
 | `Egg.Mass` | Egg-mass column as supplied; original description calls it mean individual egg weight, but see below. |
 | `Egg.Dia` | Mean ovum diameter, mm. |
 
-## Mass definitions need clarification
+## Mass field labels and units
 
 The original RTF column descriptions do not agree cleanly with the actual column names, numerical scales and paper methods. For example, the first toad record has `Weight = 76.5`, `DryMass = 14.5586`, `Egg.Mass = 5.309` and 4,741 eggs. Calling 5.309 a mean individual egg mass while 14.5586 is the whole clutch mass is not consistent with those numbers. The paper describes both maternal somatic dry mass and total clutch dry mass, but this alone does not establish which CSV column holds each measurement.
 
 Keep these columns as supplied; no names, values or units have been silently corrected. Clarify the mass definitions before reporting mass-based biological coefficients or per-egg quantities. SVL, clutch count, age where present, and egg diameter have clearer definitions. No blank or `NA` cells occur in these three CSVs; numeric zeros are not designated missing values. Population membership is observational and is not a randomized urbanization treatment.
+
+
+## Sources and citation
+
+See [CITATION.md](CITATION.md) for the paper, original dataset and source terms.
+
+Paper: https://doi.org/10.1007/s11252-018-0801-7

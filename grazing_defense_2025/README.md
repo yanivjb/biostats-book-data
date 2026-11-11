@@ -1,10 +1,18 @@
-# Grazing, aridity and plant defences
+# Does grazing change plant defences along an aridity gradient? — data
 
-**Paper:** Yan et al. (2025). Grazing disrupts the trade-off between silica- and phenol-based plant defences along an aridity gradient in grasslands. Functional Ecology. https://doi.org/10.1111/1365-2435.70206
+## Project data files
 
-**Original data:** [10.5061/dryad.31zcrjf1d](https://doi.org/10.5061/dryad.31zcrjf1d)
+| File | Contents |
+|---|---|
+| `data_defense_traits.csv` | Project data file. |
+| `data_defense_traits_Leaf_Data.csv` | Project data file. |
+| `CITATION.md` | Paper and source-data citations. |
 
-This README describes the teaching files in `grazing_defense_2025`. It adapts the authors’ documentation to the files present in this folder, checked 9 November 2026. File counts and notes about the teaching CSVs come from inspecting those files; they are not additional statements by the original authors. Cite both the paper and the original dataset. `CITATION.md` provides citation information; the paper link above identifies the published article where an older citation file is outdated.
+## Collection and row meaning
+
+Researchers sampled grasslands at 15 sites across roughly 1,700 km of Inner Mongolia in August 2017–2018. At each site they compared a grazed area with a fenced area and sampled three quadrats per area. Fences had excluded grazing for different lengths of time. These were existing management contrasts, not randomly assigned grazing treatments. The community file contains 90 quadrats. The separate leaf file contains 109 species-associated samples from 29 species.
+
+## Column definitions and source documentation
 
 ## Files included
 
@@ -12,7 +20,7 @@ This README describes the teaching files in `grazing_defense_2025`. It adapts th
 | --- | --- |
 | `data_defense_traits.csv` | Community-level measurements: 90 rows, three quadrats in each grazed/ungrazed area at each of 15 sites. This is the CSV version of `Community_Data`. |
 | `data_defense_traits_Leaf_Data.csv` | Species-associated leaf samples: 109 rows from 29 species at 15 sites. |
-| `data_defense_traits.xlsx` | Original workbook, including `Community_Data` and `Leaf_Data`. It overlaps the CSVs; it is not another independent dataset. |
+| `data_defense_traits.xlsx` | Original workbook, including `Community_Data` and `Leaf_Data`. It overlaps the CSVs; it contains the source worksheets for these CSVs. |
 | `CITATION.md` | Citation information. |
 
 The community CSV is **not** the leaf-sample table. Some numeric values in the community CSV are rounded relative to the workbook, and some have trailing spaces. Keep the workbook as the reference for original precision. The data files have not been changed by this README.
@@ -28,7 +36,7 @@ Column names contain spaces, units and some full-width punctuation. Use the exac
 
 ## Collection and row meaning
 
-At each Inner Mongolian site, researchers sampled an area exposed to livestock grazing and an adjacent fenced area protected for 3–26 years. Sampling took place in August 2017–2018. Community measurements describe quadrats; leaf measurements describe collected species-associated samples, generally pooling leaves from multiple plants. `Sample_id` identifies a row/sample, not an independently assigned treatment. Quadrats within an area and samples from the same species or site share conditions.
+At each Inner Mongolian site, researchers sampled an area exposed to livestock grazing and an adjacent fenced area protected for 3–26 years. Sampling took place in August 2017–2018. Community measurements describe quadrats; leaf measurements describe collected species-associated samples, generally pooling leaves from multiple plants. `Sample_id` identifies a row/sample, the collected sample. Three quadrats were sampled in each management area.
 
 ## Community CSV columns
 
@@ -74,3 +82,10 @@ At each Inner Mongolian site, researchers sampled an area exposed to livestock g
 Blank cells in the leaf CSV represent missing measurements: 9 silicon and 1 phenolic value. The community CSV has no blank data cells. Numeric zero is a recorded value, not a missing-value code.
 
 The tables have different observational units. Site and treatment connect them conceptually, but each site–treatment appears several times in each table: a direct join on those two columns creates multiple matches and duplicates rows. Sample identifiers do not establish matching between quadrats and species samples. Some site–species combinations in the leaf CSV occur in only one treatment despite the intended matched-species design.
+
+
+## Sources and citation
+
+See [CITATION.md](CITATION.md) for the paper, original dataset and source terms.
+
+Paper: https://doi.org/10.1111/1365-2435.70206

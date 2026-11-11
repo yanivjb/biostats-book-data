@@ -1,10 +1,18 @@
-# Poplar endophytes, leaf chemistry and insect feeding
+# Can a fungal endophyte change a tree’s chemical defences? — data
 
-**Paper:** Walther et al. (2025). A fungal endophyte alters poplar leaf chemistry, deters insect feeding and shapes insect community assembly. Ecology Letters. https://doi.org/10.1111/ele.70007
+## Project data files
 
-**Original data:** [10.5061/dryad.3xsj3txqt](https://doi.org/10.5061/dryad.3xsj3txqt)
+| File | Contents |
+|---|---|
+| `walther_et_al_2024fig2data.csv` | Project data file. |
+| `walther_et_al_2024fig3data.csv` | Project data file. |
+| `CITATION.md` | Paper and source-data citations. |
 
-This README describes the teaching files in `walther_etal2025`. It adapts the authors’ documentation to the files present in this folder, checked 9 November 2026. File counts and notes about the teaching CSVs come from inspecting those files; they are not additional statements by the original authors. Cite both the paper and the original dataset. `CITATION.md` provides citation information; the paper link above identifies the published article where an older citation file is outdated.
+## Collection and row meaning
+
+Researchers grew genetically identical black poplar cuttings under controlled conditions. Sixteen young trees received combinations of fungal inoculation or mock treatment and herbivory or no herbivory, with four trees per combination. Fifteen days after inoculation, herbivory trees received caterpillars for 48 hours before leaves were collected for chemical analysis. The chemistry files contain five salicinoids and four other phenolics measured from these trees.
+
+## Column definitions and source documentation
 
 ## Files included
 
@@ -28,7 +36,7 @@ feeding <- readr::read_csv("Walther_etal2024_Figure5d_feeding.csv")
 
 ## Leaf chemistry: Figures 2 and 3
 
-Black poplar plants were either inoculated with the endophytic fungus *Cladosporium* sp. or given a control treatment, crossed with exposure or no exposure to herbivory by *Lymantria dispar* larvae. Each chemistry row is one concentration measurement of one compound in a plant sample. Multiple compounds measured from the same samples do not represent additional independently treated plants. The CSVs do not include plant/sample identifiers, so cross-compound pairing cannot be established from their columns alone.
+Black poplar plants were either inoculated with the endophytic fungus *Cladosporium* sp. or given a control treatment, crossed with exposure or no exposure to herbivory by *Lymantria dispar* larvae. Each chemistry row is one concentration measurement of one compound in a plant sample. Each tree contributes measurements for several compounds. The CSVs do not include plant/sample identifiers, so cross-compound pairing cannot be established from their columns alone.
 
 | Column | Meaning and units |
 | --- | --- |
@@ -39,7 +47,7 @@ Black poplar plants were either inoculated with the endophytic fungus *Cladospor
 | `unit` | Figure 2: mg/g. Figure 3: catechin is µg/mg; the other three compounds are µg/g. Do not pool concentrations without attending to units. |
 | `compound` | Compound label as supplied. Figure 2 includes Salicin, Salicortin, nigracin, Homalosid D and salicortin-6-benzoat; the last label has surrounding spaces. Figure 3 includes catechin, Coumaric Acid, Caffeic acid and Ferulic Acid. |
 
-There are no blank data cells in these two chemistry CSVs. Treatment labels and the two 0/1 columns are alternative encodings of the same design, not three independent biological exposures. Workbook sheets containing ANOVA statistics or selected significant features are derived results rather than substitutes for the raw concentration data.
+There are no blank data cells in these two chemistry CSVs. Treatment labels and the two 0/1 columns are alternative encodings of the same design, alternative encodings of the same assigned treatments. Workbook sheets containing ANOVA statistics or selected significant features are derived results rather than substitutes for the raw concentration data.
 
 ## Leaf-disc choice assay: Figure 5d
 
@@ -54,6 +62,9 @@ Each insect had access to both treated and control discs. The two consumption me
 
 The feeding CSV has no blank data cells. Zero consumption is a recorded observation. It describes a chemical choice assay, distinct from the plant inoculation/herbivory experiment in Figures 2 and 3. Rows cannot be joined across those experiments as if they represented the same plant or insect.
 
-## Workbook scope
 
-The workbook also includes insect performance, field observations, chemical analyses, endophyte quantification and supporting tables. Their meanings are described in the full authors’ README on Dryad. The CSV dictionaries above document only the three teaching extracts; other workbook sheets require their own original methods and variable descriptions.
+## Sources and citation
+
+See [CITATION.md](CITATION.md) for the paper, original dataset and source terms.
+
+Paper: https://doi.org/10.1111/ele.70007

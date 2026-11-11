@@ -1,35 +1,21 @@
-# Can earthworms buffer microplastic effects on plants?
+# Can earthworms buffer microplastic effects on plants? — data
 
-**Paper:** Rittelmann-Woods, E., Lachaise, T., & van Kleunen, M. (2023). Negative effects of EPDM microplastic and cork granules on plant growth are mitigated by earthworms and likely caused by their structural properties. Science of The Total Environment, 897, 165354. https://doi.org/10.1016/j.scitotenv.2023.165354
-
-**Original data:** https://datadryad.org/dataset/doi:10.5061/dryad.xgxd254n7
-
-This README describes the teaching files in `rittelmannwoods_etal2023`, prepared from the linked authors’ data. Cite both the paper and original data source; see `CITATION.md`.
-
-## Files included
+## Files
 
 | File | Contents |
 |---|---|
-| `Rittelmann-Woods_2023_Daucus_carota_48pots.csv` | 48 rows; 42 columns. One row per study unit as defined below. |
-| `README.md` | Collection, preparation, variable definitions and biological context. |
-| `CITATION.md` | Paper and original-data citations and source terms. |
-| `DATA_DICTIONARY.md` | Definitions and units for all 42 original columns. |
+| `Rittelmann-Woods_2023_Daucus_carota_48pots.csv` | Project data file. |
+| `CITATION.md` | Paper and source-data citations. |
 
-## Start here
+## Rows and collection
 
-Use **Rittelmann-Woods_2023_Daucus_carota_48pots.csv**. One CSV is sufficient; no reshape or join is needed.
+48 rows. The experiment crossed granule type (none, cork or EPDM rubber), EPDM infusion present or absent, and earthworms present or absent. Four pots represented each combination for each of seven grassland species, giving 336 pots. Pots were randomly positioned in a greenhouse; each held one plant. A single species gives a biologically defined 48-pot project.
 
-**Motivating question:** Do earthworms and leachate exposure affect carrot growth?
+## Preparation of this CSV
 
-## Data collection
+Species = Dau_car was retained: all 48 carrot pots, all 42 original columns, and all 12 treatment combinations (four pots per combination). One Total_mass value is missing. Subsequent worm survival was not used to remove rows.
 
-The experiment crossed granule type (none, cork or EPDM rubber), EPDM infusion present or absent, and earthworms present or absent. Four pots represented each combination for each of seven grassland species, giving 336 pots. Pots were randomly positioned in a greenhouse; each held one plant. A single species gives a biologically defined 48-pot project.
-
-## Preparation and sampling unit
-
-All 48 carrot (Daucus carota) pots are retained, with 42 original columns and four pots in each of 12 factorial treatment combinations. One Total_mass is missing, leaving 47 complete biomass observations. No pot was removed because earthworms later died.
-
-## Key variables
+## Columns and codes
 
 | Column | Meaning |
 |---|---|
@@ -44,18 +30,17 @@ All 48 carrot (Daucus carota) pots are retained, with 42 original columns and fo
 | Total_L_area | Initial estimated leaf area, mm². |
 | EW_alive | Worms found alive at harvest; a later outcome, not assigned treatment. |
 
-`DATA_DICTIONARY.md` defines all 42 columns, including the remaining root and worm measurements. Select one growth response; correlated or derived outcomes are not independent replication. Worm survival and initial plant size answer different biological questions from assigned treatments.
+## Missing values
 
-## Planning an analysis
+`NA` denotes a missing measurement or a summary with a missing required component; it is not a measured zero. Missing values were not replaced by zero.
 
-Choose a biological response and at least two substantive explanatory variables. Make predictions before fitting a model. Consider an interaction only when it has a biological interpretation. Check group sizes, missingness and residuals; do not treat IDs or repeated measurements as new replicates.
+`DATA_DICTIONARY.md` defines all 42 retained source columns.
 
-Carrot is selected by biological identity before inspecting results, giving 48 pots rather than a random slice of 336. Check death/missing outcomes; no automatic deletion of outliers.
 
-## Sources
+## Sources and citation
+
+See [CITATION.md](CITATION.md) for the paper, original dataset and source terms.
 
 Paper: https://doi.org/10.1016/j.scitotenv.2023.165354
 
 Original data: https://datadryad.org/dataset/doi:10.5061/dryad.xgxd254n7
-
-This folder contains the prepared classroom version. Original files and documentation are available from the source links above.

@@ -1,10 +1,18 @@
-# Squash bee heat tolerance, parasites and site conditions
+# What makes a squash bee tolerate heat? — data
 
-**Paper:** Jones et al. (2024). Body mass, temperature, and pathogen intensity differentially affect critical thermal maxima and their population-level variation in a solitary bee. Ecology and Evolution. https://doi.org/10.1002/ece3.10945
+## Project data files
 
-**Original data:** [10.5061/dryad.hhmgqnkp9](https://doi.org/10.5061/dryad.hhmgqnkp9)
+| File | Contents |
+|---|---|
+| `Jones-et-al_Raw_Individual_Data.csv` | Project data file. |
+| `Jones-et-al_Raw_Site_Data.csv` | Project data file. |
+| `CITATION.md` | Paper and source-data citations. |
 
-This README describes the teaching files in `jones_etal2024`. It adapts the authors’ documentation to the files present in this folder, checked 9 November 2026. File counts and notes about the teaching CSVs come from inspecting those files; they are not additional statements by the original authors. Cite both the paper and the original dataset. `CITATION.md` provides citation information; the paper link above identifies the published article where an older citation file is outdated.
+## Collection and row meaning
+
+Researchers collected 420 adult bees at 14 farms in July–August 2019, with 30 bees per farm. Bees were transported on ice, then warmed from 23°C at 0.25°C per minute until loss of neuromuscular control. Critical thermal maximum (CTmax) is this endpoint temperature, not a measure of survival or reproduction under field conditions. The site table records the environment at each farm, with a separate summary row for each sex.
+
+## Column definitions and source documentation
 
 ## Files included
 
@@ -21,7 +29,7 @@ bees <- readr::read_csv("Jones-et-al_Raw_Individual_Data.csv")
 sites <- readr::read_csv("Jones-et-al_Raw_Site_Data.csv")
 ```
 
-The site table is unique by **Site and Sex together**, not by Site alone. Joining on Site alone duplicates each bee into two summary rows. Site climate/soil values are repeated for the sexes; 28 summary rows do not represent 28 independently sampled environments. The site means and standard deviations summarize the individual data and are not an independent dataset to append to the bees.
+The site table is unique by **Site and Sex together**, not by Site alone. Joining on Site alone duplicates each bee into two summary rows. Site climate/soil values are repeated for the sexes; The 28 rows contain sex-specific summaries from 14 farms. The site means and standard deviations summarize the individual data and are calculated from the individual bee measurements.
 
 ## Collection and row meaning
 
@@ -64,7 +72,7 @@ Wild squash bees were collected from Pennsylvania pumpkin/squash farms in July�
 | `Spiroplasma_apis_log(2^-ddCT)` | Log10 of the relative intensity. |
 | `Spiroplasma_apis_RelativeIntensity_AdjustedforThreshold` | Log10 relative intensity for detections; set to 0 when the raw cycle threshold exceeds the negative-detection cutoff. Already transformed; not an untransformed parasite count. |
 
-The parasite columns are alternative stages of the same molecular assay, not independent parasite measurements. Raw CT here means **PCR cycle threshold**, whereas CTmax means **critical thermal maximum**; these are different quantities. Relative molecular intensities are assay-specific and should not be interpreted as directly comparable absolute counts across parasite groups.
+The parasite columns store different stages of the same molecular assay. Raw CT here means **PCR cycle threshold**, whereas CTmax means **critical thermal maximum**; these are different quantities. Relative molecular intensity is an assay-specific measure, rather than an absolute parasite count.
 
 ## Site CSV columns
 
@@ -97,4 +105,11 @@ The parasite columns are alternative stages of the same molecular assay, not ind
 
 ## Missing values and derived quantities
 
-Neither CSV contains blank/`NA` data cells in the current copy. Threshold-adjusted parasite zeros indicate negative detections under the authors’ rule, not missing measurements or demonstrated complete absence. The soil percentages are parts of one composition. Principal components, molecular transformations, mass differences and site summaries are derived variables; their definitions matter when interpreting relationships. HOBO month labels and the elapsed-time variable need clarification as noted above; this README does not silently correct either file.
+Neither CSV contains blank/`NA` data cells in the current copy. Threshold-adjusted parasite zeros indicate negative detections under the authors’ rule, not missing measurements or demonstrated complete absence. The soil percentages are parts of one composition. Principal components, molecular transformations, mass differences and site summaries are derived variables; their calculation definitions are recorded above. HOBO month labels and the elapsed-time variable need clarification as noted above; this README does not silently correct either file.
+
+
+## Sources and citation
+
+See [CITATION.md](CITATION.md) for the paper, original dataset and source terms.
+
+Paper: https://doi.org/10.1002/ece3.10945

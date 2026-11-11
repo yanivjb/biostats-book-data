@@ -1,19 +1,17 @@
-# Supplementary_Data_Sheet_2.csv
+# Ibiza wall lizard bite force — data
 
-**Paper:** Woodgate et al. 2025. Microgeographic diversity does not drive macroevolutionary divergence in bite force of the Ibiza wall lizard. Evolution  
-https://doi.org/10.1093/evolut/qpaf140
+## Project data files
 
-**Data:** https://doi.org/10.5061/dryad.hhmgqnkt8
+| File | Contents |
+|---|---|
+| `Supplementary_Data_Sheet_2.csv` | Project data file. |
+| `CITATION.md` | Paper and source-data citations. |
 
-This folder contains only `Supplementary_Data_Sheet_2.csv` from the original deposit (downloaded 2026-11-06, unmodified). Please cite both the paper and the dataset.
+## Collection and row meaning
 
-_Below: the authors' README (README.md), trimmed to the section on this file_
+Researchers captured adult lizards by lasso at sites on Ibiza, Formentera, and nearby islets during September–October 2022 and May 2023. Each performed three bite trials, separated by rest periods, using an instrument with approximately standardized gape. The teaching file retains 307 lizards with complete focal measurements, grouped into 11 locations; two locations also distinguish lighthouse and shoreline samples. MAX records the highest of three bite-force measurements from each lizard.
 
----
-
-# Microgeographic diversity does not drive macroevolutionary divergence in bite force of the Ibiza wall lizard, *Podarcis pityusensis*
-
-Dataset DOI: [10.5061/dryad.hhmgqnkt8](10.5061/dryad.hhmgqnkt8)
+## Column definitions and source documentation
 
 ## Description of the data and file structure
 
@@ -43,12 +41,6 @@ Phenotypic measurements and ecological data for 11 populations of the Ibiza wall
 * MOUTH: Mouth width, in mm
 * AMPUTATION: Whether digits or phalanges were missing (indicated by 'Yes') or intact (indicated by 'No).
 
-## Code/software
-
-An R script is provided which corresponds to the 'data analysis' section of the manuscript. Analysis was performed on R version 4.3.2 (2023-10-31 ucrt) -- "Eye Holes" Copyright (C) 2023 The R Foundation for Statistical Computing. R packages used are as follows: ggplot2, stats, car, hillR, simboot, MASS, jmv, Matrix, remotes, RRPP.
-
-Other data is in .csv format.
-
 ## Access information
 
 This Dryad dataset refers to methods described in the following sources:
@@ -64,3 +56,7 @@ This Dryad dataset includes data derived from the following sources:
 * Lluch i Dubon, 1997. Geografia de les Illes Balears. Lleonard Muntaner Editor.
 * Rodríguez, V., Brown, R.P., Terrasa, B., Pérez‐Mellado, V., Castro, J.A., Picornell, A., Ramon, M.M., 2013. Multilocus genetic diversity and historical biogeography of the endemic wall lizard from Ibiza and Formentera, *Podarcis pityusensis * (Squamata: Lacertidae). Molecular Ecology 22, 4829–4841. [https://doi.org/10.1111/mec.12443](https://doi.org/10.1111/mec.12443)
 
+
+## Sources and citation
+
+See [CITATION.md](CITATION.md) for the paper, original dataset and source terms.

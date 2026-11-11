@@ -1,15 +1,17 @@
-# Crane_etal2024_cane_toads.csv
+# Cane toads and lungworms from different sites — data
 
-**Paper:** Crane et al. 2024. Effect of parasite infection and invasion history on feeding, growth, and energy allocation of cane toads. Biol J Linn Soc  
-https://doi.org/10.1093/biolinnean/blae054
+## Project data files
 
-**Data:** https://doi.org/10.5061/dryad.wm37pvmwd
+| File | Contents |
+|---|---|
+| `Crane_etal2024_cane_toads.csv` | Project data file. |
+| `CITATION.md` | Paper and source-data citations. |
 
-This folder contains `Crane_etal2024_cane_toads.csv`, made from sheet "data" of `Data_from_-Effect_of_parasite_infection_and_invasion_history_on_feeding__growth_and_energy_allocation_of_cane_toads.xlsx` in the original deposit. Only the file format changed (Excel to CSV, so it loads with `read_csv()`); the values are the authors'. The file was renamed to something shorter. The authors' `variable list` sheet is copied at the end of this README. Please cite both the paper and the dataset (see CITATION.md).
+## Collection and row meaning
 
-_Below: the authors' README (README.md), NOT trimmed automatically - edit by hand_
+Researchers bred toads from ten parental source sites, producing twelve families under laboratory conditions. At roughly six months old, 227 offspring were exposed to 50 lungworm larvae from one of six parasite sources; 77 received sham exposure. Toads were then housed individually, food consumption was monitored, and growth and organ masses were measured over approximately four months. At dissection, 100 exposed toads had adult worms.
 
----
+## Column definitions and source documentation
 
 # Data from: Effect of parasite infection and invasion history on feeding, growth and energy allocation of cane toads
 
@@ -89,3 +91,10 @@ Missing data code: na
 | SVL2-SVL1 (mm) | change in SVL during study |
 | SVL Growth rate (mm/day) | daily growth rate in snout-vent length during study |
 | Total food eaten (g) | amount of food consumed during study |
+
+
+## Sources and citation
+
+See [CITATION.md](CITATION.md) for the paper, original dataset and source terms.
+
+Paper: https://doi.org/10.1093/biolinnean/blae054

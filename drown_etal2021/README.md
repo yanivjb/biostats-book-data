@@ -1,15 +1,21 @@
-# Drown_physiological_plasticity_2021.csv
+# Mummichog heat tolerance at two temperatures — data
 
-**Paper:** Drown et al. 2021. Interindividual plasticity in metabolic and thermal tolerance traits from populations subjected to recent anthropogenic heating. Royal Society Open Science  
-https://doi.org/10.1098/rsos.210440
+## Project data files
 
-**Data:** https://doi.org/10.5061/dryad.0gb5mkm0w
+| File | Contents |
+|---|---|
+| `Drown_physiological_plasticity_2021.csv` | Project data file. |
+| `CITATION.md` | Paper and source-data citations. |
 
-This folder contains `Drown_physiological_plasticity_2021.csv`, made from sheet "Trait_data" of `Drown_physiological_plasticity_2021.xlsx` in the original deposit. Only the file format changed (Excel to CSV, so it loads with `read_csv()`); the values are the authors'. The authors' `Notes` sheet (abbreviations and units) is copied at the end of this README. Please cite both the paper and the dataset (see CITATION.md).
+## Collection and row meaning
 
-_Below: usage notes and methods from the repository page (deposit has no README file)_
+Fish were collected in September 2018 from three New Jersey sites: one warmed by power-station effluent and two nearby reference sites. Summer habitat temperatures averaged approximately 32°C at the effluent site and 28°C at the references. Fish were individually tagged, held under common laboratory conditions for more than six weeks, and given a simulated winter before acclimation treatments.
 
----
+Fish were acclimated to either 12°C or 28°C for at least four weeks. Whole-animal oxygen consumption was measured, followed one week later by a heat-tolerance test. Fish were then acclimated to the other temperature and tested again. Starting-temperature groups contained fish of both sexes from all populations. Fish identity, population, acclimation group, measurement dates and body mass are recorded.
+
+Heat tolerance was the water temperature at which a fish lost coordinated movement for at least five seconds during warming at 0.3°C per minute. Fish recovered after testing, but some died or were removed for declining condition; a probe-calibration problem also caused missing heat-tolerance values. The supplied file has 250 records from 144 tagged fish, with availability varying by trait.
+
+## Column definitions and source documentation
 
 Please reference the notes at the end of this README for descriptions of abbreviations used, units for trait measures, and important information about metadata columns and missing data.
 
@@ -54,3 +60,10 @@ Whole animal metabolism, substrate specific cardiac metabolic rate and critical 
 | South Reference | 39°47'04.0"N 74°11'07.0"W |  |
 |  |  |  |
 | Additional Notes: For cardiac metabolic rate, a few individuals do not have heart mass data or cardiac metabolic rate for some substrates due to technical error. Additionally, due to a temperature probe calibration issue, 17 individuals also do not have critical thermal maximum data at a single acclimation temperature. Variation in sample size across traits is primarily due to post critical thermal maximum survival with a few individuals also removed from the experiment due to loss of body condition over time.  |  |  |
+
+
+## Sources and citation
+
+See [CITATION.md](CITATION.md) for the paper, original dataset and source terms.
+
+Paper: https://doi.org/10.1098/rsos.210440

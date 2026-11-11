@@ -1,27 +1,17 @@
-# ade5868_Data_S1_Breeding_Telo_Ad.csv, ade5868_Data_S4_Morpho_d12.csv
+# Zebra finch telomeres before and after breeding — data
 
-**Paper:** Meillère et al. 2024. Pre- and postnatal noise directly impairs avian development, with fitness consequences. Science  
-https://doi.org/10.1126/science.ade5868
+## Project data files
 
-**Data:** https://doi.org/10.5061/dryad.47d7wm3mk
+| File | Contents |
+|---|---|
+| `ade5868_Data_S1_Breeding_Telo_Ad.csv` | Project data file. |
+| `CITATION.md` | Paper and source-data citations. |
 
-This folder contains `ade5868_Data_S1_Breeding_Telo_Ad.csv`, `ade5868_Data_S4_Morpho_d12.csv`, made from sheet "Data_S1_Breeding_Telo_Ad" of `ade5868_Data_S1_to_S6.xlsx`; sheet "Data_S4_Morpho_d12" of `ade5868_Data_S1_to_S6.xlsx` in the original deposit. Only the file format changed (Excel to CSV, so it loads with `read_csv()`); the values are the authors'. Two of the six sheets are included, one CSV each: `ade5868_Data_S1_Breeding_Telo_Ad.csv` (adult telomeres before and after breeding) and `ade5868_Data_S4_Morpho_d12.csv` (nestling size at day 12). The other sheets described below are not in this folder. Please cite both the paper and the dataset (see CITATION.md).
+## Collection and row meaning
 
-_Below: the authors' README (README.md), NOT trimmed automatically - edit by hand_
+Zebra finches experienced traffic noise or zebra finch song during the last five days before hatching, during days 4–13 after hatching, or at both stages. Playbacks had comparable intensity, 65 dB. Nestlings returned to undisturbed parents during the day, allowing researchers to manipulate offspring sound exposure without exposing their parents. As adults, experimental birds bred with unmanipulated partners. This file follows 40 birds from the four combinations of prenatal and postnatal sound treatment. Each bird has adult telomere measurements before and after breeding. These 40 adults were retained from the larger developmental experiment; the four treatment groups contain 9–11 birds each.
 
----
-
-# Pre- and postnatal noise directly impairs avian development, with fitness consequences
-
-[https://doi.org/10.5061/dryad.47d7wm3mk](https://doi.org/10.5061/dryad.47d7wm3mk)
-
-The dataset includes 6 spreadsheets:
-1\. Data_S1_Breeding_Telo_Ad: reproductive success of individuals exposed to acoustic treatments in early-life, and their telomere length at adulthood.
-2\. Data_S2_Egg: hatching success of eggs exposed to prenatal playbacks, and their mass at hatching.
-3\. Data_S3_Growth: body mass measurements from day 5 to day 13 post-hatch of individuals exposed to pre- and postnatal acoustic treatments.
-4\. Data_S4_Morpho_d12: morphological traits (body mass and tarsus length) measured at day 12 post-hatch in individuals exposed to pre- and postnatal acoustic treatments.
-5\. Data_S5_Physio_d12: physiological traits (telomere length, hematocrit levels) measured at day 12 post-hatch in individuals exposed to pre- and postnatal acoustic treatments.
-6\. Data_S6_Juv_d40: morphological and physiological traits measured at day 40 post-hatch in individuals exposed to pre- and postnatal acoustic treatments.
+## Column definitions and source documentation
 
 ## Description of the data and file structure
 
@@ -176,8 +166,9 @@ R. PlateID : Identifier of the assay plate
 
 Cells with NA = not applicable
 
-## Code/Software
 
-All analyses were performed in R version 4.1.1 and the scripts are provided in the ade5868_Code.R file.
+## Sources and citation
 
-<br>
+See [CITATION.md](CITATION.md) for the paper, original dataset and source terms.
+
+Paper: https://doi.org/10.1126/science.ade5868

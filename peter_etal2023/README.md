@@ -1,15 +1,20 @@
-# data_PESA.csv
+# Sandpiper hematocrit — data
 
-**Paper:** Santema et al. 2023. Sexual selection for extreme physical performance in a polygynous bird is associated with exceptional sex differences in oxygen carrying capacity. Biology Letters  
-https://doi.org/10.1098/rsbl.2023.0391
+## Project data files
 
-**Data:** https://doi.org/10.5061/dryad.pzgmsbcss
+| File | Contents |
+|---|---|
+| `data_PESA.csv` | Project data file. |
+| `CITATION.md` | Paper and source-data citations. |
 
-This folder contains `data_PESA.csv`, made from `data_PESA.xlsx` in the original deposit. Only the file format changed (Excel to CSV, so it loads with `read_csv()`); the values are the authors'. Please cite both the paper and the dataset (see CITATION.md).
+## Collection and row meaning
 
-_Below: the authors' README_
+Researchers sampled birds at an approximately 2 km² site near Utqiagvik, Alaska, during nine breeding seasons (2004–2009, 2012, 2014 and 2018). Both sexes were caught using hand-held mist nets; females were also caught in nest traps. At capture, birds were weighed, their tarsus (lower leg) measured, and blood collected. Hematocrit was averaged across capillary tubes from each capture. Some birds were sampled more than once; bird identity is recorded as ID.
 
----
+Females were classified by whether they nested at the study site. Nests were found by following females and searching the tundra. Females without a local nest could include birds passing through to breed elsewhere. The sample therefore reflects birds encountered and captured at this site, using partly different methods for the sexes.
+
+## Column definitions and source documentation
+
 ### Description of data files
 
 data\_PESA.csv (contains hematocrit values of individual pectoral sandpipers)
@@ -30,3 +35,10 @@ date\_cent - mean-centered date of sample collection (NA=no data)
 tarsus\_cent - mean-centered tarsus length (in mm, NA=no data)
 weight\_cent - mean-centered body mass (in g, NA=no data)
 cond\_cent - mean-centered body condition (residuals of weight over tarsus, NA=no data)
+
+
+## Sources and citation
+
+See [CITATION.md](CITATION.md) for the paper, original dataset and source terms.
+
+Paper: https://doi.org/10.1098/rsbl.2023.0391
