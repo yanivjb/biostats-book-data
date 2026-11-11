@@ -24,7 +24,7 @@ Species = Dau_car was retained: all 48 carrot pots, all 42 original columns, and
 | Granulate | No granules (GranC), cork, or EPDM; categorical. |
 | Infused | Assigned EPDM-infused fertilizer: 0 absent, 1 present; categorical. |
 | EW | Assigned earthworms: 0 absent, 1 present; categorical. |
-| EPDM / Cork / Control / Treatment | Original redundant treatment indicators and combination label. Do not enter every redundant encoding simultaneously. |
+| EPDM / Cork / Control / Treatment | Alternative encodings of the assigned treatments: individual indicators and a combined label. |
 | Plant_dead | Plant dead at harvest: 0 no, 1 yes. |
 | Above_mass / Below_mass / Total_mass | Aboveground, belowground and total dry biomass, g. |
 | Total_L_area | Initial estimated leaf area, mm². |

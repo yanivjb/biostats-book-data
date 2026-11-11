@@ -70,7 +70,7 @@ There are no blank cells, “NA” entries, or other missing-value codes in eith
 
 At the time of submission, these data are not available through any other publicly accessible repository or website. The data were generated directly by the authors during the greenhouse pot experiment and were not derived from any external dataset or secondary data source.
 
-The complete dataset will be publicly accessible through Dryad after publication of the dataset record. The final Dryad DOI should be used as the permanent link to the data once it has been assigned.
+
 
 No third-party data licenses apply because the deposited data are original research data produced by the authors.
 

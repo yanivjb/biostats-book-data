@@ -44,10 +44,10 @@ Black poplar plants were either inoculated with the endophytic fungus *Cladospor
 | `endophyte` | 0 = no inoculation; 1 = endophyte inoculation. |
 | `herbivory` | 0 = no experimental herbivory; 1 = herbivory treatment. |
 | `concentration` | Measured concentration of the named compound; units are in `unit`. |
-| `unit` | Figure 2: mg/g. Figure 3: catechin is µg/mg; the other three compounds are µg/g. Do not pool concentrations without attending to units. |
+| `unit` | Figure 2: mg/g. Figure 3: catechin is µg/mg; the other three compounds are µg/g. |
 | `compound` | Compound label as supplied. Figure 2 includes Salicin, Salicortin, nigracin, Homalosid D and salicortin-6-benzoat; the last label has surrounding spaces. Figure 3 includes catechin, Coumaric Acid, Caffeic acid and Ferulic Acid. |
 
-There are no blank data cells in these two chemistry CSVs. Treatment labels and the two 0/1 columns are alternative encodings of the same design, alternative encodings of the same assigned treatments. Workbook sheets containing ANOVA statistics or selected significant features are derived results rather than substitutes for the raw concentration data.
+There are no blank data cells in these two chemistry CSVs. Treatment labels and the two 0/1 columns are alternative encodings of the same assigned treatments. Workbook sheets containing ANOVA statistics or selected significant features are derived results rather than substitutes for the raw concentration data.
 
 ## Leaf-disc choice assay: Figure 5d
 

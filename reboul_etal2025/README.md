@@ -19,7 +19,7 @@ The two preamble rows were removed. Sample FD17 was excluded following the autho
 
 | Column | Meaning |
 |---|---|
-| Short ID without zeros / Short ID with zeros | Two labels for the same product; do not count them separately. |
+| Short ID without zeros / Short ID with zeros | Two labels for the same product. |
 | Processing Method | 0 = conventional; 1 = raw or partially cooked ingredients; categorical. |
 | Food texture | K kibble; C canned; FR frozen; FD freeze-dried; F refrigerated. Strongly overlaps with processing. |
 | Category | Labelled animal-protein source combination; categorical. |
@@ -28,7 +28,7 @@ The two preamble rows were removed. Sample FD17 was excluded following the autho
 | alphaDiv_bact_Pielou | Pielou evenness. |
 | cultured bacteria binary | 0 no / 1 yes: successful bacterial culture; binary outcome. |
 | Total_Frequency | Number of sequences associated with the product. |
-| Clostridium_Sens_Stricto1 / Salmonella / Klebsiella / Carbapenem_genes | Binary detections; these require a different response model from the continuous-diversity question. |
+| Clostridium_Sens_Stricto1 / Salmonella / Klebsiella / Carbapenem_genes | Binary detection indicators for the named taxa or gene category. |
 
 ## Missing values
 

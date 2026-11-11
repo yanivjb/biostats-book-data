@@ -9,7 +9,7 @@
 
 ## Rows and collection
 
-41 rows. Researchers captured adult male hummingbirds near dusk at five sites in Arizona and Ecuador. Birds could feed before entering outdoor respirometry chambers. Oxygen consumption and chamber temperature were recorded overnight; birds were marked to avoid measuring an individual twice. The individual-summary file is the starting point, rather than the hourly oxygen readings.
+41 rows. Researchers captured adult male hummingbirds near dusk at five sites in Arizona and Ecuador. Birds could feed before entering outdoor respirometry chambers. Oxygen consumption and chamber temperature were recorded overnight; birds were marked to avoid measuring an individual twice. The project CSV contains individual summaries of the overnight recordings.
 
 ## Preparation of this CSV
 
