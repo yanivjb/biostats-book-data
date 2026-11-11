@@ -9,7 +9,7 @@
 
 ## Rows and collection
 
-20 rows. Independent Bacillus lineages evolved at 15 or 30 degrees C. Researchers subsequently measured growth curves in common assay environments, with replicate wells for each lineage. This project uses the 30-degrees-C assay to ask about a possible warm-environment cost of cold adaptation.
+20 rows. Separate Bacillus lineages evolved at 15 or 30 degrees C. Researchers subsequently measured growth curves in common assay environments, with replicate wells for each lineage. The project CSV contains lineage-level summaries from the 30-degrees-C assay.
 
 ## Preparation of this CSV
 

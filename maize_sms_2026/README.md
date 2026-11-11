@@ -9,7 +9,7 @@
 
 ## Collection and row meaning
 
-The Dryad record describes a 75-day greenhouse experiment at Universiti Putra Malaysia from February to April 2025. Maize was grown in pots containing 20 kg of tropical Ultisol soil, with moisture maintained at approximately 60–70% of water-holding capacity. Treatments were assigned in a completely randomized design with three independent pots per treatment.
+The Dryad record describes a 75-day greenhouse experiment at Universiti Putra Malaysia from February to April 2025. Maize was grown in pots containing 20 kg of tropical Ultisol soil, with moisture maintained at approximately 60–70% of water-holding capacity. Treatments were assigned in a completely randomized design with three pots per treatment.
 
 The eight treatments comprised an untreated control, the recommended mineral fertilizer containing nitrogen, phosphorus and potassium (NPK), and six combinations of full recommended NPK with one of the two substrate types at 50%, 75% or 100% of the substrate rate. There were 24 pots. Treatment and pot-replication labels are recorded; replication labels repeat across treatments.
 
@@ -25,12 +25,12 @@ This dataset was generated from a 75-day greenhouse pot experiment conducted fro
 
 ## Files and variables
 
-The dataset contains two Microsoft Excel workbooks, result_3.1.xlsx and result_3.2.xlsx. Each workbook contains one worksheet, named **Sheet1**, with 24 observations representing eight treatments and three independent pot replications per treatment. The data were collected during a 75-day greenhouse experiment evaluating spent mushroom substrate amendments and recommended NPK fertilizer in maize grown under tropical soil conditions.
+The dataset contains two Microsoft Excel workbooks, result_3.1.xlsx and result_3.2.xlsx. Each workbook contains one worksheet, named **Sheet1**, with 24 observations representing eight treatments and three pot replicates per treatment. The data were collected during a 75-day greenhouse experiment evaluating spent mushroom substrate amendments and recommended NPK fertilizer in maize grown under tropical soil conditions.
 
 ### Treatment codes and abbreviations
 
 * **TRT**: Treatment code.
-* **Rep**: Independent pot replication, coded R1, R2, or R3.
+* **Rep**: Pot replicate label, coded R1, R2, or R3.
 * **SMS**: Spent mushroom substrate.
 * **SMSF**: Spent mushroom substrate derived from oil palm frond.
 * **SMSE**: Spent mushroom substrate derived from oil palm empty fruit bunch.
