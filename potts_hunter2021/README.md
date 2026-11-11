@@ -9,7 +9,7 @@
 
 ## Rows and collection
 
-45 rows. The reciprocal transplant grew offspring from three maternal lines at three locations within one Michigan population, with five seedlings per line–location combination: 45 plants. Each line grew both at its home site and at the other sites. Plants were measured repeatedly through the growing season. This is a smaller, more coherent starting experiment than pooling the separate common gardens.
+45 rows. The reciprocal transplant grew offspring from three maternal lines at three locations within one Michigan population, with five seedlings per line–location combination: 45 plants. Each line grew both at its home site and at the other sites. Plants were measured repeatedly through the growing season. The project CSV retains the Week-10 height measurement for each plant. Each family consists of seedlings sharing a maternal parent. At each location, plants grew in soil collected there, in a randomised grid with 0.5-metre spacing.
 
 ## Preparation of this CSV
 

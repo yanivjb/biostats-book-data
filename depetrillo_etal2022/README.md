@@ -9,7 +9,7 @@
 
 ## Rows and collection
 
-39 rows. Thirty-nine captive lemurs from four species completed a set of cognitive and behavioural tasks. The task-interrelations file summarises each animal’s performance and gives its species and sex. Repeated trials have already contributed to these animal-level summaries.
+39 rows. Thirty-nine captive lemurs from four species completed a set of cognitive and behavioural tasks. The original task-interrelations file summarises each animal’s performance and gives its species and sex; the project CSV retains persistence, novel-object and species summaries. Repeated trials have already contributed to these animal-level summaries.
 
 ## Preparation of this CSV
 

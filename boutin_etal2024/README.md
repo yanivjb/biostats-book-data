@@ -9,7 +9,7 @@
 
 ## Rows and collection
 
-20 rows. Healthy young adults learned a finger-tapping sequence, slept while EEG was recorded in an MRI scanner, and completed a later retention session. Screening, sleep requirements and recording-quality exclusions reduced the original 33 volunteers to 20 analysed participants. The NREM2 worksheet provides already processed participant-level spindle and performance summaries; raw EEG recordings are not included in this file.
+20 rows. Healthy young adults learned a finger-tapping sequence, slept while EEG was recorded in an MRI scanner, and completed a later retention session. Screening, sleep requirements and recording-quality exclusions reduced the original 33 volunteers to 20 analysed participants. The NREM2 worksheet provides already processed participant-level spindle and performance summaries; raw EEG recordings are not included in the project CSV. EEG-fMRI sleep recordings lasted up to 2 hours 15 minutes, after which participants could finish sleeping in a nearby sleep laboratory.
 
 ## Preparation of this CSV
 

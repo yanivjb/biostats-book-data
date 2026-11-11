@@ -9,7 +9,7 @@
 
 ## Rows and collection
 
-65 rows. The cross-sectional table contains 65 dogs tested with a standard odour battery. It records age, body weight, sex and measures of habituation and interaction with individual odours. A separate key defines the assay measures.
+65 rows. The cross-sectional table contains 65 dogs tested with a standard odour battery. It records age, body weight, sex and measures of habituation and interaction with individual odours. A separate key defines the assay measures. Odours were presented for 30 seconds in a repeated-presentation sequence, and interaction times were measured from video. The project CSV summarises each dog’s initial interactions with the 16 retained odours.
 
 ## Preparation of this CSV
 

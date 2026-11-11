@@ -52,3 +52,7 @@ Other publicly accessible locations of the data:
 See [CITATION.md](CITATION.md) for the paper, original dataset and source terms.
 
 Paper: https://zenodo.org/records/14161399
+
+## Recorded measurement units
+
+The supplied morphology dictionary and the article’s morphological-methods paragraph do not state the units of FW or DBD. The separate Straight line field is explicitly labelled cm.

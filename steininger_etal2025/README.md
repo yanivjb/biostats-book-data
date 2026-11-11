@@ -9,7 +9,7 @@
 
 ## Rows and collection
 
-49 rows. Forty-nine volunteers experienced painful electrical stimulation while viewing different audiovisual environments, including natural and urban scenes. Repeated ratings describe pain and other experiences. Pain-intensity ratings were averaged for each participant in each scene condition in the project CSV.
+49 rows. Forty-nine volunteers experienced painful electrical stimulation while viewing different audiovisual environments, including natural and urban scenes. Repeated ratings describe pain and other experiences. Pain-intensity ratings were averaged for each participant in each scene condition in the project CSV. Electrical stimulation was calibrated separately for each participant to a target pain rating of 6 on a 0–8 scale. The nature, urban and indoor scenes were shown in counterbalanced order.
 
 ## Preparation of this CSV
 

@@ -4,7 +4,9 @@ If you use `data_defense_traits_Leaf_Data.csv` please cite both the paper and th
 
 ## Paper
 
-Yan, K., Xia, W., Yu, K., Yang, X., et al. Grazing disrupts the trade-off between silica- and phenol-based plant defenses along an aridity gradient in grasslands. Submitted to Functional Ecology (cite the dataset)
+Yan, K., Xia, W., Yu, K., Yang, X., Wang, X., Wang, J., Zhou, Y., Jing, X., Zhang, H., Jiang, Y., Han, X., & Yu, L. (2025). Grazing disrupts the trade‐off between silica‐ and phenol‐based plant defences along an aridity gradient in grasslands. Functional Ecology, 39(12), 3474-3486. https://doi.org/10.1111/1365-2435.70206
+
+Link: <https://doi.org/10.1111/1365-2435.70206>
 
 ## Dataset (Dryad)
 

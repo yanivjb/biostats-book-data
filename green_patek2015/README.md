@@ -9,7 +9,7 @@
 
 ## Rows and collection
 
-93 rows. The morphology-and-force table is the starting dataset, rather than the contest-winner table. Researchers measured body size and components of the striking appendage. Strike performance was represented by the maximum peak force from ten strikes by an animal. The original note row has been removed from the project CSV.
+93 rows. Researchers measured body size and components of the striking appendage. Strike performance was represented by the maximum peak force from ten strikes by an animal. The original note row has been removed from the project CSV.
 
 ## Preparation of this CSV
 

@@ -9,7 +9,7 @@
 
 ## Rows and collection
 
-41 rows. Forty-one healthy young volunteers supplied questionnaire scores and underwent thermal pain-threshold testing. The study also recorded EEG, but the participant-level psychological and pain table supports a separate question without analysing brain signals.
+41 rows. Forty-one healthy young volunteers supplied questionnaire scores and underwent thermal pain-threshold testing. The study also recorded EEG; the project CSV contains participant-level psychological and pain measurements.
 
 ## Preparation of this CSV
 

@@ -9,7 +9,7 @@
 
 ## Rows and collection
 
-152 rows. Study 2 assigned 152 human participants to writing conditions involving different collaboration arrangements. The file contains one record per writer, demographic information, writing time, self-evaluations and expert judgments of the poem.
+152 rows. In Study 2, 152 participants recruited through Prolific were randomly assigned to three writing conditions. The file contains one record per writer, demographic information, writing time, self-evaluations and expert judgments of the poem.
 
 ## Preparation of this CSV
 

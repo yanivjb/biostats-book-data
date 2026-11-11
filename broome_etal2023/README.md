@@ -9,7 +9,7 @@
 
 ## Rows and collection
 
-116 rows. The cat sheet contains 116 clinical weight-management records. Cats entered a supervised programme rather than being randomly assigned to different degrees of obesity. The file records starting characteristics, diet information and programme outcomes.
+116 rows. The cat sheet contains 116 clinical weight-management records. Cats entered a supervised programme rather than being randomly assigned to different degrees of obesity. The file records starting characteristics, diet information and programme outcomes. Before-and-after body-composition measurements were available for 58 cats that completed weight management; the CSV also retains records without those follow-up measurements.
 
 ## Preparation of this CSV
 

@@ -9,7 +9,7 @@
 
 ## Rows and collection
 
-111 rows. Researchers purchased 112 commercial products from online sellers, stores and manufacturers between 2021 and 2023. Products represented 31 manufacturers and several textures. One contaminated homogenate was excluded. Supplementary Data 1 contains product metadata and already calculated bacterial diversity values, so raw sequencing is unnecessary. Its title and blank rows precede the real header.
+111 rows. Researchers purchased 112 commercial products from online sellers, stores and manufacturers between 2021 and 2023. Products represented 31 manufacturers and several textures. One contaminated homogenate was excluded. Supplementary Data 1 contains product metadata and already calculated bacterial diversity values. The project CSV retains the 111 products remaining after the recorded exclusion.
 
 ## Preparation of this CSV
 

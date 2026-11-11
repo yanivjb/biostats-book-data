@@ -10,7 +10,7 @@
 
 ## Collection and row meaning
 
-Researchers sampled breeding amphibians around Baltimore in 2009–2010. The reproductive data come from subsets of gravid females whose eggs were counted and measured. Mean egg diameter was based on 40 mature eggs per female; a row therefore describes a female and her clutch, not one egg. The toad file contains 50 females from five populations; the wood frog file contains 48 females from four populations. Mean egg diameter is based on 40 mature eggs per female.
+Researchers sampled breeding amphibians around Baltimore in 2009–2010. The reproductive data come from subsets of gravid females whose eggs were counted and measured. Mean egg diameter was based on 40 mature eggs per female; a row therefore describes a female and her clutch, not one egg. The toad file contains 50 females from five populations; the wood frog file contains 48 females from four populations.
 
 ## Column definitions and source documentation
 

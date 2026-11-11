@@ -9,7 +9,7 @@
 
 ## Rows and collection
 
-69 rows. Older dogs entered a blinded trial with placebo and supplement-dose groups. Owner-reported cognitive measures were recorded at baseline and follow-up. The source sheet also records age, physical condition, eligibility and follow-up information. The project file records baseline and three-month off-leash walking speed.
+69 rows. Older dogs entered a blinded trial with placebo and supplement-dose groups. Owner-reported cognitive measures were recorded at baseline and follow-up. The source sheet also records age, physical condition, eligibility and follow-up information. The project file records baseline and three-month off-leash walking speed. At each visit, walking speed was the mean of three off-leash walks over a 5-metre course.
 
 ## Preparation of this CSV
 

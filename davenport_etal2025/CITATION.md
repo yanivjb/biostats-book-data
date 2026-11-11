@@ -4,7 +4,9 @@ If you use `BodyLength.csv` please cite both the paper and the dataset.
 
 ## Paper
 
-Davenport, E., Dziuba, M., Corcoran, F., Ferreira dos Santos, N., Monell, K., McCreadie, P., Calhoun, S., Nelson, T., Jacobson, L., Manuel, R., & Duffy, M. Resource quantity affects infection success and impacts of a microsporidian on hosts. Preprint, submitted to Oikos (cite the dataset)
+Davenport, E. S., Dziuba, M. K., Corcoran, F., Santos, N. F. D., Monell, K. J., McCreadie, P., Calhoun, S. K., Nelson, T., Jacobson, L. E., Manuel, R., & Duffy, M. A. (2026). Resource quantity affects infection success and impacts of a microsporidian on hosts. Oikos, 2026(2), e11412. https://doi.org/10.1002/oik.11412
+
+Link: <https://doi.org/10.1002/oik.11412>
 
 ## Dataset (Dryad)
 

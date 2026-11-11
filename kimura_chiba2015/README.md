@@ -9,7 +9,7 @@
 
 ## Rows and collection
 
-42 rows. The paper contains several experiments. For this project, start with the sperm-mass assay. Focal virgin snails were paired with virgin or previously mated partners; only previously mated partners had developed a dart. Sperm masses donated and received were extracted after either the first or fourth mating, dried and weighed. These are different assay endpoints, not four repeated measurements of every animal.
+42 rows. Focal virgin snails were paired with virgin or previously mated partners; only previously mated partners had developed a dart. Sperm masses donated and received were extracted after either the first or fourth mating, dried and weighed. These are different assay endpoints, not four repeated measurements of every animal.
 
 ## Preparation of this CSV
 

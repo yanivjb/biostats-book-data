@@ -9,7 +9,7 @@
 
 ## Rows and collection
 
-96 rows. The paper’s discovery cohort contains 101 participants with type 1 diabetes and 20 non-diabetic controls. Participants came from a larger Danish cohort; the diabetes subset had long disease duration and was sampled across kidney-risk categories. The small sample-information table contains clinical measurements. The large methylation count matrix is not needed for this question.
+96 rows. The paper’s discovery cohort contains 101 participants with type 1 diabetes and 20 non-diabetic controls. Participants came from a larger Danish cohort; the diabetes subset had long disease duration and was sampled across kidney-risk categories. The small sample-information table contains clinical measurements. The project CSV contains 96 clinical records from participants with type 1 diabetes who had a recorded positive albumin-excretion measurement.
 
 ## Preparation of this CSV
 

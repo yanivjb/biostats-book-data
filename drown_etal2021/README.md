@@ -67,3 +67,7 @@ Whole animal metabolism, substrate specific cardiac metabolic rate and critical 
 See [CITATION.md](CITATION.md) for the paper, original dataset and source terms.
 
 Paper: https://doi.org/10.1098/rsos.210440
+
+## Record structure
+
+Three Fish_ID values have differing labels between their temperature records: G2G3O5 (Sex), G2R5R6 (Population), and G3G4R5 (Population, Sex and Acclimation_Order). The source labels are retained as recorded.

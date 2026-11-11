@@ -9,7 +9,7 @@
 
 ## Rows and collection
 
-128 rows. Study 2 involved 128 participants making judgments about others’ views. The analysis file includes repeated judgments, group relationships, accuracy-related measures and questionnaire scores. Participants and target statements can both recur.
+128 rows. Study 2 involved 128 participants making judgments about others’ views. The analysis file includes repeated judgments, group relationships, accuracy-related measures and questionnaire scores. Participants and target statements can both recur. Recruitment filled equal quotas of Democratic- and Republican-affiliated participants. Forty-three participants were excluded and replaced under preregistered response rules, including too few qualifying trials or never requesting additional information.
 
 ## Preparation of this CSV
 
