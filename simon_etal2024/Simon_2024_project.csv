@@ -1,0 +1,70 @@
+id,followup,baseline,treatment
+AB001,1.75,1.48,Full Dose
+AB002,2.9,2.65,Placebo
+AB003,2.76,2.17,Low Dose
+AB004,0.82,1.02,Placebo
+AB005,1.43,1.93,Low Dose
+AB006,3,2.62,Placebo
+AB007,0.91,1.04,Full Dose
+AB008,1.7,1.31,Low Dose
+AB009,1.16,1.07,Placebo
+AB010,0.79,0.54,Placebo
+AB011,NA,2.24,Full Dose
+AB012,0,0.73,Full Dose
+AB013,1.02,1.47,Low Dose
+AB014,NA,1.75,Full Dose
+AB015,0.63,0.72,Full Dose
+AB016,0.6,0.7,Low Dose
+AB017,1.84,2.27,Low Dose
+AB018,0.73,1.35,Placebo
+AB019,0.84,0.59,Low Dose
+AB020,1.88,3.03,Low Dose
+AB021,1.28,1.69,Placebo
+AB022,0.84,0.82,Full Dose
+AB023,1.83,2.22,Full Dose
+AB024,0.66,0.55,Placebo
+AB025,2.29,2.54,Low Dose
+AB026,1.33,0.97,Full Dose
+AB027,3.04,1.95,Placebo
+AB028,1.54,1.45,Placebo
+AB029,2.34,2.22,Full Dose
+AB030,1.2,1.23,Low Dose
+AB031,1.28,1.44,Full Dose
+AB032,2.9,3.81,Full Dose
+AB033,1.86,1.51,Placebo
+AB034,1.4,1.05,Placebo
+AB035,NA,1.29,Low Dose
+AB036,1.76,1.86,Low Dose
+AB037,1.7,1.56,Low Dose
+AB039,1.7,1.47,Full Dose
+AB040,1.75,1.2,Low Dose
+AB041,1.69,1.79,Placebo
+AB042,0.66,0.66,Full Dose
+AB043,1.51,1.31,Placebo
+AB044,1.29,1.52,Full Dose
+AB045,NA,2.58,Placebo
+AB046,1.77,2.17,Low Dose
+AB047,1.7,1.82,Placebo
+AB048,NA,1.1,Low Dose
+AB049,0.89,1.24,Full Dose
+AB050,0.88,1.14,Low Dose
+AB051,NA,1.86,Placebo
+AB052,0.74,0.66,Full Dose
+AB053,1,1.02,Placebo
+AB054,2.8,2.77,Low Dose
+AB055,1.96,2.22,Full Dose
+AB056,0.69,0.65,Low Dose
+AB057,1.8,2.21,Low Dose
+AB058,1.93,2.22,Placebo
+AB059,1.4,0.84,Full Dose
+AB060,1.61,1.84,Full Dose
+AB061,1.29,1.39,Low Dose
+AB062,0.96,1.25,Placebo
+AB063,1.86,1.21,Placebo
+AB064,1.87,1.78,Full Dose
+AB065,0.71,0.73,Full Dose
+AB066,NA,1.68,Placebo
+AB067,1.7,1.27,Low Dose
+AB068,1.33,1.25,Low Dose
+AB069,3.11,3.56,Placebo
+AB070,2.09,1.8,Placebo

@@ -1,0 +1,14 @@
+column,datatype,values,additional description
+Processing Method,binary,"0= conventional, 1 = raw or partially cooked ingredients",
+Food texture,text from list of 5 values,"K=kibble, C=can, FR=frozen, FD=freeze-dried, F=refrigerated",
+Category,text from list of 7 values,"Aquatic, Avian, Mammalian, Aquatic-Avian, Avian-Mammalian, Aquatic-Mammalian, Aquatic-Avian-Mammalian","Protein source Category based on Labeled protein ingredients (not shown for confidentiality purposes, contact the authors if needed)"
+Cultured bacteria binary,binary,"0=no, 1=yes",Any bacteria (good quality and not removed because suspicions of contatmination) isolated from food product or not ?
+alphaDiv_bact_Shannon,floats,/,alpha diversity values of bacterial species using the Shannon metric
+alphaDiv_bact_FaithPD,floats,/,alpha diversity values of bacterial species using the Faith PD metric
+alphaDiv_bact_Pielou,floats,/,alpha diversity (eveness) values of bacterial species using the pielou Index metric
+Total Frequency ,integer,/,number of sequences that are associated with each sample
+ClostridiumSensStricto1,binary,"0=no, 1=yes",Clostridium sensu stricto 1 detected in microbiome
+Salmonella,binary,"0=no, 1=yes",Salmonella cultured
+Klebsiella,binary,"0=no, 1=yes",Klebsiella cultured
+Carbapenem_genes,binary,"0=no, 1=yes",Presence of at least one carbapenemase gene
+Missing values,NA,,
